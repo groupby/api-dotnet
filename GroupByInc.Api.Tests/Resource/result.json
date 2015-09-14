@@ -1,0 +1,3845 @@
+{
+  "totalRecordCount" : 2715,
+  "area" : "Production",
+  "template" : {
+    "name" : "test",
+    "ruleName" : "testrule",
+    "zones" : { }
+  },
+  "pageInfo" : {
+    "recordStart" : 1,
+    "recordEnd" : 50
+  },
+  "availableNavigation" : [ {
+    "name" : "category_leaf_expanded",
+    "displayName" : "Top Product Categories-old",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 2144,
+      "value" : "Category Root~Sale!"
+    }, {
+      "type" : "Value",
+      "count" : 1230,
+      "value" : "Category Root~Womens"
+    }, {
+      "type" : "Value",
+      "count" : 1089,
+      "value" : "Category Root~Sale!~Womens"
+    }, {
+      "type" : "Value",
+      "count" : 1046,
+      "value" : "Category Root~Athletics"
+    }, {
+      "type" : "Value",
+      "count" : 628,
+      "value" : "Category Root~Mens"
+    }, {
+      "type" : "Value",
+      "count" : 504,
+      "value" : "Category Root~Sale!~Mens"
+    }, {
+      "type" : "Value",
+      "count" : 427,
+      "value" : "Category Root~Boys"
+    }, {
+      "type" : "Value",
+      "count" : 405,
+      "value" : "Category Root~Girls"
+    }, {
+      "type" : "Value",
+      "count" : 332,
+      "value" : "Category Root~Mens~Casual"
+    }, {
+      "type" : "Value",
+      "count" : 315,
+      "value" : "Category Root~Athletics~Boys"
+    }, {
+      "type" : "Value",
+      "count" : 313,
+      "value" : "Category Root~Boys~Athletics"
+    }, {
+      "type" : "Value",
+      "count" : 306,
+      "value" : "Category Root~Womens~Sandals"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "Category Root~Athletics~Mens"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "Category Root~Mens~Athletics"
+    }, {
+      "type" : "Value",
+      "count" : 256,
+      "value" : "Category Root~Sale!~Girls"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "Category Root~Athletics~Womens"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "Category Root~Womens~Athletics"
+    }, {
+      "type" : "Value",
+      "count" : 249,
+      "value" : "Category Root~Sale!~Boys"
+    }, {
+      "type" : "Value",
+      "count" : 247,
+      "value" : "Category Root~Womens~Pumps and Heels"
+    }, {
+      "type" : "Value",
+      "count" : 225,
+      "value" : "Category Root~Athletics~Girls"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "category_leaf_id",
+    "displayName" : "Category Leaf",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 2144,
+      "value" : "490006"
+    }, {
+      "type" : "Value",
+      "count" : 1230,
+      "value" : "90017"
+    }, {
+      "type" : "Value",
+      "count" : 1089,
+      "value" : "490007"
+    }, {
+      "type" : "Value",
+      "count" : 1046,
+      "value" : "90021"
+    }, {
+      "type" : "Value",
+      "count" : 628,
+      "value" : "90018"
+    }, {
+      "type" : "Value",
+      "count" : 504,
+      "value" : "490008"
+    }, {
+      "type" : "Value",
+      "count" : 427,
+      "value" : "90020"
+    }, {
+      "type" : "Value",
+      "count" : 405,
+      "value" : "90019"
+    }, {
+      "type" : "Value",
+      "count" : 332,
+      "value" : "90031"
+    }, {
+      "type" : "Value",
+      "count" : 315,
+      "value" : "90057"
+    }, {
+      "type" : "Value",
+      "count" : 313,
+      "value" : "90044"
+    }, {
+      "type" : "Value",
+      "count" : 306,
+      "value" : "90025"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "90034"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "90056"
+    }, {
+      "type" : "Value",
+      "count" : 256,
+      "value" : "490009"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "90027"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "90055"
+    }, {
+      "type" : "Value",
+      "count" : 249,
+      "value" : "490010"
+    }, {
+      "type" : "Value",
+      "count" : 247,
+      "value" : "640014"
+    }, {
+      "type" : "Value",
+      "count" : 225,
+      "value" : "90058"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "category_leaf_expanded_id",
+    "displayName" : "Top Product Categories",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 2144,
+      "value" : "0~490006"
+    }, {
+      "type" : "Value",
+      "count" : 1230,
+      "value" : "0~90017"
+    }, {
+      "type" : "Value",
+      "count" : 1089,
+      "value" : "0~490006~490007"
+    }, {
+      "type" : "Value",
+      "count" : 1046,
+      "value" : "0~90021"
+    }, {
+      "type" : "Value",
+      "count" : 628,
+      "value" : "0~90018"
+    }, {
+      "type" : "Value",
+      "count" : 504,
+      "value" : "0~490006~490008"
+    }, {
+      "type" : "Value",
+      "count" : 427,
+      "value" : "0~90020"
+    }, {
+      "type" : "Value",
+      "count" : 405,
+      "value" : "0~90019"
+    }, {
+      "type" : "Value",
+      "count" : 332,
+      "value" : "0~90018~90031"
+    }, {
+      "type" : "Value",
+      "count" : 315,
+      "value" : "0~90021~90057"
+    }, {
+      "type" : "Value",
+      "count" : 313,
+      "value" : "0~90020~90044"
+    }, {
+      "type" : "Value",
+      "count" : 306,
+      "value" : "0~90017~90025"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "0~90018~90034"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "0~90021~90056"
+    }, {
+      "type" : "Value",
+      "count" : 256,
+      "value" : "0~490006~490009"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "0~90017~90027"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "0~90021~90055"
+    }, {
+      "type" : "Value",
+      "count" : 249,
+      "value" : "0~490006~490010"
+    }, {
+      "type" : "Value",
+      "count" : 247,
+      "value" : "0~90017~640014"
+    }, {
+      "type" : "Value",
+      "count" : 225,
+      "value" : "0~90021~90058"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "brand",
+    "displayName" : "brand",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 1,
+      "value" : "A.S.A.P."
+    }, {
+      "type" : "Value",
+      "count" : 70,
+      "value" : "Adidas"
+    }, {
+      "type" : "Value",
+      "count" : 23,
+      "value" : "Adidas Neo"
+    }, {
+      "type" : "Value",
+      "count" : 9,
+      "value" : "Aerology"
+    }, {
+      "type" : "Value",
+      "count" : 9,
+      "value" : "Aerosoles"
+    }, {
+      "type" : "Value",
+      "count" : 8,
+      "value" : "Anchors Edge Bay"
+    }, {
+      "type" : "Value",
+      "count" : 3,
+      "value" : "Andrew Geller"
+    }, {
+      "type" : "Value",
+      "count" : 12,
+      "value" : "Ariat"
+    }, {
+      "type" : "Value",
+      "count" : 55,
+      "value" : "Asics"
+    }, {
+      "type" : "Value",
+      "count" : 5,
+      "value" : "Axxiom"
+    }, {
+      "type" : "Value",
+      "count" : 9,
+      "value" : "B.O.C."
+    }, {
+      "type" : "Value",
+      "count" : 25,
+      "value" : "BOBS"
+    }, {
+      "type" : "Value",
+      "count" : 8,
+      "value" : "Baby Girl"
+    }, {
+      "type" : "Value",
+      "count" : 3,
+      "value" : "Baby Phat"
+    }, {
+      "type" : "Value",
+      "count" : 17,
+      "value" : "Bandolino"
+    }, {
+      "type" : "Value",
+      "count" : 24,
+      "value" : "Bare Traps"
+    }, {
+      "type" : "Value",
+      "count" : 10,
+      "value" : "Bearpaw"
+    }, {
+      "type" : "Value",
+      "count" : 6,
+      "value" : "Beaver Creek"
+    }, {
+      "type" : "Value",
+      "count" : 5,
+      "value" : "Bellini"
+    }, {
+      "type" : "Value",
+      "count" : 10,
+      "value" : "Bernie Mev"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "feature",
+    "displayName" : "feature",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 1306,
+      "value" : "Slip On"
+    }, {
+      "type" : "Value",
+      "count" : 1216,
+      "value" : "Lace Up"
+    }, {
+      "type" : "Value",
+      "count" : 553,
+      "value" : "Pre-School"
+    }, {
+      "type" : "Value",
+      "count" : 487,
+      "value" : "Grade-School"
+    }, {
+      "type" : "Value",
+      "count" : 432,
+      "value" : "Open Toe"
+    }, {
+      "type" : "Value",
+      "count" : 377,
+      "value" : "Adjustable Strap"
+    }, {
+      "type" : "Value",
+      "count" : 360,
+      "value" : "Light Weight"
+    }, {
+      "type" : "Value",
+      "count" : 352,
+      "value" : "Canvas"
+    }, {
+      "type" : "Value",
+      "count" : 277,
+      "value" : "Memory Foam"
+    }, {
+      "type" : "Value",
+      "count" : 271,
+      "value" : "Velcro"
+    }, {
+      "type" : "Value",
+      "count" : 209,
+      "value" : "Performance"
+    }, {
+      "type" : "Value",
+      "count" : 194,
+      "value" : "Thong"
+    }, {
+      "type" : "Value",
+      "count" : 177,
+      "value" : "Zip Up"
+    }, {
+      "type" : "Value",
+      "count" : 162,
+      "value" : "High & Mid Top"
+    }, {
+      "type" : "Value",
+      "count" : 125,
+      "value" : "Classic/Retro"
+    }, {
+      "type" : "Value",
+      "count" : 124,
+      "value" : "Mid Calf"
+    }, {
+      "type" : "Value",
+      "count" : 122,
+      "value" : "Pull On"
+    }, {
+      "type" : "Value",
+      "count" : 119,
+      "value" : "Ankle"
+    }, {
+      "type" : "Value",
+      "count" : 112,
+      "value" : "Moc Toe"
+    }, {
+      "type" : "Value",
+      "count" : 103,
+      "value" : "Knee High"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "category2_id",
+    "displayName" : "Category",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 2144,
+      "value" : "490006"
+    }, {
+      "type" : "Value",
+      "count" : 1230,
+      "value" : "90017"
+    }, {
+      "type" : "Value",
+      "count" : 1046,
+      "value" : "90021"
+    }, {
+      "type" : "Value",
+      "count" : 628,
+      "value" : "90018"
+    }, {
+      "type" : "Value",
+      "count" : 427,
+      "value" : "90020"
+    }, {
+      "type" : "Value",
+      "count" : 405,
+      "value" : "90019"
+    }, {
+      "type" : "Value",
+      "count" : 68,
+      "value" : "90022"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : true
+  }, {
+    "name" : "category3_id",
+    "displayName" : "Sub Category",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 1089,
+      "value" : "490007"
+    }, {
+      "type" : "Value",
+      "count" : 504,
+      "value" : "490008"
+    }, {
+      "type" : "Value",
+      "count" : 332,
+      "value" : "90031"
+    }, {
+      "type" : "Value",
+      "count" : 315,
+      "value" : "90057"
+    }, {
+      "type" : "Value",
+      "count" : 313,
+      "value" : "90044"
+    }, {
+      "type" : "Value",
+      "count" : 306,
+      "value" : "90025"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "90034"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "90056"
+    }, {
+      "type" : "Value",
+      "count" : 256,
+      "value" : "490009"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "90027"
+    }, {
+      "type" : "Value",
+      "count" : 251,
+      "value" : "90055"
+    }, {
+      "type" : "Value",
+      "count" : 249,
+      "value" : "490010"
+    }, {
+      "type" : "Value",
+      "count" : 247,
+      "value" : "640014"
+    }, {
+      "type" : "Value",
+      "count" : 231,
+      "value" : "90058"
+    }, {
+      "type" : "Value",
+      "count" : 224,
+      "value" : "90026"
+    }, {
+      "type" : "Value",
+      "count" : 224,
+      "value" : "90038"
+    }, {
+      "type" : "Value",
+      "count" : 223,
+      "value" : "90040"
+    }, {
+      "type" : "Value",
+      "count" : 190,
+      "value" : "640020"
+    }, {
+      "type" : "Value",
+      "count" : 180,
+      "value" : "640037"
+    }, {
+      "type" : "Value",
+      "count" : 179,
+      "value" : "640044"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : true
+  }, {
+    "name" : "category4_id",
+    "displayName" : "Category Group",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 175,
+      "value" : "40051"
+    }, {
+      "type" : "Value",
+      "count" : 175,
+      "value" : "580010"
+    }, {
+      "type" : "Value",
+      "count" : 160,
+      "value" : "640017"
+    }, {
+      "type" : "Value",
+      "count" : 148,
+      "value" : "50001"
+    }, {
+      "type" : "Value",
+      "count" : 147,
+      "value" : "580005"
+    }, {
+      "type" : "Value",
+      "count" : 141,
+      "value" : "570016"
+    }, {
+      "type" : "Value",
+      "count" : 141,
+      "value" : "90070"
+    }, {
+      "type" : "Value",
+      "count" : 140,
+      "value" : "570001"
+    }, {
+      "type" : "Value",
+      "count" : 134,
+      "value" : "580055"
+    }, {
+      "type" : "Value",
+      "count" : 132,
+      "value" : "580016"
+    }, {
+      "type" : "Value",
+      "count" : 132,
+      "value" : "90063"
+    }, {
+      "type" : "Value",
+      "count" : 131,
+      "value" : "580054"
+    }, {
+      "type" : "Value",
+      "count" : 129,
+      "value" : "640038"
+    }, {
+      "type" : "Value",
+      "count" : 123,
+      "value" : "640041"
+    }, {
+      "type" : "Value",
+      "count" : 122,
+      "value" : "570027"
+    }, {
+      "type" : "Value",
+      "count" : 122,
+      "value" : "580014"
+    }, {
+      "type" : "Value",
+      "count" : 122,
+      "value" : "640021"
+    }, {
+      "type" : "Value",
+      "count" : 120,
+      "value" : "570006"
+    }, {
+      "type" : "Value",
+      "count" : 120,
+      "value" : "580003"
+    }, {
+      "type" : "Value",
+      "count" : 107,
+      "value" : "580057"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : true
+  }, {
+    "name" : "heel_height",
+    "displayName" : "Heel_Height",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 1779,
+      "value" : ""
+    }, {
+      "type" : "Value",
+      "count" : 561,
+      "value" : "Low"
+    }, {
+      "type" : "Value",
+      "count" : 201,
+      "value" : "Medium"
+    }, {
+      "type" : "Value",
+      "count" : 174,
+      "value" : "High"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "widths",
+    "displayName" : "Width",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 3,
+      "value" : "BOYS"
+    }, {
+      "type" : "Value",
+      "count" : 1,
+      "value" : "EXTRA WIDE"
+    }, {
+      "type" : "Value",
+      "count" : 2625,
+      "value" : "MEDIUM"
+    }, {
+      "type" : "Value",
+      "count" : 4,
+      "value" : "NARROW"
+    }, {
+      "type" : "Value",
+      "count" : 2,
+      "value" : "SLIM"
+    }, {
+      "type" : "Value",
+      "count" : 9,
+      "value" : "SMALL/MED/LARGE"
+    }, {
+      "type" : "Value",
+      "count" : 44,
+      "value" : "TRIPLE EXTRA WIDE"
+    }, {
+      "type" : "Value",
+      "count" : 68,
+      "value" : "UNSIZED"
+    }, {
+      "type" : "Value",
+      "count" : 288,
+      "value" : "WIDE"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "facet_color",
+    "displayName" : "Color_",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 17,
+      "value" : "ASSORTED"
+    }, {
+      "type" : "Value",
+      "count" : 268,
+      "value" : "BEIGE"
+    }, {
+      "type" : "Value",
+      "count" : 1539,
+      "value" : "BLACK"
+    }, {
+      "type" : "Value",
+      "count" : 557,
+      "value" : "BLUE"
+    }, {
+      "type" : "Value",
+      "count" : 648,
+      "value" : "BROWN"
+    }, {
+      "type" : "Value",
+      "count" : 71,
+      "value" : "GOLD"
+    }, {
+      "type" : "Value",
+      "count" : 154,
+      "value" : "GREEN"
+    }, {
+      "type" : "Value",
+      "count" : 612,
+      "value" : "GREY"
+    }, {
+      "type" : "Value",
+      "count" : 127,
+      "value" : "MULTI-COLOR"
+    }, {
+      "type" : "Value",
+      "count" : 127,
+      "value" : "ORANGE"
+    }, {
+      "type" : "Value",
+      "count" : 343,
+      "value" : "PINK"
+    }, {
+      "type" : "Value",
+      "count" : 102,
+      "value" : "PURPLE"
+    }, {
+      "type" : "Value",
+      "count" : 207,
+      "value" : "RED"
+    }, {
+      "type" : "Value",
+      "count" : 189,
+      "value" : "SILVER"
+    }, {
+      "type" : "Value",
+      "count" : 427,
+      "value" : "WHITE"
+    }, {
+      "type" : "Value",
+      "count" : 101,
+      "value" : "YELLOW"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "customer",
+    "displayName" : "Gender",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 1224,
+      "value" : "Women's"
+    }, {
+      "type" : "Value",
+      "count" : 622,
+      "value" : "Men's"
+    }, {
+      "type" : "Value",
+      "count" : 328,
+      "value" : "Boys'"
+    }, {
+      "type" : "Value",
+      "count" : 284,
+      "value" : "Girls'"
+    }, {
+      "type" : "Value",
+      "count" : 224,
+      "value" : ""
+    }, {
+      "type" : "Value",
+      "count" : 27,
+      "value" : "Kids'"
+    }, {
+      "type" : "Value",
+      "count" : 6,
+      "value" : "Adults'"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "primary_color",
+    "displayName" : "Color",
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 17,
+      "value" : "ASSORTED"
+    }, {
+      "type" : "Value",
+      "count" : 255,
+      "value" : "BEIGE"
+    }, {
+      "type" : "Value",
+      "count" : 1420,
+      "value" : "BLACK"
+    }, {
+      "type" : "Value",
+      "count" : 424,
+      "value" : "BLUE"
+    }, {
+      "type" : "Value",
+      "count" : 609,
+      "value" : "BROWN"
+    }, {
+      "type" : "Value",
+      "count" : 52,
+      "value" : "GOLD"
+    }, {
+      "type" : "Value",
+      "count" : 42,
+      "value" : "GREEN"
+    }, {
+      "type" : "Value",
+      "count" : 531,
+      "value" : "GREY"
+    }, {
+      "type" : "Value",
+      "count" : 43,
+      "value" : "MULTI-COLOR"
+    }, {
+      "type" : "Value",
+      "count" : 33,
+      "value" : "ORANGE"
+    }, {
+      "type" : "Value",
+      "count" : 166,
+      "value" : "PINK"
+    }, {
+      "type" : "Value",
+      "count" : 56,
+      "value" : "PURPLE"
+    }, {
+      "type" : "Value",
+      "count" : 97,
+      "value" : "RED"
+    }, {
+      "type" : "Value",
+      "count" : 108,
+      "value" : "SILVER"
+    }, {
+      "type" : "Value",
+      "count" : 288,
+      "value" : "WHITE"
+    }, {
+      "type" : "Value",
+      "count" : 18,
+      "value" : "YELLOW"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  }, {
+    "name" : "sizes",
+    "displayName" : "Size",
+    "moreRefinements" : true,
+    "refinements" : [ {
+      "type" : "Value",
+      "count" : 2,
+      "value" : "0"
+    }, {
+      "type" : "Value",
+      "count" : 560,
+      "value" : "1"
+    }, {
+      "type" : "Value",
+      "count" : 433,
+      "value" : "1.5"
+    }, {
+      "type" : "Value",
+      "count" : 4,
+      "value" : "1/2"
+    }, {
+      "type" : "Value",
+      "count" : 2027,
+      "value" : "10"
+    }, {
+      "type" : "Value",
+      "count" : 942,
+      "value" : "10.5"
+    }, {
+      "type" : "Value",
+      "count" : 12,
+      "value" : "10/11"
+    }, {
+      "type" : "Value",
+      "count" : 2244,
+      "value" : "11"
+    }, {
+      "type" : "Value",
+      "count" : 874,
+      "value" : "11.5"
+    }, {
+      "type" : "Value",
+      "count" : 3,
+      "value" : "11/12"
+    }, {
+      "type" : "Value",
+      "count" : 1390,
+      "value" : "12"
+    }, {
+      "type" : "Value",
+      "count" : 423,
+      "value" : "12.5"
+    }, {
+      "type" : "Value",
+      "count" : 12,
+      "value" : "12/13"
+    }, {
+      "type" : "Value",
+      "count" : 1136,
+      "value" : "13"
+    }, {
+      "type" : "Value",
+      "count" : 413,
+      "value" : "13.5"
+    }, {
+      "type" : "Value",
+      "count" : 3,
+      "value" : "13/1"
+    }, {
+      "type" : "Value",
+      "count" : 392,
+      "value" : "14"
+    }, {
+      "type" : "Value",
+      "count" : 150,
+      "value" : "15"
+    }, {
+      "type" : "Value",
+      "count" : 12,
+      "value" : "16"
+    }, {
+      "type" : "Value",
+      "count" : 2,
+      "value" : "17"
+    } ],
+    "metadata" : [ ],
+    "range" : false,
+    "or" : false
+  } ],
+  "selectedNavigation" : [ ],
+  "records" : [ {
+    "allMeta" : {
+      "price_retail" : [ "79.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "5", "7", "9", "8.5", "9.5" ],
+      "id" : "83141.000000",
+      "brand" : "Madden Girl",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "1",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83141_158067_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "158068",
+        "color_desc" : "Cognac"
+      }, {
+        "color_nbr" : "158067",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Galeriaa",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Lace Up", "Cap Toe", "Mid Calf", "Zip Up" ],
+      "price_clearance" : [ "40" ],
+      "final_price" : [ "40" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-madden-girl-galeriaa/black/83141.scp",
+      "style_description" : "Women's Madden Girl Lace-Up Studded Boots. Step out in rugged style just right for cool weather in the Madden Girl Galeriaa! These boots feature a faux leather upper, stud detailing, and a rear zipper for easy on wear. Get retro chic style with the Madden Girl Galeriaa!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90026", "490006", "490007", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "01e39439baead5d90fcde5db65f750d4",
+    "_u" : "http://shoecarnival1Variant.com/83141.000000",
+    "_t" : "Galeriaa"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "89.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Riding",
+      "sizes" : [ "7.5", "6", "10", "6.5", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83143.000000",
+      "brand" : "Madden Girl",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "1",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83143_158077_1?$prod_category$",
+      "category4" : "Riding",
+      "category_leaf_id" : "580068",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~580068",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~580068",
+      "color" : [ {
+        "color_nbr" : "158077",
+        "color_desc" : "Brown"
+      } ],
+      "sale_type" : "",
+      "title" : "Lilith Wide Calf",
+      "is_wide_width" : "1",
+      "category_leaf" : "Riding",
+      "feature" : [ "Slip On", "Adjustable Strap", "Knee High", "Wide Calf", "Zip Up" ],
+      "price_clearance" : [ "40" ],
+      "final_price" : [ "40" ],
+      "is_wide_calf" : "1",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Riding",
+      "secondary_color" : [ ],
+      "category4_id" : "580068",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-madden-girl-lilith-wide-calf/brown/83143.scp",
+      "style_description" : "Women's Madden Girl Knee High Strappy Boots. Strap into sleek cool-weather style with the Madden Girl Lilith! These knee-high boots feature multiple adjustable strap and buckles, soft cushioned fabric lining, and a rear zipper for easy on wear. Pair these trendy boots with sweater dresses or skinny jeans for a look everyone will want to copy!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90017", "90026", "490006", "490007", "580068" ],
+      "customer" : "Women's"
+    },
+    "_id" : "dbdf8e2cac785888bcab612653b4dccb",
+    "_u" : "http://shoecarnival1Variant.com/83143.000000",
+    "_t" : "Lilith Wide Calf"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "54.99" ],
+      "category3_expanded_id" : "0~90017~640044",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "WHITE", "GREY", "BLACK", "WHITE" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Athletics~Sneakers",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "12", "8", "7", "5", "9", "8.5", "9.5", "10.5" ],
+      "id" : "83145.000000",
+      "brand" : "Reebok",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83145_158080_1?$prod_category$",
+      "category4" : "Sneakers",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "primary_color" : [ "WHITE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90027~580022",
+      "color" : [ {
+        "color_nbr" : "158080",
+        "color_desc" : "Black/White"
+      }, {
+        "color_nbr" : "158079",
+        "color_desc" : "White/Grey"
+      } ],
+      "sale_type" : "",
+      "title" : "Classic Nylon",
+      "is_wide_width" : "1",
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Classic/Retro", "Lace Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "54.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ "GREY", "WHITE" ],
+      "category4_id" : "580022",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/womens-reebok-classic-nylon/black-white/83145.scp",
+      "style_description" : "Women's Reebok Classic Nylon Running Shoes. Run in comfort and sleek style with the Reebok Classic Nylon! These classic sneaks feature breathable nylon and suede uppers, sculpted EVA midsole for lightweight cushioning, and a padded foam sockliner for added comfort. Run, walk or just hang out in the Reebok Classic Nylon!",
+      "is_on_sale" : "1",
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90021", "90027", "90055", "90063", "490006", "490007", "580001", "580016", "580022", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "f4d93cc22daaec6f5cac129b65422d98",
+    "_u" : "http://shoecarnival1Variant.com/83145.000000",
+    "_t" : "Classic Nylon"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Flat",
+      "sizes" : [ "7.5", "5.5", "6.5", "6", "10", "11", "8", "5", "7", "9", "8.5", "9.5" ],
+      "id" : "83146.000000",
+      "brand" : "Makalu",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83146_158083_1?$prod_category$",
+      "category4" : "Flat",
+      "category_leaf_id" : "640009",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640009",
+      "price_sale" : [ "64.98" ],
+      "category4_expanded_id" : "0~90017~90026~640009",
+      "color" : [ {
+        "color_nbr" : "158083",
+        "color_desc" : "Chestnut Suede"
+      } ],
+      "sale_type" : "S",
+      "title" : "Nalani",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flat",
+      "feature" : [ "Slip On", "Mid Calf", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "64.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Flat",
+      "secondary_color" : [ ],
+      "category4_id" : "640009",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-makalu-nalani/chestnut-suede/83146.scp",
+      "style_description" : "Women's Makalu Moccasin Fringe Boots. Show off your retro earth-girl style in the Makalu California Nalani! Featuring rows of fringes, stitching details and a cushiony fabric lining, you can pair these cute slip-on boots with skirts or skinnies for a naturally stylish look!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90026", "490006", "490007", "640009" ],
+      "customer" : "Women's"
+    },
+    "_id" : "dd6b05db0816c5cd5109ed5e81170448",
+    "_u" : "http://shoecarnival1Variant.com/83146.000000",
+    "_t" : "Nalani"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "62.99" ],
+      "category3_expanded_id" : "0~90021~90057",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "GREY" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Athletics~Boys~Running",
+      "sizes" : [ "5.5", "4.5", "6", "6.5", "3.5", "5", "7", "4" ],
+      "id" : "76047.000000",
+      "brand" : "New Balance",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76047_142895_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580010",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057~580010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90021~90057~580010",
+      "color" : [ {
+        "color_nbr" : "142895",
+        "color_desc" : "Grey"
+      } ],
+      "sale_type" : "",
+      "title" : "KJ990GRG 3.5-7",
+      "is_wide_width" : "0",
+      "category_leaf" : "Running",
+      "feature" : [ "Performance", "Lace Up", "Grade-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "62.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys~Running",
+      "secondary_color" : [ ],
+      "category4_id" : "580010",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "WIDE", "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/kids-new-balance-kj990grg-3-7/grey/76047.scp",
+      "style_description" : "<P ALIGN=\"LEFT\"><B>Kid&apos;s New Balance </B><FONT KERNING=\"1\"><B>KJ990GRG Athletic Shoes</B><FONT KERNING=\"0\"></P><P ALIGN=\"LEFT\"></FONT></P><P ALIGN=\"LEFT\">Give your little athlete the same sleek sneaker as the serious runners wear! This cool running shoe features a breathable upper and durable cushioning while the lace-up closure promises to keep him secure. Whether they&apos;re at the start of his running career or just needs a supportive shoe for gym class, the New Balance KJ990GRG promises to give them all of the comfort and support he needs!</FONT></P>",
+      "is_on_sale" : "1",
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40051", "50001", "90019", "90020", "90021", "90038", "90044", "90057", "90058", "580005", "580010" ],
+      "customer" : "Kids'"
+    },
+    "_id" : "1b5f771897930e0b6b82a85797c5e0e1",
+    "_u" : "http://shoecarnival1Variant.com/76047.000000",
+    "_t" : "KJ990GRG 3.5-7"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "57.99" ],
+      "category3_expanded_id" : "0~90021~90057",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "GREY", "WHITE" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Athletics~Boys~Running",
+      "sizes" : [ "1", "2.5", "3", "12", "11", "13", "1.5", "11.5", "12.5", "13.5", "2", "10.5" ],
+      "id" : "76048.000000",
+      "brand" : "New Balance",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76048_142897_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580010",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057~580010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90021~90057~580010",
+      "color" : [ {
+        "color_nbr" : "142897",
+        "color_desc" : "Grey"
+      } ],
+      "sale_type" : "",
+      "title" : "KJ990GRP 10.5-3",
+      "is_wide_width" : "0",
+      "category_leaf" : "Running",
+      "feature" : [ "Performance", "Lace Up", "Pre-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "57.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys~Running",
+      "secondary_color" : [ "WHITE" ],
+      "category4_id" : "580010",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "WIDE", "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/kids-new-balance-kj990grp-10-3/grey/76048.scp",
+      "style_description" : "<P ALIGN=\"LEFT\"><B>Boys&apos; New Balance KJ990GRP Running Shoes</B></P><P ALIGN=\"LEFT\"></P><P ALIGN=\"LEFT\">Give your little athlete the same sleek sneaker as the serious runners wear! This cool running shoe features a breathable upper and durable cushioning while the lace-up closure promises to keep him secure. Whether he&apos;s at the start of his running career or just needs a supportive shoe for gym class, the New Balance KJ990GRP promises to give him all of the comfort and support he needs!</P>",
+      "is_on_sale" : "1",
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40051", "50001", "90019", "90020", "90021", "90038", "90044", "90057", "90058", "580005", "580010" ],
+      "customer" : "Kids'"
+    },
+    "_id" : "10b692a283ce84422d9aaf26b05e8734",
+    "_u" : "http://shoecarnival1Variant.com/76048.000000",
+    "_t" : "KJ990GRP 10.5-3"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "179.99" ],
+      "color" : [ {
+        "color_nbr" : "143069",
+        "color_desc" : "Brown"
+      } ],
+      "sale_type" : "S",
+      "category3_expanded_id" : "0~490006~490008",
+      "title" : "Roughstock",
+      "category2_expanded_id" : "0~490006",
+      "is_wide_width" : "1",
+      "facet_color" : [ "BROWN" ],
+      "map_price" : [ "0" ],
+      "category_leaf" : "Mens",
+      "feature" : [ "Slip On" ],
+      "sizes" : [ "7.5", "10", "11", "12", "13", "8", "11.5", "15", "7", "9", "14", "9.5", "10.5", "8.5" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "174.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Sale!~Mens",
+      "secondary_color" : [ ],
+      "id" : "76127.000000",
+      "brand" : "Ariat",
+      "category2_id" : "490006",
+      "category2" : "Sale!",
+      "category3_expanded" : "Category Root~Sale!~Mens",
+      "is_on_clearance" : "0",
+      "tertiary_color" : [ ],
+      "category3" : "Mens",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76127_143069_1?$prod_category$",
+      "category_leaf_id" : "490008",
+      "category1" : "Category Root",
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "primary_color" : [ "BROWN" ],
+      "url" : "//brown/76127.scp",
+      "style_description" : "<P ALIGN=\"LEFT\"><B>Men&apos;s Ariat Leather Western Cowboy Boot</B></P><P ALIGN=\"LEFT\"></P><P ALIGN=\"LEFT\">Show them that you mean business in this rough and tumble boot! A premium leather upper combines with a durable outsole to give you a boot that&apos;s ready for anything the ranch throws at you!</P>",
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~490006~490008",
+      "is_on_sale" : "1",
+      "price_sale" : [ "174.98" ],
+      "category3_id" : "490008",
+      "category2_expanded" : "Category Root~Sale!",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90033", "90035", "490006", "490008" ],
+      "customer" : "Men's"
+    },
+    "_id" : "55252e047c4d26adb188c025b5f8bd63",
+    "_u" : "http://shoecarnival1Variant.com/76127.000000",
+    "_t" : "Roughstock"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "47" ],
+      "color" : [ {
+        "color_nbr" : "143080",
+        "color_desc" : "Blk/Tor/Msil"
+      } ],
+      "sale_type" : "",
+      "category3_expanded_id" : "0~90021~90057",
+      "title" : "Super Bad Shark 10-6",
+      "category2_expanded_id" : "0~90021",
+      "is_wide_width" : "1",
+      "facet_color" : [ "BLACK", "SILVER" ],
+      "map_price" : [ "" ],
+      "category_leaf" : "Boys",
+      "feature" : [ "Velcro", "High & Mid Top", "Lace Up", "Grade-School", "Pre-School" ],
+      "sizes" : [ "2.5", "1", "3", "5.5", "10", "11", "12", "4.5", "6", "1.5", "3.5", "13", "5", "2", "4" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "47" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys",
+      "secondary_color" : [ "SILVER" ],
+      "id" : "76133.000000",
+      "brand" : "Nike",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "is_on_clearance" : "0",
+      "tertiary_color" : [ ],
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76133_143080_1?$prod_category$",
+      "category_leaf_id" : "90057",
+      "category1" : "Category Root",
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "primary_color" : [ "BLACK" ],
+      "url" : "/boys-nike-super-bad-shark/blk-tor-msil/76133.scp",
+      "style_description" : "Nike Boy's Mid-Rise Lace-Up Velcro Cleats. Watch him as he dominates the game in these power-packed cleats! The lace-up front combines with an additional strap to give your little athlete maximum stability while the rubber Shark outsole promises him sure footing.",
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057",
+      "is_on_sale" : "1",
+      "price_sale" : [ "" ],
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90020", "90021", "90044", "90057" ],
+      "customer" : "Boys'"
+    },
+    "_id" : "8e6a7e661503ddcc5f2e59794ea25e02",
+    "_u" : "http://shoecarnival1Variant.com/76133.000000",
+    "_t" : "Super Bad Shark 10-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90017~640037",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "sizes" : [ "6", "10", "11", "8", "5", "7", "9" ],
+      "id" : "76199.000000",
+      "brand" : "Volatile",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Wedges",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76199_143251_1?$prod_category$",
+      "category4" : "Platforms",
+      "category_leaf_id" : "640041",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640037~640041",
+      "price_sale" : [ "39.98" ],
+      "category4_expanded_id" : "0~90017~640037~640041",
+      "color" : [ {
+        "color_nbr" : "143250",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "143251",
+        "color_desc" : "Brown"
+      } ],
+      "sale_type" : "S",
+      "title" : "Jessica Croco",
+      "is_wide_width" : "1",
+      "category_leaf" : "Platforms",
+      "feature" : [ "Open Toe", "Slip On", "Thong" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "secondary_color" : [ ],
+      "category4_id" : "640041",
+      "category3_expanded" : "Category Root~Womens~Wedges",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Medium",
+      "url" : "/womens-volatile-jessica-croco/brown/76199.scp",
+      "style_description" : "<P ALIGN=\"LEFT\">Women&apos;s Jessica Croco Platform Sandals</P><P ALIGN=\"LEFT\"></P><P ALIGN=\"LEFT\">Add some animal flair to your ensemble with the women&apos;s Jessica Croco plaform sandals from Volatile. Croc material covers these thong sandals in perfect style, making the rest of your outfit a cinch.</P>",
+      "is_on_sale" : "1",
+      "category3_id" : "640037",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90025", "490006", "490007", "580055", "580057", "580060", "640037", "640038", "640041" ],
+      "customer" : "Women's"
+    },
+    "_id" : "f648dec55a2b926a11f7ba6737bdb8d2",
+    "_u" : "http://shoecarnival1Variant.com/76199.000000",
+    "_t" : "Jessica Croco"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "139.99" ],
+      "category3_expanded_id" : "0~90018~90033",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Mens~Boots~Work and Safety",
+      "sizes" : [ "10", "11", "12", "13", "8", "15", "9", "14" ],
+      "id" : "76204.000000",
+      "brand" : "Bogs Footwear",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76204_143262_1?$prod_category$",
+      "category4" : "Work and Safety",
+      "category_leaf_id" : "570023",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90033~570023",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90018~90033~570023",
+      "color" : [ {
+        "color_nbr" : "143262",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Forge Steel Toe",
+      "is_wide_width" : "1",
+      "category_leaf" : "Work and Safety",
+      "feature" : [ "Slip On", "Insulated", "Waterproof", "Slip Resistant", "Steel Toe" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "139.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Boots~Work and Safety",
+      "secondary_color" : [ ],
+      "category4_id" : "570023",
+      "category3_expanded" : "Category Root~Mens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "//black/76204.scp",
+      "style_description" : "Men's Bogs Waterproof Steel Toe Boots. The Bogs Rancher Forge Steel Toe boot is designed for outdoor activities. With 100% waterproof hand-lasted rubber uppers, ASTM rated steel safety toe, and four-way stretch 7mm Neo-Tech? insulation, you're covered from heel to toe. From the job site to the camp site, the Bogs Forge Steel Toe will keep you high and dry in any conditions!",
+      "is_on_sale" : "1",
+      "category3_id" : "90033",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90033", "90035", "570023" ],
+      "customer" : "Men's"
+    },
+    "_id" : "65ab39a6bafcebd60c228436507c4647",
+    "_u" : "http://shoecarnival1Variant.com/76204.000000",
+    "_t" : "Forge Steel Toe"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "44" ],
+      "category3_expanded_id" : "0~90021~90057",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "WHITE", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Athletics~Boys~Running",
+      "sizes" : [ "1", "2.5", "3", "5.5", "11", "12", "4.5", "6", "6.5", "13", "1.5", "3.5", "11.5", "12.5", "5", "7", "10.5", "13.5", "2", "4" ],
+      "id" : "76296.000000",
+      "brand" : "Nike",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76296_143475_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580010",
+      "category1" : "Category Root",
+      "primary_color" : [ "WHITE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057~580010",
+      "price_sale" : [ "29.98" ],
+      "category4_expanded_id" : "0~90021~90057~580010",
+      "color" : [ {
+        "color_nbr" : "143436",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "143475",
+        "color_desc" : "White"
+      } ],
+      "sale_type" : "S",
+      "title" : "Advantage Runner 2 10.5-7",
+      "is_wide_width" : "1",
+      "category_leaf" : "Running",
+      "feature" : [ "Lace Up", "Uniform", "Grade-School", "Pre-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "29.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys~Running",
+      "secondary_color" : [ ],
+      "category4_id" : "580010",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/kids-nike-advantage-runner/white/76296.scp",
+      "style_description" : "Kids' Nike Advantage Runner Leather Sneakers. From the classroom to the playground, the Nike Advantage Runner will keep them comfortable and stylish! With a sleek black or white leather upper, lace-up closure and padded footbed, these versatile sneakers are perfect for everyday wear.",
+      "is_on_sale" : "1",
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40051", "50001", "90019", "90020", "90021", "90038", "90044", "90057", "90058", "490006", "490009", "490010", "580005", "580010" ],
+      "customer" : "Kids'"
+    },
+    "_id" : "7e24380fa76b6029c249fd27d570f78b",
+    "_u" : "http://shoecarnival1Variant.com/76296.000000",
+    "_t" : "Advantage Runner 2 10.5-7"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "119.99" ],
+      "category3_expanded_id" : "0~90018~90033",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BROWN", "BEIGE" ],
+      "map_price" : [ "109.98" ],
+      "category4_expanded" : "Category Root~Mens~Boots~Work and Safety",
+      "sizes" : [ "7.5", "6", "10", "11", "12", "6.5", "13", "8", "11.5", "7", "9", "14", "8.5", "9.5", "10.5" ],
+      "id" : "76350.000000",
+      "brand" : "Justin Boots",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/76350_143148_1?$prod_category$",
+      "category4" : "Work and Safety",
+      "category_leaf_id" : "570023",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90033~570023",
+      "price_sale" : [ "114.98" ],
+      "category4_expanded_id" : "0~90018~90033~570023",
+      "color" : [ {
+        "color_nbr" : "143148",
+        "color_desc" : "Brown/Cream"
+      } ],
+      "sale_type" : "S",
+      "title" : "WK 4683 Stampede 11\"",
+      "is_wide_width" : "0",
+      "category_leaf" : "Work and Safety",
+      "feature" : [ "Slip On", "Wellington", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "114.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Boots~Work and Safety",
+      "secondary_color" : [ "BEIGE" ],
+      "category4_id" : "570023",
+      "category3_expanded" : "Category Root~Mens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "WIDE", "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-justin-boots-wk-4683-stampede-11/brown-cream/76350.scp",
+      "style_description" : "Men's Justin Leather Soft-Toe Work Boot. For work and western-style in one, pull on the Justin Boots WK4683 Stampede 11\". These Justin Original Work Boots feature full-grain leather uppers with Western style stitching, dual pull straps for easy on wear and a squared soft-toe. With the J-Flex Flexible Comfort System? insole for maximum energy return and unbeatable comfort of the Justin Boots WK4683 Stampede 11\", nothing will slow down your work day!",
+      "is_on_sale" : "1",
+      "category3_id" : "90033",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90031", "90033", "90035", "490006", "490008", "570018", "570022", "570023" ],
+      "customer" : "Men's"
+    },
+    "_id" : "bdac74920cc8ad9711f243619f9eb6b6",
+    "_u" : "http://shoecarnival1Variant.com/76350.000000",
+    "_t" : "WK 4683 Stampede 11\""
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90017~640037",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BEIGE", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "sizes" : [ "6", "10", "8", "5", "7", "9" ],
+      "id" : "86917.000000",
+      "brand" : "Patrizia",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Wedges",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86917_165860_1?$prod_category$",
+      "category4" : "Platforms",
+      "category_leaf_id" : "640041",
+      "category1" : "Category Root",
+      "primary_color" : [ "BEIGE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640037~640041",
+      "price_sale" : [ "29.98" ],
+      "category4_expanded_id" : "0~90017~640037~640041",
+      "color" : [ {
+        "color_nbr" : "165860",
+        "color_desc" : "Beige"
+      }, {
+        "color_nbr" : "165859",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Extravagant",
+      "is_wide_width" : "1",
+      "category_leaf" : "Platforms",
+      "feature" : [ "Open Toe", "Slip On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "29.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "secondary_color" : [ ],
+      "category4_id" : "640041",
+      "category3_expanded" : "Category Root~Womens~Wedges",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "High",
+      "url" : "/womens-patrizia-extravagant/beige/86917.scp",
+      "style_description" : "Women's Patrizia Cork Wedge Platform Sandals. Add earthy style and feminine detail to your summertime looks with the Patrizia Extravagant! These platforms feature breathable fabric uppers, oversized flower accent at the vamp, and trendy cork wedge. Free your fashion spirit in the Patrizia Extravagant!",
+      "is_on_sale" : "1",
+      "category3_id" : "640037",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90017", "90025", "490006", "490007", "580055", "580057", "640037", "640038", "640041" ],
+      "customer" : "Women's"
+    },
+    "_id" : "7ecfe96bf16194d58088477d6384a29c",
+    "_u" : "http://shoecarnival1Variant.com/86917.000000",
+    "_t" : "Extravagant"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90017~90027",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLUE" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Athletics~Running",
+      "sizes" : [ "7.5", "5.5", "6.5", "10", "11", "6", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "86918.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Athletics",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86918_165861_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580016",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLUE" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90027~580016",
+      "price_sale" : [ "59.98" ],
+      "category4_expanded_id" : "0~90017~90027~580016",
+      "color" : [ {
+        "color_nbr" : "165861",
+        "color_desc" : "Navy/Multi"
+      } ],
+      "sale_type" : "S",
+      "title" : "Ultimate Reality 12126",
+      "is_wide_width" : "1",
+      "category_leaf" : "Running",
+      "feature" : [ "Lace Up", "Light Weight", "Memory Foam" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "59.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Athletics~Running",
+      "secondary_color" : [ ],
+      "category4_id" : "580016",
+      "category3_expanded" : "Category Root~Womens~Athletics",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/womens-skechers-ultimate-reality-12126/navy-multi/86918.scp",
+      "style_description" : "Women's Skechers Relaxed Fit? Running Shoes. Find the ultimate level of comfort and style in the Skechers Ultimate Reality 12126! These lightweight running sneakers feature a brightly colored collar made of stretch neoprene fabric, Gel-Infused Memory Foam cushioning footbed, and Endur-Lite Response shock absorbing midsole. Turn heads as you get into shape with the Skechers Ultimate Reality 12126!",
+      "is_on_sale" : "1",
+      "category3_id" : "90027",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90021", "90027", "90055", "90063", "490006", "490007", "580016" ],
+      "customer" : "Women's"
+    },
+    "_id" : "53ba783def0aeecf45caa3b0fadaa0ca",
+    "_u" : "http://shoecarnival1Variant.com/86918.000000",
+    "_t" : "Ultimate Reality 12126"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90017~640037",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "sizes" : [ "6", "10", "8", "5", "7", "9" ],
+      "id" : "86919.000000",
+      "brand" : "Patrizia",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Wedges",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86919_165863_1?$prod_category$",
+      "category4" : "Platforms",
+      "category_leaf_id" : "640041",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640037~640041",
+      "price_sale" : [ "39.98" ],
+      "category4_expanded_id" : "0~90017~640037~640041",
+      "color" : [ {
+        "color_nbr" : "165862",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "165863",
+        "color_desc" : "Tan"
+      } ],
+      "sale_type" : "S",
+      "title" : "Candace",
+      "is_wide_width" : "1",
+      "category_leaf" : "Platforms",
+      "feature" : [ "Slip On", "Adjustable Strap", "Peep Toe", "Slingback" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "secondary_color" : [ ],
+      "category4_id" : "640041",
+      "category3_expanded" : "Category Root~Womens~Wedges",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Medium",
+      "url" : "/womens-patrizia-candace/tan/86919.scp",
+      "style_description" : "Women's Patrizia Peep Toe Slingback Wedges. Dress up with the earthy style of the Patrizia Candace! These pumps feature a peep toe front, perforated faux leather uppers, and adjustable slingback strap. The Patrizia Candace is sure to polish off all of your summertime looks!",
+      "is_on_sale" : "1",
+      "category3_id" : "640037",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90017", "90025", "490006", "490007", "580055", "580057", "640014", "640015", "640018", "640019", "640037", "640038", "640039", "640041" ],
+      "customer" : "Women's"
+    },
+    "_id" : "de6dd1c335fe0f863839dafff6dfc40f",
+    "_u" : "http://shoecarnival1Variant.com/86919.000000",
+    "_t" : "Candace"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "34.99" ],
+      "category3_expanded_id" : "0~90017~90025",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Sandals~Flat",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5" ],
+      "id" : "86921.000000",
+      "brand" : "City Classified",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Sandals",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86921_165866_1?$prod_category$",
+      "category4" : "Flat",
+      "category_leaf_id" : "580054",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90025~580054",
+      "price_sale" : [ "24.98" ],
+      "category4_expanded_id" : "0~90017~90025~580054",
+      "color" : [ {
+        "color_nbr" : "165867",
+        "color_desc" : "Tan"
+      }, {
+        "color_nbr" : "165866",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Tuscan",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flat",
+      "feature" : [ "Open Toe", "Slip On", "Adjustable Strap" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "24.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sandals~Flat",
+      "secondary_color" : [ ],
+      "category4_id" : "580054",
+      "category3_expanded" : "Category Root~Womens~Sandals",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-city-classified-tuscan/black/86921.scp",
+      "style_description" : "Women's City Classified Casual Fringe Sandals. Add flirty fringe to your warm weather looks with the City Classified Tuscan! These laid back sandals feature all-over fringe detailing, adjustable ankle strap for a secure fit, and soft microfiber uppers. Your summertime style will be on point in the City Classified Tuscan!",
+      "is_on_sale" : "1",
+      "category3_id" : "90025",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "60017", "90017", "90025", "490006", "490007", "580054" ],
+      "customer" : "Women's"
+    },
+    "_id" : "e596f675c4ca951b987c20daa8dadd0e",
+    "_u" : "http://shoecarnival1Variant.com/86921.000000",
+    "_t" : "Tuscan"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "86938.000000",
+      "brand" : "Soda",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86938_165891_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "165891",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Nevitt",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Slip On", "Ankle", "Lace Up", "Zip Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Medium",
+      "url" : "/womens-soda-nevitt/black/86938.scp",
+      "style_description" : "Women's Soda Heeled Platform Zip-Up Booties. Rock one of the season's hottest trends in the Soda Nevitt! These ankle booties feature a 2 1/4 inch chunky heel, lace-up closure for a secure fit, and full-length zipper for simple slip-on wear. Pair with leggings and flannel for edgy fashion forward style!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "40030", "90017", "90026", "640008", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "afd28c75ab58822bd40ca4bb243ce2ce",
+    "_u" : "http://shoecarnival1Variant.com/86938.000000",
+    "_t" : "Nevitt"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90018~90031",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BROWN", "GREY" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Mens~Casual~Sneakers",
+      "sizes" : [ "7.5", "10", "11", "12", "13", "8", "11.5", "7", "9", "14", "8.5", "9.5", "10.5" ],
+      "id" : "86953.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Casual",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86953_165921_1?$prod_category$",
+      "category4" : "Sneakers",
+      "category_leaf_id" : "570016",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY", "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90031~570016",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90018~90031~570016",
+      "color" : [ {
+        "color_nbr" : "165921",
+        "color_desc" : "Brown"
+      }, {
+        "color_nbr" : "165920",
+        "color_desc" : "Charcoal"
+      } ],
+      "sale_type" : "",
+      "title" : "Mind Game 51502",
+      "is_wide_width" : "1",
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Slip On", "Light Weight", "Memory Foam" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "69.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Casual~Sneakers",
+      "secondary_color" : [ ],
+      "category4_id" : "570016",
+      "category3_expanded" : "Category Root~Mens~Casual",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-skechers-mind-game-51502/brown/86953.scp",
+      "style_description" : "Men's Skechers Lightweight Casual Comfort Loafers. Get the right idea for style and comfort with the Skechers Mind Game 51502! These laid back loafers feature soft pigskin suede uppers, Dual-Lite shock absorbing midsole, and Memory Foam comfort cushioning insole. Pair with denim or khakis for a classic casual look!",
+      "is_on_sale" : "1",
+      "category3_id" : "90031",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90031", "570015", "570016" ],
+      "customer" : "Men's"
+    },
+    "_id" : "c8b257435339457f163778eb421b3116",
+    "_u" : "http://shoecarnival1Variant.com/86953.000000",
+    "_t" : "Mind Game 51502"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "39.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5" ],
+      "id" : "86955.000000",
+      "brand" : "Delicious",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86955_165923_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "165923",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Verb",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Slip On", "Ankle", "Lace Up", "Zip Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "High",
+      "url" : "/womens-delicious-verb/black/86955.scp",
+      "style_description" : "Women's Delicious Heeled Platform Combat Booties. Show off your edgy style with the Delicious Verb! These platforms feature a sky high 4 inch heel, lace-up closure for a secure fit, and full length zipper for simple slip-on wear. Your daring look will be heads above the rest in the Delicious Verb!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "40030", "90017", "90026", "640008", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "cb1b51f7e7945e8b0b31b43f61530122",
+    "_u" : "http://shoecarnival1Variant.com/86955.000000",
+    "_t" : "Verb"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "89.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Booties and Shooties",
+      "sizes" : [ "7.5", "10", "11", "6", "6.5", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "86959.000000",
+      "brand" : "Roxy",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86959_165930_1?$prod_category$",
+      "category4" : "Booties and Shooties",
+      "category_leaf_id" : "90026",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~40030",
+      "color" : [ {
+        "color_nbr" : "165930",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "165931",
+        "color_desc" : "Brown"
+      } ],
+      "sale_type" : "",
+      "title" : "Harding",
+      "is_wide_width" : "1",
+      "category_leaf" : "Boots",
+      "feature" : [ "Slip On", "Fur", "Adjustable Strap", "Mid Calf", "Zip Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "89.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots",
+      "secondary_color" : [ ],
+      "category4_id" : "40030",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-roxy-harding/black/86959.scp",
+      "style_description" : "Women's Roxy Moto Inspired Mid-Calf Boots. Rock trendy, moto inspired style with the Roxy Harding! These mid-calf boots feature dual adjustable straps for a comfort fit, stylish quilted shaft, and plush faux fur lining for cozy comfort. Pair the Roxy Harding with skinny jeans or leggings for an edgy on point look!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "40030", "90017", "90026" ],
+      "customer" : "Women's"
+    },
+    "_id" : "08efbbbdb7746206eeee0f6d14d661e9",
+    "_u" : "http://shoecarnival1Variant.com/86959.000000",
+    "_t" : "Harding"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90018~90034",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Mens~Athletics~Walking",
+      "sizes" : [ "7.5", "10", "11", "12", "13", "8", "11.5", "9", "14", "8.5", "9.5", "10.5" ],
+      "id" : "86962.000000",
+      "brand" : "Fila",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Athletics",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86962_165956_1?$prod_category$",
+      "category4" : "Walking",
+      "category_leaf_id" : "570005",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90034~570005",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90018~90034~570005",
+      "color" : [ {
+        "color_nbr" : "165956",
+        "color_desc" : "Black/Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Memory Workshift",
+      "is_wide_width" : "0",
+      "category_leaf" : "Walking",
+      "feature" : [ "Slip Resistant", "Lace Up", "Uniform", "Memory Foam" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Athletics~Walking",
+      "secondary_color" : [ ],
+      "category4_id" : "570005",
+      "category3_expanded" : "Category Root~Mens~Athletics",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "WIDE", "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-fila-memory-workshift/black-black/86962.scp",
+      "style_description" : "Men's Fila Slip Resistant Work Shoes. Protect your feet during those long work days in the Fila Memory Workshift! These durable work shoes feature a memory foam cushioned footbed for comfort, slip-resistant rubber traction outsole, and durable faux leather uppers. When it seems like the day will never end, you can keep going in comfort with the Fila Memory Workshift at your feet!",
+      "is_on_sale" : "1",
+      "category3_id" : "90034",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90021", "90034", "90035", "90056", "90071", "570005" ],
+      "customer" : "Men's"
+    },
+    "_id" : "8c5e536409032203058dea98cbab7716",
+    "_u" : "http://shoecarnival1Variant.com/86962.000000",
+    "_t" : "Memory Workshift"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90021~90056",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Athletics~Mens~Sneakers",
+      "sizes" : [ "7.5", "10", "11", "12", "13", "8", "11.5", "7", "9", "8.5", "9.5", "10.5" ],
+      "id" : "86969.000000",
+      "brand" : "Vans",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Mens",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86969_165950_1?$prod_category$",
+      "category4" : "Sneakers",
+      "category_leaf_id" : "580003",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90056~580003",
+      "price_sale" : [ "64.98" ],
+      "category4_expanded_id" : "0~90021~90056~580003",
+      "color" : [ {
+        "color_nbr" : "165950",
+        "color_desc" : "Black/Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Atwood Hi Twill",
+      "is_wide_width" : "1",
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Canvas", "High & Mid Top", "Lace Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "64.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Mens~Sneakers",
+      "secondary_color" : [ ],
+      "category4_id" : "580003",
+      "category3_expanded" : "Category Root~Athletics~Mens",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-vans-atwood-hi-twill/black-black/86969.scp",
+      "style_description" : "Men's Vans High-Top Canvas Skate Shoes. Take your skate style to the next level in the Vans Atwood Hi Twill! This high-top style features textured canvas uppers, foam padded tongue and collar, and Vans Original Waffle outsole for grip and durability. Keep your feet protected and your style skater fresh with the Atwood Hi Twill!",
+      "is_on_sale" : "1",
+      "category3_id" : "90056",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90018", "90021", "90031", "90034", "90056", "90072", "490006", "490008", "570003", "570006", "570016", "580003" ],
+      "customer" : "Men's"
+    },
+    "_id" : "f2d2799153c7803e4ba8c045101b06f3",
+    "_u" : "http://shoecarnival1Variant.com/86969.000000",
+    "_t" : "Atwood Hi Twill"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "24.99" ],
+      "category3_expanded_id" : "0~90019~90043",
+      "category2_expanded_id" : "0~90019",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Girls~Infants~Dress",
+      "sizes" : [ "7.5", "10", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "86042.000000",
+      "brand" : "Unr8ed",
+      "category2_id" : "90019",
+      "category2" : "Girls",
+      "is_on_clearance" : "0",
+      "category3" : "Infants",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86042_163988_1?$prod_category$",
+      "category4" : "Dress",
+      "category_leaf_id" : "580048",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90019~90043~580048",
+      "price_sale" : [ "12.98" ],
+      "category4_expanded_id" : "0~90019~90043~580048",
+      "color" : [ {
+        "color_nbr" : "163988",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Infant Adriana 7-10",
+      "is_wide_width" : "1",
+      "category_leaf" : "Dress",
+      "feature" : [ "Slip On", "Velcro", "Adjustable Strap", "Uniform" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "12.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Girls~Infants~Dress",
+      "secondary_color" : [ ],
+      "category4_id" : "580048",
+      "category3_expanded" : "Category Root~Girls~Infants",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/unr8ed-infant-adriana-7-10/black/86042.scp",
+      "style_description" : "Infant Girl's Unr8ed Uniform Dress Flats. Your little one will be right in style in the Unr8ed Infant Adriana! With a padded collar, cushioned footbed and cute cutout design, she will be moving in style and comfort!",
+      "is_on_sale" : "1",
+      "category3_id" : "90043",
+      "category2_expanded" : "Category Root~Girls",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90019", "90039", "90043", "490006", "490009", "580038", "580048" ],
+      "customer" : ""
+    },
+    "_id" : "7931d9300d2268c580e6dfe37b124bc1",
+    "_u" : "http://shoecarnival1Variant.com/86042.000000",
+    "_t" : "Infant Adriana 7-10"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "59.99" ],
+      "category3_expanded_id" : "0~90017~640037",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK", "BLUE" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "sizes" : [ "7.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "86050.000000",
+      "brand" : "Bandolino",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Wedges",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86050_164007_1?$prod_category$",
+      "category4" : "Platforms",
+      "category_leaf_id" : "640041",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLUE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640037~640041",
+      "price_sale" : [ "29.98" ],
+      "category4_expanded_id" : "0~90017~640037~640041",
+      "color" : [ {
+        "color_nbr" : "164007",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "164008",
+        "color_desc" : "Navy"
+      } ],
+      "sale_type" : "S",
+      "title" : "Dammel",
+      "is_wide_width" : "1",
+      "category_leaf" : "Platforms",
+      "feature" : [ "Open Toe", "Slip On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "29.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Wedges~Platforms",
+      "secondary_color" : [ ],
+      "category4_id" : "640041",
+      "category3_expanded" : "Category Root~Womens~Wedges",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Medium",
+      "url" : "/womens-bandolino-dammel/black/86050.scp",
+      "style_description" : "Women's Bandolino Dammel Platform Wedge Sandals. Slide into sunny day style with the Bandolino Dammel! These wedges feature a contoured micro-fiber footbed, strap with oversized buckle detail, and 1 inch platform. For casual style made easy, choose the Bandolino Dammel!",
+      "is_on_sale" : "1",
+      "category3_id" : "640037",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90025", "490006", "490007", "580055", "580057", "640037", "640038", "640041" ],
+      "customer" : "Women's"
+    },
+    "_id" : "89ebd0f095101303eb8d7bc242af0aca",
+    "_u" : "http://shoecarnival1Variant.com/86050.000000",
+    "_t" : "Dammel"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "29.99" ],
+      "category3_expanded_id" : "0~90020~90048",
+      "category2_expanded_id" : "0~90020",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Girls~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "10", "11", "12", "6", "13", "8", "7", "5", "9", "2", "4" ],
+      "id" : "86051.000000",
+      "brand" : "Itasca Sonoma",
+      "category2_id" : "90020",
+      "category2" : "Boys",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86051_164014_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "90048",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90020~90048",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90019~90042~40054",
+      "color" : [ {
+        "color_nbr" : "164014",
+        "color_desc" : "BLACK"
+      } ],
+      "sale_type" : "",
+      "title" : "Snow Scamp 7-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Boots",
+      "feature" : [ "Grade-School", "Mid Calf", "Pre-School", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "29.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Boys~Boots",
+      "secondary_color" : [ ],
+      "category4_id" : "40054",
+      "category3_expanded" : "Category Root~Boys~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/kids-itasca-sonoma-snow-scamp-7-6/black/86051.scp",
+      "style_description" : "Kid's Itasca Drawstring Cold Weather Boots. Give your little one outdoor fun, even in cold weather with the Itasca Snow Scamp 7-6! These cold weather boots feature a water-resistant nylon upper, single layer foam insulation, and drawstring for a secure fit. When old man winter comes knocking, they'll stay warm and cozy in the Itasca Snow Scamp 7-6!",
+      "is_on_sale" : "1",
+      "category3_id" : "90048",
+      "category2_expanded" : "Category Root~Boys",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40053", "40054", "90019", "90020", "90042", "90048" ],
+      "customer" : "Kids'"
+    },
+    "_id" : "517846f546784e731a42addda10a6e34",
+    "_u" : "http://shoecarnival1Variant.com/86051.000000",
+    "_t" : "Snow Scamp 7-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "44.99" ],
+      "category3_expanded_id" : "0~90019~90042",
+      "category2_expanded_id" : "0~90019",
+      "facet_color" : [ "BLUE", "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Girls~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "6", "5", "2", "4" ],
+      "id" : "86052.000000",
+      "brand" : "Itasca Sonoma",
+      "category2_id" : "90019",
+      "category2" : "Girls",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86052_164015_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "90042",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLUE" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90019~90042",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90019~90042~40054",
+      "color" : [ {
+        "color_nbr" : "164015",
+        "color_desc" : "BLUE"
+      } ],
+      "sale_type" : "",
+      "title" : "Sleigh Bell 1-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Boots",
+      "feature" : [ "Fur", "Insulated", "Waterproof", "Lace Up", "Grade-School", "Mid Calf", "Pre-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "44.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Girls~Boots",
+      "secondary_color" : [ "BLACK" ],
+      "category4_id" : "40054",
+      "category3_expanded" : "Category Root~Girls~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/girls-itasca-sonoma-sleigh-bell-1-6/blue/86052.scp",
+      "style_description" : "Girl's Itasca Waterproof Cold Weather Boots. Keep the water out and the warmth in with the Itasca Sleigh Bell 1-6! These cold weather boots offer serious protection with waterproof leather and nylon uppers, durable rubber shell, and 200g of Thermolite? insulation. Send her out for snowy day fun in the Itasca Sleigh Bell 1-6!",
+      "is_on_sale" : "1",
+      "category3_id" : "90042",
+      "category2_expanded" : "Category Root~Girls",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40054", "90019", "90042" ],
+      "customer" : "Girls'"
+    },
+    "_id" : "d2b2e94edb0d3ea6139aaec0ec9622b5",
+    "_u" : "http://shoecarnival1Variant.com/86052.000000",
+    "_t" : "Sleigh Bell 1-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~490006~490010",
+      "category2_expanded_id" : "0~490006",
+      "facet_color" : [ "BLUE" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Girls~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "10", "11", "12", "6", "13", "5", "2", "4" ],
+      "id" : "86053.000000",
+      "brand" : "Bogs Footwear",
+      "category2_id" : "490006",
+      "category2" : "Sale!",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86053_164026_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "490010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLUE" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~490006~490010",
+      "price_sale" : [ "44.98" ],
+      "category4_expanded_id" : "0~90019~90042~40054",
+      "color" : [ {
+        "color_nbr" : "164026",
+        "color_desc" : "Navy"
+      } ],
+      "sale_type" : "S",
+      "title" : "Rainboot Solid 10-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Boys",
+      "feature" : [ "Waterproof", "Grade-School", "Pre-School", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "44.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Sale!~Boys",
+      "secondary_color" : [ ],
+      "category4_id" : "40054",
+      "category3_expanded" : "Category Root~Sale!~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/kids-bogs-footwear-rainboot-solid-10-6/navy/86053.scp",
+      "style_description" : "Kids Bogs Lightweight Waterproof Rain Boot. Let your little ones splish and splash all day long in the lightweight Bogs Rainboot Solid! These pint-sized puddle jumpers feature 100% waterproof construction, flexible rubber uppers, and DuraFresh bio-technology to fight unwanted odors. With the Bogs Rainboot Solid at their feet, they'll be unstoppable!",
+      "is_on_sale" : "1",
+      "category3_id" : "490010",
+      "category2_expanded" : "Category Root~Sale!",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40053", "40054", "90019", "90020", "90042", "90048", "490006", "490009", "490010" ],
+      "customer" : "Kids'"
+    },
+    "_id" : "05e5333a5eb6a03563e18f8bd95e5402",
+    "_u" : "http://shoecarnival1Variant.com/86053.000000",
+    "_t" : "Rainboot Solid 10-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "54.99" ],
+      "category3_expanded_id" : "0~90021~90057",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "GREY" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Athletics~Boys~Running",
+      "sizes" : [ "1", "2.5", "3", "11", "12", "13", "1.5", "11.5", "12.5", "10.5", "13.5", "2" ],
+      "id" : "86054.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86054_164017_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580010",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057~580010",
+      "price_sale" : [ "49.98" ],
+      "category4_expanded_id" : "0~90021~90057~580010",
+      "color" : [ {
+        "color_nbr" : "164017",
+        "color_desc" : "Charcoal/Red"
+      } ],
+      "sale_type" : "S",
+      "title" : "Broozer 10.5-3",
+      "is_wide_width" : "1",
+      "category_leaf" : "Running",
+      "feature" : [ "Slip On", "Velcro", "Adjustable Strap", "Light Up", "Pre-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys~Running",
+      "secondary_color" : [ ],
+      "category4_id" : "580010",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/boys-skechers-broozer-10-5-3/charcoal-red/86054.scp",
+      "style_description" : "Boy's Skechers Hot Lights Light-Up Shoes. Give him comfort, style, and bright lights with the Skechers Broozer! These sneakers feature bright lights with every step, adjustable velcro strap for a secure fit, and bungee lacing system for simple slip-on wear. He'll light up any room in the Skechers Broozer!",
+      "is_on_sale" : "1",
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40051", "90020", "90021", "90044", "90057", "490006", "490010", "580010" ],
+      "customer" : "Boys'"
+    },
+    "_id" : "b9a48f52397fe29fc47d69c1e8b6a8f9",
+    "_u" : "http://shoecarnival1Variant.com/86054.000000",
+    "_t" : "Broozer 10.5-3"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90020~90048",
+      "category2_expanded_id" : "0~90020",
+      "facet_color" : [ "GREEN" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Boys~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "10", "11", "12", "6", "13", "5", "2", "4" ],
+      "id" : "86055.000000",
+      "brand" : "Bogs Footwear",
+      "category2_id" : "90020",
+      "category2" : "Boys",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86055_164018_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "90048",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREEN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90020~90048",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90020~90048~40053",
+      "color" : [ {
+        "color_nbr" : "164018",
+        "color_desc" : "Mossy Oak"
+      } ],
+      "sale_type" : "",
+      "title" : "Rainboot Hunting 10-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Boots",
+      "feature" : [ "Trail", "Waterproof", "Grade-School", "Knee High", "Mid Calf", "Pre-School", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Boys~Boots",
+      "secondary_color" : [ ],
+      "category4_id" : "40053",
+      "category3_expanded" : "Category Root~Boys~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/boys-bogs-footwear-rainboot-hunting-10-6/mossy-oak/86055.scp",
+      "style_description" : "Boy's Bogs Mossy Oak? Rain Boots. Give him the outdoorsy style he loves, with the protection he needs in the Bogs Rainboot Hunting! These rainboots feature Mossy Oak? camouflage rubber uppers, 100% waterproof protection, and dual handles for easy on and off. Send him splashing through the puddles in style with the Bogs Rainboot Hunting!",
+      "is_on_sale" : "1",
+      "category3_id" : "90048",
+      "category2_expanded" : "Category Root~Boys",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40053", "90020", "90048" ],
+      "customer" : "Boys'"
+    },
+    "_id" : "1d7376ac29d16f262bedd82811f0a2c0",
+    "_u" : "http://shoecarnival1Variant.com/86055.000000",
+    "_t" : "Rainboot Hunting 10-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~490006~490009",
+      "category2_expanded_id" : "0~490006",
+      "facet_color" : [ "PURPLE", "GREEN" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Girls~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "10", "11", "12", "6", "13", "5", "2", "4" ],
+      "id" : "86056.000000",
+      "brand" : "Bogs Footwear",
+      "category2_id" : "490006",
+      "category2" : "Sale!",
+      "is_on_clearance" : "0",
+      "category3" : "Girls",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86056_164019_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "490009",
+      "category1" : "Category Root",
+      "primary_color" : [ "PURPLE" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~490006~490009",
+      "price_sale" : [ "44.98" ],
+      "category4_expanded_id" : "0~90019~90042~40054",
+      "color" : [ {
+        "color_nbr" : "164019",
+        "color_desc" : "Grape Multi"
+      } ],
+      "sale_type" : "S",
+      "title" : "Rainboot Dots 10-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Girls",
+      "feature" : [ "Waterproof", "Grade-School", "Knee High", "Mid Calf", "Pre-School", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "44.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Sale!~Girls",
+      "secondary_color" : [ "GREEN" ],
+      "category4_id" : "40054",
+      "category3_expanded" : "Category Root~Sale!~Girls",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/girls-bogs-footwear-rainboot-dots-10-6/grape-multi/86056.scp",
+      "style_description" : "Girl's Bogs Polka Dot Waterproof Boots. Your little explorer needs boots that are cute and can handle rainy days, and the Bogs Rainboot Dots can do just that! These mid-calf boots are 100% waterproof, feature dual handles for easy on and off, and moisture wicking lining. She'll stay dry and fashionable with the Bogs Rainboot Dots!",
+      "is_on_sale" : "1",
+      "category3_id" : "490009",
+      "category2_expanded" : "Category Root~Sale!",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40054", "90019", "90042", "490006", "490009" ],
+      "customer" : "Girls'"
+    },
+    "_id" : "3f1ae62f787359a022d8be29f22ce9a2",
+    "_u" : "http://shoecarnival1Variant.com/86056.000000",
+    "_t" : "Rainboot Dots 10-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~490006~490009",
+      "category2_expanded_id" : "0~490006",
+      "facet_color" : [ "BLACK", "WHITE" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Girls~Boots~Cold Weather and Rain",
+      "sizes" : [ "1", "3", "10", "11", "12", "6", "13", "5", "2", "4" ],
+      "id" : "86057.000000",
+      "brand" : "Bogs Footwear",
+      "category2_id" : "490006",
+      "category2" : "Sale!",
+      "is_on_clearance" : "0",
+      "category3" : "Girls",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86057_164020_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "490009",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~490006~490009",
+      "price_sale" : [ "44.98" ],
+      "category4_expanded_id" : "0~90019~90042~40054",
+      "color" : [ {
+        "color_nbr" : "164020",
+        "color_desc" : "Black Multi"
+      } ],
+      "sale_type" : "S",
+      "title" : "Rainboot Stripes 10-6",
+      "is_wide_width" : "1",
+      "category_leaf" : "Girls",
+      "feature" : [ "Waterproof", "Grade-School", "Knee High", "Mid Calf", "Pre-School", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "44.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Sale!~Girls",
+      "secondary_color" : [ "WHITE" ],
+      "category4_id" : "40054",
+      "category3_expanded" : "Category Root~Sale!~Girls",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/girls-bogs-footwear-rainboot-stripes-10-6/black-multi/86057.scp",
+      "style_description" : "Girl's Bogs Mid Calf Waterproof Boots. Your little explorer needs boots that are cute and can handle rainy days, and the Bogs Rainboot Stripes can do just that! These mid-calf boots are 100% waterproof, feature dual handles for easy on and off, and moisture wicking lining. She'll stay dry and fashionable with the Bogs Rainboot Stripes!",
+      "is_on_sale" : "1",
+      "category3_id" : "490009",
+      "category2_expanded" : "Category Root~Sale!",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40054", "90019", "90042", "490006", "490009" ],
+      "customer" : "Girls'"
+    },
+    "_id" : "b5f17847bb85b3566aaeafeb47a34875",
+    "_u" : "http://shoecarnival1Variant.com/86057.000000",
+    "_t" : "Rainboot Stripes 10-6"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "59.99" ],
+      "category3_expanded_id" : "0~90018~90033",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BROWN" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Mens~Boots~Cold Weather",
+      "sizes" : [ "10", "11", "12", "13", "8", "9", "14" ],
+      "id" : "86058.000000",
+      "brand" : "Itasca Sonoma",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86058_164070_1?$prod_category$",
+      "category4" : "Cold Weather",
+      "category_leaf_id" : "920001",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90033~920001",
+      "price_sale" : [ "39.98" ],
+      "category4_expanded_id" : "0~90018~90033~920001",
+      "color" : [ {
+        "color_nbr" : "164070",
+        "color_desc" : "Brown"
+      } ],
+      "sale_type" : "S",
+      "title" : "Lutsen",
+      "is_wide_width" : "1",
+      "category_leaf" : "Cold Weather",
+      "feature" : [ "Ankle", "Insulated", "Lace Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Boots~Cold Weather",
+      "secondary_color" : [ ],
+      "category4_id" : "920001",
+      "category3_expanded" : "Category Root~Mens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-itasca-sonoma-lutsen/brown/86058.scp",
+      "style_description" : "Men's Itasca Insulated Cold Weather Boots. Protect your feet from the elements in the Itasca Lutsen! These cold weather boots will keep you warm with leather uppers and 200 gram Thinsulate? insulation, while the waterproof TPR rubber shell and outsole will keep you dry and sure-footed. Frosty temps are no match for the Itasca Lutsen!",
+      "is_on_sale" : "1",
+      "category3_id" : "90033",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90033", "490006", "490008", "920001" ],
+      "customer" : "Men's"
+    },
+    "_id" : "5ae600164293e4a7dc2a115a9e5e980e",
+    "_u" : "http://shoecarnival1Variant.com/86058.000000",
+    "_t" : "Lutsen"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "44.99" ],
+      "category3_expanded_id" : "0~90021~90057",
+      "category2_expanded_id" : "0~90021",
+      "facet_color" : [ "WHITE", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Athletics~Boys~Running",
+      "sizes" : [ "1", "2.5", "3", "11", "12", "13", "1.5", "3.5", "11.5", "12.5", "13.5", "2", "4", "10.5" ],
+      "id" : "86059.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90021",
+      "category2" : "Athletics",
+      "is_on_clearance" : "0",
+      "category3" : "Boys",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86059_164024_1?$prod_category$",
+      "category4" : "Running",
+      "category_leaf_id" : "580010",
+      "category1" : "Category Root",
+      "primary_color" : [ "WHITE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90021~90057~580010",
+      "price_sale" : [ "34.98" ],
+      "category4_expanded_id" : "0~90021~90057~580010",
+      "color" : [ {
+        "color_nbr" : "164025",
+        "color_desc" : "White"
+      }, {
+        "color_nbr" : "164024",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Tough Trax 10.5-4",
+      "is_wide_width" : "1",
+      "category_leaf" : "Running",
+      "feature" : [ "Slip On", "Velcro", "Grade-School", "Pre-School" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "34.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Athletics~Boys~Running",
+      "secondary_color" : [ ],
+      "category4_id" : "580010",
+      "category3_expanded" : "Category Root~Athletics~Boys",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/boys-skechers-tough-trax-10-5-4/black/86059.scp",
+      "style_description" : "Boy?s Skechers Tough Trax Slip-On Shoes. Give him a shoe tough enough to stand up to the roughest of adventures, the Skechers Tough Trax! With high traction outsole, secure Super Z-Strap velcro closure, and shock absorbing midsole, the Skechers Tough Trax will keep up with him whether he's on the track or the trails!",
+      "is_on_sale" : "1",
+      "category3_id" : "90057",
+      "category2_expanded" : "Category Root~Athletics",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40051", "90020", "90021", "90044", "90057", "490006", "490010", "580010" ],
+      "customer" : "Boys'"
+    },
+    "_id" : "9acdd92859dec2f4506425b5fad6a221",
+    "_u" : "http://shoecarnival1Variant.com/86059.000000",
+    "_t" : "Tough Trax 10.5-4"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "89.99" ],
+      "category3_expanded_id" : "0~90018~90033",
+      "category2_expanded_id" : "0~90018",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Mens~Boots~Casual",
+      "sizes" : [ "7.5", "10", "11", "12", "13", "11.5", "8", "14", "9", "10.5", "8.5", "9.5" ],
+      "id" : "86060.000000",
+      "brand" : "Rockport",
+      "category2_id" : "90018",
+      "category2" : "Mens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/86060_160329_1?$prod_category$",
+      "category4" : "Casual",
+      "category_leaf_id" : "570022",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90018~90033~570022",
+      "price_sale" : [ "79.98" ],
+      "category4_expanded_id" : "0~90018~90033~570022",
+      "color" : [ {
+        "color_nbr" : "160329",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Storm Surge Boot",
+      "is_wide_width" : "0",
+      "category_leaf" : "Casual",
+      "feature" : [ "Ankle", "Waterproof", "Slip Resistant", "Lace Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "79.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Mens~Boots~Casual",
+      "secondary_color" : [ ],
+      "category4_id" : "570022",
+      "category3_expanded" : "Category Root~Mens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "WIDE", "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/mens-rockport-storm-surge-boot/black/86060.scp",
+      "style_description" : "Men's Rockport Waterproof Leather Ankle Boots. Stand up to the elements with tailored styling in the Rockport Storm Surge Boot! These ankle boots feature waterproof leather uppers, slip resistant rubber traction outsole, and ADIPRENE? by Adidas sport technology for all day comfort with shock absorption in the heel. From the job site to a casual night out, you'll love the look and feel of the Rockport Storm Surge Boot!",
+      "is_on_sale" : "1",
+      "category3_id" : "90033",
+      "category2_expanded" : "Category Root~Mens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90018", "90031", "90033", "490006", "490008", "570018", "570022" ],
+      "customer" : "Men's"
+    },
+    "_id" : "24895e67093c320cb5e21ab558ccc3be",
+    "_u" : "http://shoecarnival1Variant.com/86060.000000",
+    "_t" : "Storm Surge Boot"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "39.99" ],
+      "category3_expanded_id" : "0~90020~90048",
+      "category2_expanded_id" : "0~90020",
+      "facet_color" : [ "BROWN", "GREEN" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Boys~Boots~Western",
+      "sizes" : [ "1", "2.5", "3", "5.5", "6.5", "11", "12", "4.5", "6", "13", "1.5", "3.5", "12.5", "5", "7", "13.5", "4", "2" ],
+      "id" : "83386.000000",
+      "brand" : "Realtree",
+      "category2_id" : "90020",
+      "category2" : "Boys",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83386_158557_1?$prod_category$",
+      "category4" : "Western",
+      "category_leaf_id" : "630002",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90020~90048~630002",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90020~90048~630002",
+      "color" : [ {
+        "color_nbr" : "158557",
+        "color_desc" : "Camo"
+      } ],
+      "sale_type" : "",
+      "title" : "Dustin Jr 11-7",
+      "is_wide_width" : "1",
+      "category_leaf" : "Western",
+      "feature" : [ "Slip On", "Grade-School", "Knee High", "Mid Calf", "Pre-School", "Zip Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Boys~Boots~Western",
+      "secondary_color" : [ "GREEN" ],
+      "category4_id" : "630002",
+      "category3_expanded" : "Category Root~Boys~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/boys-realtree-dustin-jr-11-7/camo/83386.scp",
+      "style_description" : "Boy's Realtree Dustin APG? Camouflage Boots. Let your little man stomp around like one of the guys in the Realtree Dustin Jr! These camo boots are rough and tough with Realtree APG? fabric printed uppers, faux leather vamp with stitching detail and an instep zipper for easy on wear. He'll love stomping around and creating a scene in the Realtree Dustin Jr!",
+      "is_on_sale" : "1",
+      "category3_id" : "90048",
+      "category2_expanded" : "Category Root~Boys",
+      "is_extended_size" : "0",
+      "categoryId" : [ "90020", "90046", "90048", "570035", "570036", "630002" ],
+      "customer" : "Boys'"
+    },
+    "_id" : "315ffac647f4c4146513352dccdc7282",
+    "_u" : "http://shoecarnival1Variant.com/83386.000000",
+    "_t" : "Dustin Jr 11-7"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "54.99" ],
+      "category3_expanded_id" : "0~90017~640044",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "GREY", "BLUE", "WHITE", "GREEN", "BLACK" ],
+      "map_price" : [ "", "0" ],
+      "category4_expanded" : "Category Root~Womens~Athletics~Sneakers",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "5", "7", "9", "8.5", "9.5" ],
+      "id" : "83390.000000",
+      "brand" : "Vans",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83390_158569_1?$prod_category$",
+      "category4" : "Sneakers",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY", "GREEN", "BLUE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "price_sale" : [ "", "49.98" ],
+      "category4_expanded_id" : "0~90017~90027~580022",
+      "color" : [ {
+        "color_nbr" : "161115",
+        "color_desc" : "Navy/White"
+      }, {
+        "color_nbr" : "160707",
+        "color_desc" : "Black/White"
+      }, {
+        "color_nbr" : "158570",
+        "color_desc" : "Chambray/White"
+      }, {
+        "color_nbr" : "158569",
+        "color_desc" : "Mint/White"
+      } ],
+      "sale_type" : "S",
+      "title" : "Camden",
+      "is_wide_width" : "1",
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Canvas", "Classic/Retro", "Lace Up" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "54.99", "49.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ "WHITE" ],
+      "category4_id" : "580022",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/womens-vans-camden/mint-white/83390.scp",
+      "style_description" : "Women's Vans Low-Profile Skate Shoes. Get in touch with your inner skater in the Vans Camden! This slimmed down low-top sneak features a canvas upper, vulcanized construction, and signature micro-waffle outsole for grip and abrasion resistance. Get on board with style in the Vans Camden!",
+      "is_on_sale" : "1",
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90021", "90027", "90055", "90065", "490006", "490007", "580001", "580018", "580022", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "f750556e0e2585fb3cadfdf45cae118f",
+    "_u" : "http://shoecarnival1Variant.com/83390.000000",
+    "_t" : "Camden"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "64.99" ],
+      "color" : [ {
+        "color_nbr" : "158572",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "category3_expanded_id" : "0~90017~640044",
+      "title" : "Dimension 22477",
+      "category2_expanded_id" : "0~90017",
+      "is_wide_width" : "1",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Slip On", "Light Weight", "Memory Foam" ],
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "5", "9", "8.5", "9.5" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "64.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ ],
+      "id" : "83391.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "is_on_clearance" : "0",
+      "tertiary_color" : [ ],
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83391_158572_1?$prod_category$",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "primary_color" : [ "BLACK" ],
+      "url" : "/womens-skechers-dimension-22477/black/83391.scp",
+      "style_description" : "Women's Skechers Relaxed Fit Slip-On Shoes. Relax and take it easy in the Skechers Relaxed Fit?: Breathe Easy - Dimension 22477! These slip-ons will keep your feet cushioned in comfort with a Memory Foam insole, woven mesh fabric upper, and Relaxed Fit? design for a roomier fit. Keep your feet comfy and fresh even when your day is hectic with the Skechers Dimension 22477!",
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "is_on_sale" : "1",
+      "price_sale" : [ "" ],
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "5c854e307d4bb4983a59c881020e061c",
+    "_u" : "http://shoecarnival1Variant.com/83391.000000",
+    "_t" : "Dimension 22477"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "64.99" ],
+      "category3_expanded_id" : "0~90017~640044",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Athletics~Sneakers",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "5", "9", "8.5", "9.5" ],
+      "id" : "83392.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83392_158573_1?$prod_category$",
+      "category4" : "Sneakers",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "price_sale" : [ "59.98" ],
+      "category4_expanded_id" : "0~90017~90027~580022",
+      "color" : [ {
+        "color_nbr" : "158573",
+        "color_desc" : "Black Suede"
+      } ],
+      "sale_type" : "S",
+      "title" : "Just Relax 22459",
+      "is_wide_width" : "1",
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Lace Up", "Memory Foam" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "59.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ ],
+      "category4_id" : "580022",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "",
+      "url" : "/womens-skechers-just-relax-22459/black-suede/83392.scp",
+      "style_description" : "Women's Skechers Relaxed Fit Lace-Up Sneakers. Ease into your day with the sporty Skechers Relaxed Fit?: Breathe Easy - Just Relax 22459! These sneaks are stylish and comfy with a Memory Foam cushioned insole, suede and ripstop upper, and Relaxed Fit? design for a roomier toe box and improved flexibility. When the going gets tough, give yourself a cushiony boost with the Skechers Just Relax 22459!",
+      "is_on_sale" : "1",
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90021", "90027", "90055", "490006", "490007", "580001", "580022", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "4cff269c395a77d6f0bf16f429f2c211",
+    "_u" : "http://shoecarnival1Variant.com/83392.000000",
+    "_t" : "Just Relax 22459"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "64.99" ],
+      "color" : [ {
+        "color_nbr" : "167220",
+        "color_desc" : "Chocolate"
+      }, {
+        "color_nbr" : "158580",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "158581",
+        "color_desc" : "Charcoal"
+      } ],
+      "sale_type" : "S",
+      "category3_expanded_id" : "0~90017~640044",
+      "title" : "Big Bucks 22478",
+      "category2_expanded_id" : "0~90017",
+      "is_wide_width" : "1",
+      "facet_color" : [ "BROWN", "GREY", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Slip On", "Memory Foam" ],
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "59.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ ],
+      "id" : "83396.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "is_on_clearance" : "0",
+      "tertiary_color" : [ ],
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83396_158580_1?$prod_category$",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "primary_color" : [ "GREY", "BROWN", "BLACK" ],
+      "url" : "/womens-skechers-big-bucks-22478/black/83396.scp",
+      "style_description" : "Women's Skechers Relaxed Fit Slip-On Shoes. Slip into style that?s comfy and cute with the Skechers Relaxed Fit?: Breathe Easy - Big Bucks 22478! The combination uppers feature soft suede, durable ripstop mesh, and stretchy neoprene for a secure, comfort fit. With the Memory Foam cushioned insole and roomier Relaxed Fit? design, your feet really will breathe easy in the Skechers Big Bucks 22478!",
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "is_on_sale" : "1",
+      "price_sale" : [ "59.98" ],
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "7e70d51ddc268a975560198d267572c6",
+    "_u" : "http://shoecarnival1Variant.com/83396.000000",
+    "_t" : "Big Bucks 22478"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "64.99" ],
+      "color" : [ {
+        "color_nbr" : "158588",
+        "color_desc" : "Grey/Aqua"
+      } ],
+      "sale_type" : "S",
+      "category3_expanded_id" : "0~90017~640044",
+      "title" : "Good Life 22468",
+      "category2_expanded_id" : "0~90017",
+      "is_wide_width" : "1",
+      "facet_color" : [ "GREY" ],
+      "map_price" : [ "0" ],
+      "category_leaf" : "Sneakers",
+      "feature" : [ "Slip On", "Memory Foam" ],
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "12", "8", "7", "5", "9", "8.5", "9.5" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "59.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Sneakers",
+      "secondary_color" : [ ],
+      "id" : "83402.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "category3_expanded" : "Category Root~Womens~Sneakers",
+      "is_on_clearance" : "0",
+      "tertiary_color" : [ ],
+      "category3" : "Sneakers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83402_158588_1?$prod_category$",
+      "category_leaf_id" : "640044",
+      "category1" : "Category Root",
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "primary_color" : [ "GREY" ],
+      "url" : "/womens-skechers-good-life-22468/grey-aqua/83402.scp",
+      "style_description" : "Women's Skechers Relaxed Fit Slip-On Sneakers. Casual comfort for a walk around the neighborhood or a trip to the mall is easy in the Skechers Relaxed Fit?: Breathe Easy - Good Life 22468! These slip-on sneakers feature an easy on bungee laced front, soft heathered finish fabric upper, and a full length Memory Foam cushioned insole for long-lasting comfort. No matter where your day takes you the Skechers Good Life 22468 is the perfect companion!",
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640044",
+      "is_on_sale" : "1",
+      "price_sale" : [ "59.98" ],
+      "category3_id" : "640044",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640044" ],
+      "customer" : "Women's"
+    },
+    "_id" : "f4a3d230beb13473959c70c80f87060f",
+    "_u" : "http://shoecarnival1Variant.com/83402.000000",
+    "_t" : "Good Life 22468"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "64.99" ],
+      "category3_expanded_id" : "0~90017~640020",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BEIGE", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Flats and Loafers~Flats",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83403.000000",
+      "brand" : "Skechers",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Flats and Loafers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83403_158589_1?$prod_category$",
+      "category4" : "Flats",
+      "category_leaf_id" : "640021",
+      "category1" : "Category Root",
+      "primary_color" : [ "BEIGE", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640020~640021",
+      "price_sale" : [ "54.98" ],
+      "category4_expanded_id" : "0~90017~640020~640021",
+      "color" : [ {
+        "color_nbr" : "158590",
+        "color_desc" : "Dark Taupe"
+      }, {
+        "color_nbr" : "158589",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "S",
+      "title" : "Fashion Frontier 48904",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flats",
+      "feature" : [ "Mary Jane", "Slip On", "Velcro", "Memory Foam" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "54.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Flats and Loafers~Flats",
+      "secondary_color" : [ ],
+      "category4_id" : "640021",
+      "category3_expanded" : "Category Root~Womens~Flats and Loafers",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-skechers-fashion-frontier-48904/black/83403.scp",
+      "style_description" : "Women's Skechers Relaxed Fit Slip-On Shoes. Comfort and classic style combine in the Skechers Relaxed Fit?: Bikers - Fashion Frontier 48904! These suede slip-ons feature an easy-on velcro Mary Jane cross strap, Memory Foam cushioned insole, and Skechers Relaxed Fit? design for more wiggle room where it counts!",
+      "is_on_sale" : "1",
+      "category3_id" : "640020",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640020", "640021" ],
+      "customer" : "Women's"
+    },
+    "_id" : "ff97402036c4b57516ea7764267e94dd",
+    "_u" : "http://shoecarnival1Variant.com/83403.000000",
+    "_t" : "Fashion Frontier 48904"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90017~640025",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Comfort~Flats and Loafers",
+      "sizes" : [ "7.5", "10", "11", "6", "6.5", "8", "7", "9", "9.5", "8.5" ],
+      "id" : "83404.000000",
+      "brand" : "B.O.C.",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Comfort",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83404_158592_1?$prod_category$",
+      "category4" : "Flats and Loafers",
+      "category_leaf_id" : "640028",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640025~640028",
+      "price_sale" : [ "49.98" ],
+      "category4_expanded_id" : "0~90017~640025~640028",
+      "color" : [ {
+        "color_nbr" : "158591",
+        "color_desc" : "Black Suede"
+      }, {
+        "color_nbr" : "158592",
+        "color_desc" : "Dk Brown Suede"
+      } ],
+      "sale_type" : "S",
+      "title" : "Jami",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flats and Loafers",
+      "feature" : [ "Slip On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Comfort~Flats and Loafers",
+      "secondary_color" : [ ],
+      "category4_id" : "640028",
+      "category3_expanded" : "Category Root~Womens~Comfort",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-b-o-c-jami/dk-brown-suede/83404.scp",
+      "style_description" : "Women's B.?.C. Casual Slip-On Suede Flats. Slip into casual style with comfort in the B.?.C. Jami! These slip-on suede flats feature leather trim, wraparound strap and buckle accent, and a cushioned comfort footbed. With durable, flexible construction and cushioned comfort fit, the B.?. C. Jami takes you straight from the week to the weekend!",
+      "is_on_sale" : "1",
+      "category3_id" : "640025",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640020", "640023", "640025", "640028" ],
+      "customer" : "Women's"
+    },
+    "_id" : "30af888c820e7291a2fc2975e6189960",
+    "_u" : "http://shoecarnival1Variant.com/83404.000000",
+    "_t" : "Jami"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90017~640025",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Comfort~Flats and Loafers",
+      "sizes" : [ "7.5", "6.5", "10", "11", "6", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83405.000000",
+      "brand" : "B.O.C.",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Comfort",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83405_158954_1?$prod_category$",
+      "category4" : "Flats and Loafers",
+      "category_leaf_id" : "640028",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640025~640028",
+      "price_sale" : [ "49.98" ],
+      "category4_expanded_id" : "0~90017~640025~640028",
+      "color" : [ {
+        "color_nbr" : "158954",
+        "color_desc" : "Black Oiled"
+      }, {
+        "color_nbr" : "158593",
+        "color_desc" : "Chocolate Oiled"
+      } ],
+      "sale_type" : "S",
+      "title" : "Chime",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flats and Loafers",
+      "feature" : [ "Slip On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "49.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Comfort~Flats and Loafers",
+      "secondary_color" : [ ],
+      "category4_id" : "640028",
+      "category3_expanded" : "Category Root~Womens~Comfort",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Medium",
+      "url" : "/womens-b-o-c-chime/black-oiled/83405.scp",
+      "style_description" : "Women's B.?.C. Leather Slip-On Booties. Get simple boot style without all the fuss in the B.?.C. Chime! These slip-on booties feature smooth leather uppers, rounded plain front toe, and dual elastic stretch panels for a comfort fit. With the soft fabric lining and cushioned footbed, the B.?.C. Chime will please your feet and keep your style easy!",
+      "is_on_sale" : "1",
+      "category3_id" : "640025",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "40030", "90017", "90026", "490006", "490007", "640020", "640023", "640025", "640027", "640028" ],
+      "customer" : "Women's"
+    },
+    "_id" : "b97001dacc188cd6822d70a5655f3933",
+    "_u" : "http://shoecarnival1Variant.com/83405.000000",
+    "_t" : "Chime"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "59.99" ],
+      "category3_expanded_id" : "0~90017~640020",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Flats and Loafers~Flats",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83406.000000",
+      "brand" : "White Mountain",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Flats and Loafers",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83406_158594_1?$prod_category$",
+      "category4" : "Flats",
+      "category_leaf_id" : "640021",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640020~640021",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~640020~640021",
+      "color" : [ {
+        "color_nbr" : "158594",
+        "color_desc" : "Black"
+      } ],
+      "sale_type" : "",
+      "title" : "Moondance",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flats",
+      "feature" : [ "Slip On", "Cap Toe" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "59.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Flats and Loafers~Flats",
+      "secondary_color" : [ ],
+      "category4_id" : "640021",
+      "category3_expanded" : "Category Root~Womens~Flats and Loafers",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-white-mountain-moondance/black/83406.scp",
+      "style_description" : "Women's White Mountain Slip-On Flats. Get charmingly feminine style in the White Mountain Moondance! These chic flats are sure to please with quilted faux leather uppers, patent heel and toe cap, and medallion and bow detailing. From the office to a night out on the town, dress up your flats with the White Mountain Moondance!",
+      "is_on_sale" : "1",
+      "category3_id" : "640020",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640020", "640021" ],
+      "customer" : "Women's"
+    },
+    "_id" : "f28ee98160085283afacd54c028b3d5a",
+    "_u" : "http://shoecarnival1Variant.com/83406.000000",
+    "_t" : "Moondance"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "69.99" ],
+      "category3_expanded_id" : "0~90017~640032",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Pumps and Heels~Platforms",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83407.000000",
+      "brand" : "White Mountain",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Clogs and Mules",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83407_158595_1?$prod_category$",
+      "category4" : "Platforms",
+      "category_leaf_id" : "640032",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~640032",
+      "price_sale" : [ "39.98" ],
+      "category4_expanded_id" : "0~90017~640014~640019",
+      "color" : [ {
+        "color_nbr" : "158595",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "158596",
+        "color_desc" : "Chestnut"
+      } ],
+      "sale_type" : "S",
+      "title" : "Cherub",
+      "is_wide_width" : "1",
+      "category_leaf" : "Clogs and Mules",
+      "feature" : [ "Adjustable Strap" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "39.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Clogs and Mules",
+      "secondary_color" : [ ],
+      "category4_id" : "640019",
+      "category3_expanded" : "Category Root~Womens~Clogs and Mules",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "High",
+      "url" : "/womens-white-mountain-cherub/black/83407.scp",
+      "style_description" : "Women's White Mountain Suede Platform Pumps. Give your style a retro lift in the White Mountain Cherub! These closed-toe pumps feature soft suede uppers, metal rivet detail, and a faux wood platform. With the extra cushioned footbed and elastic strap extender, the White Mountain Cherub is loveably cute and comfy!",
+      "is_on_sale" : "1",
+      "category3_id" : "640032",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "490006", "490007", "640014", "640017", "640019", "640032" ],
+      "customer" : "Women's"
+    },
+    "_id" : "556fe24248e0fe0b08b8b3c85ba11903",
+    "_u" : "http://shoecarnival1Variant.com/83407.000000",
+    "_t" : "Cherub"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "79.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Flat",
+      "sizes" : [ "7.5", "5.5", "10", "6", "6.5", "11", "12", "8", "7", "5", "9", "8.5", "9.5" ],
+      "id" : "83408.000000",
+      "brand" : "Columbia",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83408_158597_1?$prod_category$",
+      "category4" : "Flat",
+      "category_leaf_id" : "640009",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640009",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640009",
+      "color" : [ {
+        "color_nbr" : "158597",
+        "color_desc" : "Black/Grey"
+      } ],
+      "sale_type" : "",
+      "title" : "Ice Maiden Lace",
+      "is_wide_width" : "1",
+      "category_leaf" : "Flat",
+      "feature" : [ "Fur", "Insulated", "Lace Up", "Mid Calf" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "79.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Flat",
+      "secondary_color" : [ ],
+      "category4_id" : "640009",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-columbia-ice-maiden-lace/black-grey/83408.scp",
+      "style_description" : "Women's Columbia Waterproof Insulated Snow Boots. Keep the cold out and the style in with the Columbia Ice Maiden Lace! Suede uppers, faux fur trim, and a lace-up design make these boots a serious style statement. With 200g insulation, waterproof membrane construction, and advanced traction Omni-Grip? outsole, the Columbia Ice Maiden Lace won't let anything stand in your way!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "40028", "90017", "90026", "640009" ],
+      "customer" : "Women's"
+    },
+    "_id" : "33d3b46aa3e631440f2286a152d25f6f",
+    "_u" : "http://shoecarnival1Variant.com/83408.000000",
+    "_t" : "Ice Maiden Lace"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "109.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "6", "6.5", "10", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83409.000000",
+      "brand" : "Columbia",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "0",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83409_158599_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "158599",
+        "color_desc" : "Black/Shale"
+      } ],
+      "sale_type" : "",
+      "title" : "Bugaboot",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Ankle", "Insulated", "Waterproof", "Lace Up", "Mid Calf" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "109.99" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-columbia-bugaboot/black-shale/83409.scp",
+      "style_description" : "Women's Columbia Waterproof Insulated Leather Boots. Tell cold weather to bug off when you step out in the Columbia Bugaboot! These waterproof boots feature leather and Techlite? shell uppers, 200g insulation for warmth rated to -25? Fahrenheit, and advanced traction Omni-Grip? rubber outsoles. Precipitation doesn't stand a chance against the Columbia Bugaboot!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40028", "90017", "90026", "640009", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "1766b7c3ae61b30c0e3dd26fcbafec3a",
+    "_u" : "http://shoecarnival1Variant.com/83409.000000",
+    "_t" : "Bugaboot"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "79.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "BROWN", "BLACK" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "10", "11", "6", "6.5", "8", "7", "9", "8.5", "9.5" ],
+      "id" : "83417.000000",
+      "brand" : "Roxy",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "1",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83417_158613_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "BROWN", "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "158612",
+        "color_desc" : "Black"
+      }, {
+        "color_nbr" : "158613",
+        "color_desc" : "Tan"
+      } ],
+      "sale_type" : "",
+      "title" : "Seattle IV S",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Lace Up", "Zip Up" ],
+      "price_clearance" : [ "40" ],
+      "final_price" : [ "40" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-roxy-seattle-iv-s/tan/83417.scp",
+      "style_description" : "Women's Roxy Mid-Calf Lace-Up Seattle Boots. Add an alternative edge to your cool weather style in the Roxy Seattle IV! These mid-calf boots feature a perforated upper for breathability, rear zipper for easy on wear, and a fashionable round cap toe. With the convenient storage pocket you even have somewhere to keep your change!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90026", "490006", "490007", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "1e40c45702cf8927a76c3698f3868697",
+    "_u" : "http://shoecarnival1Variant.com/83417.000000",
+    "_t" : "Seattle IV S"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "39.99" ],
+      "category3_expanded_id" : "0~490006~490007",
+      "category2_expanded_id" : "0~490006",
+      "facet_color" : [ "BLACK" ],
+      "map_price" : [ "0" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Cold Weather and Rain",
+      "sizes" : [ "6", "10", "8", "7", "9" ],
+      "id" : "83425.000000",
+      "brand" : "Capelli New York",
+      "category2_id" : "490006",
+      "category2" : "Sale!",
+      "is_on_clearance" : "0",
+      "category3" : "Womens",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83425_158622_1?$prod_category$",
+      "category4" : "Cold Weather and Rain",
+      "category_leaf_id" : "490007",
+      "category1" : "Category Root",
+      "primary_color" : [ "BLACK" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~490006~490007",
+      "price_sale" : [ "34.98" ],
+      "category4_expanded_id" : "0~90017~90026~40028",
+      "color" : [ {
+        "color_nbr" : "158622",
+        "color_desc" : "Black Combo"
+      } ],
+      "sale_type" : "S",
+      "title" : "Ethnic Floral",
+      "is_wide_width" : "1",
+      "category_leaf" : "Womens",
+      "feature" : [ "Waterproof", "Knee High", "Pull On" ],
+      "price_clearance" : [ ],
+      "final_price" : [ "34.98" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Sale!~Womens",
+      "secondary_color" : [ ],
+      "category4_id" : "40028",
+      "category3_expanded" : "Category Root~Sale!~Womens",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-capelli-new-york-ethnic-floral/black-combo/83425.scp",
+      "style_description" : "Women's Capelli New York Floral Rain Boots. Don't cancel your plans due to rain, slip on the Capelli New York Ethnic Floral rain boots and splash through those puddles with ease! With waterproof rubber uppers, lugged outsole for wet/dry traction, and fabric lining, these rain boots will keep your feet dry, comfy and stylish!",
+      "is_on_sale" : "1",
+      "category3_id" : "490007",
+      "category2_expanded" : "Category Root~Sale!",
+      "is_extended_size" : "0",
+      "categoryId" : [ "40028", "90017", "90026", "490006", "490007" ],
+      "customer" : "Women's"
+    },
+    "_id" : "04ed7d3e6f7ca1f5d8a306184b608069",
+    "_u" : "http://shoecarnival1Variant.com/83425.000000",
+    "_t" : "Ethnic Floral"
+  }, {
+    "allMeta" : {
+      "price_retail" : [ "49.99" ],
+      "category3_expanded_id" : "0~90017~90026",
+      "category2_expanded_id" : "0~90017",
+      "facet_color" : [ "GREY" ],
+      "map_price" : [ "" ],
+      "category4_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "sizes" : [ "7.5", "5.5", "6", "6.5", "10", "11", "12", "8", "5", "7", "9", "8.5", "9.5" ],
+      "id" : "83429.000000",
+      "brand" : "US Polo Assn",
+      "category2_id" : "90017",
+      "category2" : "Womens",
+      "is_on_clearance" : "1",
+      "category3" : "Boots",
+      "image" : "http://s7d1.scene7.com/is/image/Shoecarnival/83429_158630_1?$prod_category$",
+      "category4" : "Lace Up",
+      "category_leaf_id" : "640010",
+      "category1" : "Category Root",
+      "primary_color" : [ "GREY" ],
+      "category1_id" : "0",
+      "category_leaf_expanded_id" : "0~90017~90026~640010",
+      "price_sale" : [ "" ],
+      "category4_expanded_id" : "0~90017~90026~640010",
+      "color" : [ {
+        "color_nbr" : "158630",
+        "color_desc" : "Dark Grey"
+      } ],
+      "sale_type" : "",
+      "title" : "Jess",
+      "is_wide_width" : "1",
+      "category_leaf" : "Lace Up",
+      "feature" : [ "Slip On", "Fur", "Lace Up", "Knee High", "Zip Up" ],
+      "price_clearance" : [ "25" ],
+      "final_price" : [ "25" ],
+      "is_wide_calf" : "0",
+      "category_leaf_expanded" : "Category Root~Womens~Boots~Lace Up",
+      "secondary_color" : [ ],
+      "category4_id" : "640010",
+      "category3_expanded" : "Category Root~Womens~Boots",
+      "tertiary_color" : [ ],
+      "mId" : "",
+      "widths" : [ "MEDIUM" ],
+      "heel_height" : "Low",
+      "url" : "/womens-us-polo-assn-jess/dark-grey/83429.scp",
+      "style_description" : "Women's U.S. Polo Assn. Faux-Fur Winter Boots. Take on the cold weather in unbeatable style with the U.S. Polo Assn. Jess! These winter-ready boots feature soft fabric uppers with a quilted shaft, faux fur collar and front trim, and a lace-up front with cute pom-pom accents. Make snow days into stylish days in the U.S. Polo Assn. Jess!",
+      "is_on_sale" : "1",
+      "category3_id" : "90026",
+      "category2_expanded" : "Category Root~Womens",
+      "is_extended_size" : "1",
+      "categoryId" : [ "90017", "90026", "490006", "490007", "640009", "640010" ],
+      "customer" : "Women's"
+    },
+    "_id" : "d26d091a3c9d2a49ecd03c5122d6bc82",
+    "_u" : "http://shoecarnival1Variant.com/83429.000000",
+    "_t" : "Jess"
+  } ],
+  "didYouMean" : [ ],
+  "relatedQueries" : [ ],
+  "rewrites" : [ ],
+  "siteParams" : [ ]
+}
