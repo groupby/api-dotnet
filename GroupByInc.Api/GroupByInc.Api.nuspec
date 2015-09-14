@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<package >
+  <metadata>
+    <id>GroupByInc.Api</id>
+		<version>0.0.0</version>
+    <authors>groupby</authors>
+    <owners>groupby</owners>
+		<projectUrl>https://github.com/groupby/api-dotnet</projectUrl>
+		<licenseUrl>https://github.com/groupby/api-dotnet/blob/develop/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>.NET APIs for v$bindleVersion$</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>Search API GroupBy JSON REST</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+		<file src="*" target="lib" />
+  </files>
+</package>
