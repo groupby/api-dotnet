@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>api-dotnet</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
 
   <packaging>pom</packaging>
 
@@ -21,7 +21,7 @@
     <url>https://github.com/groupby/api-dotnet</url>
     <connection>scm:git:git@github.com:groupby/api-dotnet.git</connection>
     <developerConnection>scm:git:git@github.com:groupby/api-dotnet.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v0.1</tag>
   </scm>
 
   <properties>
