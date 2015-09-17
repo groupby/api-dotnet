@@ -72,7 +72,7 @@ namespace GroupByInc.Api.Tests.Http
 
             headers.Accept = mediaTypes;
             Assert.AreEqual(mediaTypes, headers.Accept, "Invalid Accept header");
-            Assert.AreEqual("text/html,text/plain", headers["Accept"], "Invalid Accept header");
+            Assert.AreEqual("text/html2,text/plain", headers["Accept"], "Invalid Accept header");
         }
 
         //[Test]
