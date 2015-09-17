@@ -8,7 +8,7 @@
 		<projectUrl>https://github.com/groupby/api-dotnet</projectUrl>
 		<licenseUrl>https://github.com/groupby/api-dotnet/blob/develop/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>.NET APIs for v$bindleVersion$</description>
+		<description>Searchandiser v$bindleVersion$+</description>
     <copyright>Copyright 2015</copyright>
     <tags>Search API GroupBy JSON REST</tags>
     <dependencies>

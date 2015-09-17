@@ -278,6 +278,7 @@
               <executable>scripts/package.sh</executable>
               <arguments>
                 <argument>${project.version}</argument>
+                <argument>${groupbyinc.bindle.version}</argument>
               </arguments>
             </configuration>
           </execution>
