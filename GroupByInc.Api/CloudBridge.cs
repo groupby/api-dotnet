@@ -1,11 +1,12 @@
-﻿using GroupByInc.Api.Http.Client;
-using GroupByInc.Api.Models;
+﻿using GroupByInc.Api.Models;
 using GroupByInc.Api.Requests;
 using GroupByInc.Api.Util;
+using Newtonsoft.Json.Linq;
+using Spring.Http.Client;
 
 namespace GroupByInc.Api
 {
-    public class CloudBridge : AbstractBridge<Request, Query, Record, Results>
+    public class CloudBridge : AbstractBridge
     {
 
         private static readonly string Dot = ".";
@@ -29,14 +30,14 @@ namespace GroupByInc.Api
         {
         }
 
-        public override Results Map(IClientHttpResponse response, bool returnBinary)
+        public override JObject Map(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue<Results>(response);
+            return Mappers.ReadValue(response);
         }
 
-        public override RefinementsResult MapRefinements(IClientHttpResponse response, bool returnBinary)
+        public override JObject MapRefinements(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue<RefinementsResult>(response);
+            return Mappers.ReadValue(response);
         }
     }
 }

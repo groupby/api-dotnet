@@ -15,6 +15,7 @@ namespace GroupByInc.Api.Requests
             Descending
         }
 
+        public static readonly Sort Relevance = new Sort().SetField("_relevance");
 
         [JsonProperty("order")]
         private Order _order = Order.Ascending;

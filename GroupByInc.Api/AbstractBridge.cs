@@ -2,25 +2,20 @@
 using System.IO;
 using System.Net;
 using System.Text;
-using GroupByInc.Api.Http;
-using GroupByInc.Api.Http.Client;
-using GroupByInc.Api.Models;
-using GroupByInc.Api.Requests;
+using Newtonsoft.Json.Linq;
+using Spring.Http;
+using Spring.Http.Client;
 
 namespace GroupByInc.Api
 {
-    public abstract class AbstractBridge<RQ, Q, D, R>
-        where RQ : AbstractRequest<RQ>
-        where Q : AbstractQuery<RQ, Q>
-        where D : AbstractRecord<D>
-        where R : AbstractResults<D, R>
+    public abstract class AbstractBridge
     {
         public static readonly string Cluster = "/cluster";
         protected static readonly string Colon = ":";
         protected static readonly string Http = "http://";
         protected static readonly string Https = "https://";
         private static readonly string _search = "/search";
-        private static readonly string Refinements = "/refinements";
+        private static readonly string RefinementsSearch = "/refinements";
         private static readonly string RefinementSearch = "/refinement";
         private static readonly string Body = "\nbody:\n";
         private static readonly string ExceptionFromBridge = "Exception from bridge: ";
@@ -44,7 +39,7 @@ namespace GroupByInc.Api
             _clientKey = clientKey;
             _httpRequestFactory = httpRequestFactory;
             _bridgeUrl = baseUrl + _search;
-            _bridgeRefinementsUrl = _bridgeUrl+ Refinements;
+            _bridgeRefinementsUrl = _bridgeUrl + RefinementsSearch;
             _bridgeRefinementSearchUrl = baseUrl + RefinementSearch;
             _bridgeClusterUrl = baseUrl + Cluster;
         }
@@ -64,14 +59,20 @@ namespace GroupByInc.Api
             return _bridgeClusterUrl;
         }
 
-        public abstract R Map(IClientHttpResponse response, bool returnBinary);
+        public abstract JObject Map(IClientHttpResponse response, bool returnBinary);
 
-        public abstract RefinementsResult MapRefinements(IClientHttpResponse response, bool returnBinary);
+        public abstract JObject MapRefinements(IClientHttpResponse response, bool returnBinary);
 
-        public R Search(Q query)
+        public JObject Search(Query query)
         {
             IClientHttpResponse response = FireRequest(_bridgeUrl, query.GetBridgeJson(_clientKey), query.IsReturnBinary());
             return Map(response, query.IsReturnBinary());
+        }
+
+        public JObject Refinements(Query query, string navigationName)
+        {
+            IClientHttpResponse response = FireRequest(_bridgeRefinementsUrl, query.GetBridgeRefinementsJson(_clientKey, navigationName), query.IsReturnBinary());
+            return MapRefinements(response, query.IsReturnBinary());
         }
 
         private IClientHttpResponse FireRequest(string url, string body, bool returnBinary)

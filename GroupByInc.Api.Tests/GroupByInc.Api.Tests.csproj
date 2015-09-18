@@ -40,38 +40,23 @@
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Spring.Rest, Version=1.1.1.35020, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Spring.Rest.1.1.1\lib\net20\Spring.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Rest.Testing, Version=1.1.1.35020, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Spring.Rest.Testing.1.1.1\lib\net20\Spring.Rest.Testing.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Api\AbstractQueryTest.cs" />
-    <Compile Include="Api\BaseQueryTest.cs" />
     <Compile Include="Api\Models\Refinements\ResultsTest.cs" />
-    <Compile Include="Api\Models\ZoneTest.cs" />
     <Compile Include="Api\BridgeTest.cs" />
     <Compile Include="Api\QueryTest.cs" />
-    <Compile Include="Http\Client\Testing\AssertionException.cs" />
-    <Compile Include="Http\Client\Testing\AssertionUtils.cs" />
-    <Compile Include="Http\Client\Testing\IRequestActions.cs" />
-    <Compile Include="Http\Client\Testing\MockClientHttpRequest.cs" />
     <Compile Include="Http\Client\Testing\MockClientHttpRequestFactory.cs" />
-    <Compile Include="Http\Client\Testing\MockClientHttpResponse.cs" />
-    <Compile Include="Http\Client\Testing\RequestMatcher.cs" />
-    <Compile Include="Http\Client\Testing\RequestMatchers.cs" />
-    <Compile Include="Http\Client\Testing\ResponseCreator.cs" />
-    <Compile Include="Http\Client\Testing\ResponseCreators.cs" />
-    <Compile Include="Http\HttpHeadersTests.cs" />
-    <Compile Include="Http\HttpMethodTests.cs" />
-    <Compile Include="Http\HttpUtilsTests.cs" />
-    <Compile Include="Http\MediaTypeTests.cs" />
-    <Compile Include="Http\MockHttpInputMessage.cs" />
-    <Compile Include="Http\MockHttpOuputMessage.cs" />
-    <Compile Include="IO\StreamResourceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\ArgumentUtilsTests.cs" />
-    <Compile Include="Util\IoUtilsTests.cs" />
-    <Compile Include="Util\SerializationTestUtils.cs" />
-    <Compile Include="Util\StringUtilsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

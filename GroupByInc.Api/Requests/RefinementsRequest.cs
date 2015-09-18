@@ -2,11 +2,10 @@
 
 namespace GroupByInc.Api.Requests
 {
-    public class RefinementsRequest<R>
-        where R : AbstractRequest<R>
+    public class RefinementsRequest : Request
     {
         [JsonProperty("originalQuery")]
-        private R _originalQuery;
+        private Request _originalQuery;
 
         [JsonProperty("navigationName")]
         private string _navigationName;
@@ -16,18 +15,18 @@ namespace GroupByInc.Api.Requests
             return _navigationName;
         }
 
-        public RefinementsRequest<R> SetNavigationName(string navigationName)
+        public RefinementsRequest SetNavigationName(string navigationName)
         {
             _navigationName = navigationName;
             return this;
         }
 
-        public R GetOriginalQuery()
+        public Request GetOriginalQuery()
         {
             return _originalQuery;
         }
 
-        public RefinementsRequest<R> SetOriginalQuery(R originQuery)
+        public RefinementsRequest SetOriginalQuery(Request originQuery)
         {
             _originalQuery = originQuery;
             return this;
