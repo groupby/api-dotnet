@@ -36,40 +36,26 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Spring.Rest, Version=1.1.1.35020, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Spring.Rest.1.1.1\lib\net20\Spring.Rest.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractBridge.cs" />
-    <Compile Include="AbstractQuery.cs" />
-    <Compile Include="BaseQuery.cs" />
     <Compile Include="Exceptions\ParserException.cs" />
     <Compile Include="Exceptions\UrlBeautificationException.cs" />
     <Compile Include="Injector\GlobalInjector.cs" />
     <Compile Include="Injector\StaticInjector.cs" />
     <Compile Include="Injector\StaticInjectorFactory.cs" />
-    <Compile Include="Models\AbstractRecord.cs" />
-    <Compile Include="Models\AbstractResults.cs" />
-    <Compile Include="Models\Cluster.cs" />
-    <Compile Include="Models\ClusterRecord.cs" />
     <Compile Include="Models\CustomUrlParam.cs" />
     <Compile Include="Models\Metadata.cs" />
     <Compile Include="Models\Navigation.cs" />
-    <Compile Include="Models\PageInfo.cs" />
     <Compile Include="Models\Refinement.cs" />
-    <Compile Include="Models\RefinementsResult.cs" />
     <Compile Include="Models\Refinements\RefinementRange.cs" />
     <Compile Include="Models\Refinements\RefinementValue.cs" />
-    <Compile Include="Models\Sort.cs" />
-    <Compile Include="Models\Template.cs" />
-    <Compile Include="Models\Zone.cs" />
-    <Compile Include="Models\Zones\AbstractContentZone.cs" />
-    <Compile Include="Models\Zones\BannerZone.cs" />
-    <Compile Include="Models\Zones\ContentZone.cs" />
-    <Compile Include="Models\Zones\RecordZone.cs" />
-    <Compile Include="Models\Zones\RichContentZone.cs" />
-    <Compile Include="Requests\AbstractRequest.cs" />
-    <Compile Include="Requests\BaseRequest.cs" />
     <Compile Include="Requests\MatchStrategy.cs" />
     <Compile Include="Requests\PartialMatchRule.cs" />
     <Compile Include="Requests\RefinementsRequest.cs" />
@@ -78,56 +64,15 @@
     <Compile Include="Requests\RestrictNavigation.cs" />
     <Compile Include="Requests\SelectedRefinement.cs" />
     <Compile Include="Requests\Sort.cs" />
-    <Compile Include="Bridge.cs" />
     <Compile Include="CloudBridge.cs" />
-    <Compile Include="Models\MatchStrategy.cs" />
-    <Compile Include="Models\PartialMatchRule.cs" />
-    <Compile Include="Models\Record.cs" />
-    <Compile Include="Models\RefinementMatch.cs" />
-    <Compile Include="Models\Results.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="Requests\Request.cs" />
-    <Compile Include="Http\Client\ClientHttpRequestCompletedEventArgs.cs" />
-    <Compile Include="Http\Client\IClientHttpRequest.cs" />
-    <Compile Include="Http\Client\IClientHttpRequestFactory.cs" />
-    <Compile Include="Http\Client\IClientHttpResponse.cs" />
-    <Compile Include="Http\Client\Interceptor\BasicSigningRequestInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestAsyncExecution.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestAsyncInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestBeforeInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestContext.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestFactoryCreation.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestFactoryInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestSyncExecution.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpRequestSyncInterceptor.cs" />
-    <Compile Include="Http\Client\Interceptor\IClientHttpResponseAsyncContext.cs" />
-    <Compile Include="Http\Client\Interceptor\InterceptingClientHttpRequest.cs" />
-    <Compile Include="Http\Client\Interceptor\InterceptingClientHttpRequestFactory.cs" />
-    <Compile Include="Http\Client\WebClientHttpRequest.cs" />
-    <Compile Include="Http\Client\WebClientHttpRequestFactory.cs" />
-    <Compile Include="Http\Client\WebClientHttpResponse.cs" />
-    <Compile Include="Http\HttpEntity.cs" />
-    <Compile Include="Http\HttpHeaders.cs" />
-    <Compile Include="Http\HttpMethod.cs" />
-    <Compile Include="Http\HttpResponseMessage.cs" />
-    <Compile Include="Http\HttpResponseMessage`1.cs" />
-    <Compile Include="Http\HttpUtils.cs" />
-    <Compile Include="Http\IHttpInputMessage.cs" />
-    <Compile Include="Http\IHttpOutputMessage.cs" />
-    <Compile Include="Http\MediaType.cs" />
-    <Compile Include="IO\AbstractResource.cs" />
-    <Compile Include="IO\IResource.cs" />
-    <Compile Include="IO\StreamResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\ArgumentUtils.cs" />
     <Compile Include="Util\CollectionUtils.cs" />
     <Compile Include="Util\Converters\DefaultConverter.cs" />
     <Compile Include="Util\Converters\RefinementConverter.cs" />
-    <Compile Include="Util\Converters\ZoneConverter.cs" />
     <Compile Include="Util\EmptyCollectionContractResolver.cs" />
     <Compile Include="Util\HashSet.cs" />
-    <Compile Include="Util\IoUtils.cs" />
     <Compile Include="Util\Mappers.cs" />
     <Compile Include="Util\StringUtils.cs" />
     <Compile Include="Util\UriUtils.cs" />

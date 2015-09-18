@@ -19,9 +19,10 @@
 #endregion
 
 using System;
-using GroupByInc.Api.Http;
-using GroupByInc.Api.Http.Client;
-using GroupByInc.Api.Util;
+using Spring.Http;
+using Spring.Http.Client;
+using Spring.Rest.Client.Testing;
+using Spring.Util;
 
 namespace GroupByInc.Api.Tests.Http.Client.Testing
 {

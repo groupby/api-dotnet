@@ -1,4 +1,6 @@
-﻿namespace GroupByInc.Api.Models
+﻿using Newtonsoft.Json;
+
+namespace GroupByInc.Api.Models
 {
     /// <summary>
     ///     Metadata is associated with Navigation objects and Areas and allows the
@@ -10,7 +12,22 @@
     /// </summary>
     public class Metadata
     {
-        public string Key { get; set; }
-        public string Value { get; set; }
+        [JsonProperty("key")]
+        private string _key;
+
+        [JsonProperty("value")]
+        private string _value;
+
+        public string Key
+        {
+            get { return _key; }
+            set { _key = value; }
+        }
+
+        public string Value
+        {
+            get { return _value; }
+            set { _value = value; }
+        }
     }
 }

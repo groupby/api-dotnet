@@ -1,11 +1,12 @@
 ﻿using System;
 using System.IO;
-using GroupByInc.Api.Http;
-using GroupByInc.Api.Models;
 using GroupByInc.Api.Models.Refinements;
-using GroupByInc.Api.Tests.Http.Client.Testing;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using NUnit.Framework;
+using Spring.Http;
+using Spring.Rest.Client.Testing;
+using MockClientHttpRequestFactory = GroupByInc.Api.Tests.Http.Client.Testing.MockClientHttpRequestFactory;
 
 namespace GroupByInc.Api.Tests.Api
 {
@@ -27,15 +28,15 @@ namespace GroupByInc.Api.Tests.Api
             MockClientHttpRequestFactory httpRequestFactory = new MockClientHttpRequestFactory();
             httpRequestFactory.AddMockClient(mockClientHttpRequest);
             Query query = new Query();
-            query.SetCollection("Variant").AddFields(new string[] {"*"});
+            query.SetCollection("Variant").AddFields("*");
             query.SetPageSize(50);
             query.SetReturnBinary(false);
             CloudBridge cloudBridge = new CloudBridge("****", "https://example.groupbycloud.com:443/api/v1",
                 httpRequestFactory);
-            Results results = cloudBridge.Search(query);
-            Assert.AreEqual(results.GetArea(), "Production");
-            Assert.AreEqual(results.GetAvailableNavigations().Count, 14);
-            Assert.AreEqual(results.GetRecords().Count, 50);
+            JObject results = cloudBridge.Search(query);
+            Assert.AreEqual(results["area"].ToString(), "Production");
+            Assert.AreEqual(((JArray)results["availableNavigation"]).Count, 14);
+            Assert.AreEqual(((JArray)results["records"]).Count, 50);
         }
 
         [Test]
@@ -43,7 +44,7 @@ namespace GroupByInc.Api.Tests.Api
         {
             object result =
                 JsonConvert.DeserializeObject("{\"type\":\"Value\",\"count\":2144,\"value\":\"Category Root~Sale!\"}",
-                    typeof (RefinementValue));
+                    typeof(RefinementValue));
             Assert.IsNotNull(result);
         }
     }
