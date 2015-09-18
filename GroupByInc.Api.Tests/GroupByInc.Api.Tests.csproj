@@ -51,7 +51,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Api\Tags\UrlFunctionsBugTest.cs" />
+    <Compile Include="Api\Tags\UrlFunctionsTest.cs" />
+    <Compile Include="Api\Url\UrlBeautifierTest.cs" />
+    <Compile Include="Api\Url\UrlReplacementTest.cs" />
     <Compile Include="Api\Models\Refinements\ResultsTest.cs" />
     <Compile Include="Api\BridgeTest.cs" />
     <Compile Include="Api\QueryTest.cs" />
