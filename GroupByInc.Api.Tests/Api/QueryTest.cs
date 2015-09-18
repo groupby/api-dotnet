@@ -56,7 +56,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"pruneRefinements\":true," +
                 "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -122,7 +122,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"clientKey\":\"aoeu\"," +
                 "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
                 "\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -154,7 +154,7 @@ namespace GroupByInc.Api.Tests.Api
             _query.SetPageSize(100);
             string expected = "{\"pruneRefinements\":true," +
                               "\"clientKey\":\"aoeu\"," +
-                              "\"skip\":0,\"pageSize\":100,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                              "\"skip\":0,\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -175,7 +175,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
                 "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -195,7 +195,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
                 "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
 
             AssertQuery(expected, _query);
         }
@@ -208,7 +208,7 @@ namespace GroupByInc.Api.Tests.Api
             string expected = "{\"pruneRefinements\":true," +
                               "\"refinements\":[{\"value\":\"ab'\",\"navigationName\":\"abc\",\"exclude\":false,\"type\":\"Value\"}]," +
                               "\"clientKey\":\"aoeu\",\"skip\":0," +
-                              "\"pageSize\":100,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                              "\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -228,7 +228,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"clientKey\":\"aoeu\"," +
                 "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
                 "\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -315,7 +315,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"sort\":[{\"order\":\"Ascending\",\"field\":\"relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -343,7 +343,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"sort\":[{\"order\":\"Descending\",\"field\":\"relevance\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -364,7 +364,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -385,7 +385,7 @@ namespace GroupByInc.Api.Tests.Api
                 "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
                 "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":true,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 

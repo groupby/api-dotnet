@@ -44,7 +44,6 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractBridge.cs" />
     <Compile Include="Exceptions\ParserException.cs" />
     <Compile Include="Exceptions\UrlBeautificationException.cs" />
     <Compile Include="Injector\GlobalInjector.cs" />

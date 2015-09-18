@@ -29,7 +29,7 @@ namespace GroupByInc.Api
         private int _pageSize = 10;
         private bool _pruneRefinements = true;
         private string _query;
-        private bool _returnBinary = true;
+        private bool _returnBinary = false;
         private int _skip;
         private bool _wildcardSearchEnabled;
         protected RestrictNavigation RestrictNavigation;
