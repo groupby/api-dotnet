@@ -5,28 +5,29 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B34D4983-16F8-4AE8-B3AD-31BE2AE7E200}</ProjectGuid>
+    <ProjectGuid>{38811930-7AEB-4281-82E8-0EEED569FE01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GroupByInc.Api.Tests</RootNamespace>
     <AssemblyName>GroupByInc.Api.Tests</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\target\NET20\GroupByInc.Api.Tests\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>..\target\NET40\GroupByInc.Api.Tests\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\target\NET20\GroupByInc.Api.Tests\Debug\GroupByInc.Api.Tests.XML</DocumentationFile>
+    <DocumentationFile>..\target\NET40\GroupByInc.Api.Tests\Debug\GroupByInc.Api.Tests.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\target\NET20\GroupByInc.Api.Tests\Release\</OutputPath>
+    <OutputPath>..\target\NET40\GroupByInc.Api.Tests\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -64,14 +65,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Resource\cbor_result.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resource\result.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GroupByInc.Api\GroupByInc.Api.csproj">
-      <Project>{F0407D42-B2C5-450D-A95D-FFBECE02B7E0}</Project>
-      <Name>GroupByInc.Api</Name>
+    <ProjectReference Include="..\GroupByInc.Api\GroupByInc.Api.NET40.csproj">
+      <Project>{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}</Project>
+      <Name>GroupByInc.Api.NET40</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByInc.Api", "GroupByIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByInc.Api.Tests", "GroupByInc.Api.Tests\GroupByInc.Api.Tests.csproj", "{B34D4983-16F8-4AE8-B3AD-31BE2AE7E200}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByInc.Api.NET40", "GroupByInc.Api\GroupByInc.Api.NET40.csproj", "{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByInc.Api.Tests.NET40", "GroupByInc.Api.Tests\GroupByInc.Api.Tests.NET40.csproj", "{38811930-7AEB-4281-82E8-0EEED569FE01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{B34D4983-16F8-4AE8-B3AD-31BE2AE7E200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B34D4983-16F8-4AE8-B3AD-31BE2AE7E200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B34D4983-16F8-4AE8-B3AD-31BE2AE7E200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EDE1AB-764E-43A8-A4BA-CDA491A703BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38811930-7AEB-4281-82E8-0EEED569FE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38811930-7AEB-4281-82E8-0EEED569FE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38811930-7AEB-4281-82E8-0EEED569FE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38811930-7AEB-4281-82E8-0EEED569FE01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

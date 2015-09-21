@@ -72,12 +72,12 @@ namespace GroupByInc.Api
 
         public JObject Map(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue(response);
+            return Mappers.ReadValue(response, returnBinary);
         }
 
         public JObject MapRefinements(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue(response);
+            return Mappers.ReadValue(response, returnBinary);
         }
 
         public JObject Search(Query query)

@@ -4,6 +4,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using Spring.Http.Client;
+#if NET40
+using PeterO.Cbor;
+#endif
 
 namespace GroupByInc.Api.Util
 {
@@ -30,8 +33,19 @@ namespace GroupByInc.Api.Util
             return jsonSerializerSettings;
         }
 
-        public static JObject ReadValue(IClientHttpResponse response)
+        public static JObject ReadValue(IClientHttpResponse response, bool returnBinary)
         {
+#if NET40
+            if (returnBinary)
+            {
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    response.Body.CopyTo(memoryStream);
+                    CBORObject obj = CBORObject.DecodeFromBytes(memoryStream.ToArray());
+                    return JObject.Parse(obj.ToJSONString());
+                }
+            }
+#endif
             // Read from the message stream
             using (StreamReader reader = new StreamReader(response.Body))
             using (JsonTextReader jsonReader = new JsonTextReader(reader))
