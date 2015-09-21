@@ -10,6 +10,11 @@ using GroupByInc.Api.Injector;
 using GroupByInc.Api.Models;
 using GroupByInc.Api.Models.Refinements;
 using GroupByInc.Api.Util;
+#if NET40
+using HashSet = System.Collections.Generic.HashSet<string>;
+#else
+using HashSet = GroupByInc.Api.Util.HashSet<string>;
+#endif
 
 namespace GroupByInc.Api.Url
 {
@@ -279,7 +284,7 @@ namespace GroupByInc.Api.Url
             OrderedDictionary navigations = query.GetNavigations();
             foreach (Navigation n in navigations.Values)
             {
-                HashSet<string> names = new HashSet<string>();
+                HashSet names = new HashSet();
                 List<Refinement> deletRefinements = new List<Refinement>();
                 foreach (Refinement refinement1 in n.GetRefinements())
                 {
