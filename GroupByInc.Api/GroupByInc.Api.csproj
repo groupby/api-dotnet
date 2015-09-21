@@ -17,24 +17,21 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\target\GroupByInc.Api\Debug\</OutputPath>
+    <OutputPath>..\target\NET20\GroupByInc.Api\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\target\GroupByInc.Api\Debug\GroupByInc.Api.XML</DocumentationFile>
+    <DocumentationFile>..\target\NET20\GroupByInc.Api\Debug\GroupByInc.Api.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\target\GroupByInc.Api\Release\</OutputPath>
+    <OutputPath>..\target\NET20\GroupByInc.Api\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CBOR">
-      <HintPath>..\packages\PeterO.Cbor.2.2.0.0\lib\portable-net40+sl50+win+wpa81+wp80\CBOR.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -73,7 +70,6 @@
     <Compile Include="Tags\UrlFunctions.cs" />
     <Compile Include="Url\UrlBeautifier.cs" />
     <Compile Include="Util\CollectionUtils.cs" />
-    <Compile Include="Util\Converters\DefaultConverter.cs" />
     <Compile Include="Util\Converters\RefinementConverter.cs" />
     <Compile Include="Util\EmptyCollectionContractResolver.cs" />
     <Compile Include="Util\HashSet.cs" />

@@ -17,16 +17,16 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\target\GroupByInc.Api.Tests\Debug\</OutputPath>
+    <OutputPath>..\target\NET20\GroupByInc.Api.Tests\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\target\GroupByInc.Api.Tests\Debug\GroupByInc.Api.Tests.XML</DocumentationFile>
+    <DocumentationFile>..\target\NET20\GroupByInc.Api.Tests\Debug\GroupByInc.Api.Tests.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\target\GroupByInc.Api.Tests\Release\</OutputPath>
+    <OutputPath>..\target\NET20\GroupByInc.Api.Tests\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

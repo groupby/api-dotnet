@@ -18,16 +18,16 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\target\GroupByInc.Api\Debug\</OutputPath>
+    <OutputPath>..\target\NET40\GroupByInc.Api\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\target\GroupByInc.Api\Debug\GroupByInc.Api.XML</DocumentationFile>
+    <DocumentationFile>..\target\NET40\GroupByInc.Api\Debug\GroupByInc.Api.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\target\GroupByInc.Api\Release\</OutputPath>
+    <OutputPath>..\target\NET40\GroupByInc.Api\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
