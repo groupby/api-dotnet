@@ -34,7 +34,7 @@ namespace GroupByInc.Api.Tests.Api.Models.Refinements
             refinementValue.SetValue("something");
 
             Assert.AreEqual("{\"value\":\"something\",\"count\":0,\"exclude\":false,\"type\":\"Value\"}",
-                Mappers.WriteValueAsString(refinementValue));
+                new Mappers().WriteValueAsString(refinementValue));
         }
 
         [Test]

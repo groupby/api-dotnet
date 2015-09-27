@@ -11,23 +11,23 @@ namespace GroupByInc.Api.Util.Converters
         public override bool CanConvert(Type objectType)
         {
             //assume we can convert to anything for now
-            return (objectType == typeof(Refinement));
+            return (objectType == typeof (Refinement));
         }
 
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
+            JsonSerializer serializer)
         {
             //explicitly specify the concrete type we want to create
             if (!string.IsNullOrEmpty(objectType.Name) && objectType.Name.Equals("Refinement"))
             {
                 JObject jo = JObject.Load(reader);
                 string type = Extensions.Value<string>(jo["type"]);
-                if (type == "Value")
+                switch (type)
                 {
-                    return jo.ToObject<RefinementValue>(serializer);
-                }
-                if (type == "Range")
-                {
-                    return jo.ToObject<RefinementRange>(serializer);
+                    case "Value":
+                        return jo.ToObject<RefinementValue>(serializer);
+                    case "Range":
+                        return jo.ToObject<RefinementRange>(serializer);
                 }
             }
 

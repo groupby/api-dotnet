@@ -31,24 +31,34 @@ namespace GroupByInc.Api
         private readonly string _bridgeUrl;
         private readonly string _clientKey;
         private readonly IClientHttpRequestFactory _httpRequestFactory;
+        private readonly Mappers _mappers;
         private long _retryTimeout = 80;
 
         public CloudBridge(string clientKey, string customerId)
             : this(
-                clientKey, string.Format("{0}{1}{2}", Https, customerId, UrlSuffix), new WebClientHttpRequestFactory())
+                clientKey, string.Format("{0}{1}{2}", Https, customerId, UrlSuffix), new WebClientHttpRequestFactory(),
+                new Mappers())
+        {
+        }
+
+        public CloudBridge(string clientKey, string customerId, Mappers mappers)
+            : this(
+                clientKey, string.Format("{0}{1}{2}", Https, customerId, UrlSuffix), new WebClientHttpRequestFactory(),
+                mappers)
         {
         }
 
         public CloudBridge(string clientKey, string baseUrl, IClientHttpRequestFactory httpRequestFactory)
-            : this(clientKey, baseUrl, httpRequestFactory, true)
+            : this(clientKey, baseUrl, httpRequestFactory, new Mappers())
         {
         }
 
         public CloudBridge(string clientKey, string baseUrl, IClientHttpRequestFactory httpRequestFactory,
-            bool compressResponse)
+            Mappers mappers)
         {
             _clientKey = clientKey;
             _httpRequestFactory = httpRequestFactory;
+            _mappers = mappers;
             _bridgeUrl = baseUrl + _search;
             _bridgeRefinementsUrl = _bridgeUrl + RefinementsSearch;
             _bridgeRefinementSearchUrl = baseUrl + RefinementSearch;
@@ -72,29 +82,28 @@ namespace GroupByInc.Api
 
         public JObject Map(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue(response);
+            return _mappers.ReadValue(response, returnBinary);
         }
 
         public JObject MapRefinements(IClientHttpResponse response, bool returnBinary)
         {
-            return Mappers.ReadValue(response);
+            return _mappers.ReadValue(response, returnBinary);
         }
 
         public JObject Search(Query query)
         {
-            IClientHttpResponse response = FireRequest(_bridgeUrl, query.GetBridgeJson(_clientKey),
-                query.IsReturnBinary());
+            IClientHttpResponse response = FireRequest(_bridgeUrl, query.GetBridgeJson(_clientKey));
             return Map(response, query.IsReturnBinary());
         }
 
         public JObject Refinements(Query query, string navigationName)
         {
             IClientHttpResponse response = FireRequest(_bridgeRefinementsUrl,
-                query.GetBridgeRefinementsJson(_clientKey, navigationName), query.IsReturnBinary());
+                query.GetBridgeRefinementsJson(_clientKey, navigationName));
             return MapRefinements(response, query.IsReturnBinary());
         }
 
-        private IClientHttpResponse FireRequest(string url, string body, bool returnBinary)
+        private IClientHttpResponse FireRequest(string url, string body)
         {
             //TODO : Implement retry mechanism
             IClientHttpResponse response = PostToBridge(url, body);

@@ -33,15 +33,21 @@ namespace GroupByInc.Api
         private int _skip;
         private bool _wildcardSearchEnabled;
         protected RestrictNavigation RestrictNavigation;
+        private static Mappers _mappers;
+
+        static Query() 
+        {
+            _mappers = new Mappers();
+        }
 
         private static string RequestToJson(Request abstractRequest)
         {
-            return Mappers.WriteValueAsString(abstractRequest);
+            return _mappers.WriteValueAsString(abstractRequest);
         }
 
         private static string RequestToJson(RefinementsRequest abstractRequest)
         {
-            return Mappers.WriteValueAsString(abstractRequest);
+            return _mappers.WriteValueAsString(abstractRequest);
         }
 
         private List<SelectedRefinement> GenerateSelectedRefinements(OrderedDictionary navigations)

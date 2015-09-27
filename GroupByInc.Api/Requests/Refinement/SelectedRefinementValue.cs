@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GroupByInc.Api.Requests.Refinement
 {
-    class SelectedRefinementValue : SelectedRefinement
+    public class SelectedRefinementValue : SelectedRefinement
     {
         [JsonProperty("value")]
         private string _value;

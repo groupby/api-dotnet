@@ -70,7 +70,6 @@
     <Compile Include="Tags\UrlFunctions.cs" />
     <Compile Include="Url\UrlBeautifier.cs" />
     <Compile Include="Util\CollectionUtils.cs" />
-    <Compile Include="Util\Converters\DefaultConverter.cs" />
     <Compile Include="Util\Converters\RefinementConverter.cs" />
     <Compile Include="Util\EmptyCollectionContractResolver.cs" />
     <Compile Include="Util\HashSet.cs" />

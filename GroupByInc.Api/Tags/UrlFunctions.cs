@@ -11,6 +11,13 @@ namespace GroupByInc.Api.Tags
 {
     public class UrlFunctions
     {
+        private static Mappers _mappers;
+        
+        static UrlFunctions() 
+        {
+            _mappers = new Mappers();
+        }
+
         public static string ToUrlAdd(string identifier, string searchString, List<Navigation> navigations,
             string navigationName, Refinement refinement)
         {
@@ -105,7 +112,7 @@ namespace GroupByInc.Api.Tags
             OrderedDictionary queryNavigations = query.GetNavigations();
             if (navigations != null)
             {
-                List<Navigation> navs = Mappers.CloneJson(navigations);
+                List<Navigation> navs = _mappers.CloneJson(navigations);
                 foreach (Navigation navigation in navs)
                 {
                     queryNavigations.Add(navigation.GetName(), navigation);

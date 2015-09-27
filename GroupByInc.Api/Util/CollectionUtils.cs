@@ -22,7 +22,7 @@ namespace GroupByInc.Api.Util
                 foreach (T value in values)
                 {
                     collection.Add(value);
-                }   
+                }
             }
         }
 
