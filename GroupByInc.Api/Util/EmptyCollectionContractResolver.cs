@@ -6,7 +6,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace GroupByInc.Api.Util
 {
-    internal class EmptyCollectionContractResolver : DefaultContractResolver
+    public class EmptyCollectionContractResolver : DefaultContractResolver
     {
         protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
         {
@@ -14,7 +14,10 @@ namespace GroupByInc.Api.Util
 
             Predicate<object> shouldSerialize = property.ShouldSerialize;
             property.ShouldSerialize =
-                obj => (shouldSerialize == null || shouldSerialize(obj)) && !IsEmptyCollection(property, obj);
+                delegate(object obj)
+                {
+                    return (shouldSerialize == null || shouldSerialize(obj)) && !IsEmptyCollection(property, obj);
+                };
             return property;
         }
 

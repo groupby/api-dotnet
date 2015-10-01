@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using GroupByInc.Api.Util.Converters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -9,12 +10,12 @@ namespace GroupByInc.Api.Util
 {
     public class Mappers
     {
-        public static string WriteValueAsString<T>(T value)
+        public string WriteValueAsString<T>(T value)
         {
             return JsonConvert.SerializeObject(value, GetJsonSerializerSettings());
         }
 
-        private static JsonSerializerSettings GetJsonSerializerSettings()
+        protected virtual JsonSerializerSettings GetJsonSerializerSettings()
         {
             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
             jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
@@ -23,15 +24,17 @@ namespace GroupByInc.Api.Util
             return jsonSerializerSettings;
         }
 
-        private static JsonSerializerSettings GetJsonDeserializerSettings()
+        protected virtual JsonSerializerSettings GetJsonDeserializerSettings()
         {
             JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings();
             jsonSerializerSettings.Converters.Add(new RefinementConverter());
             return jsonSerializerSettings;
         }
 
-        public static JObject ReadValue(IClientHttpResponse response)
+        public virtual JObject ReadValue(IClientHttpResponse response, bool returnBinary)
         {
+            //TODO handle binary format if returnBinary is true 
+
             // Read from the message stream
             using (StreamReader reader = new StreamReader(response.Body))
             using (JsonTextReader jsonReader = new JsonTextReader(reader))
@@ -40,7 +43,14 @@ namespace GroupByInc.Api.Util
             }
         }
 
-        public static T CloneJson<T>(T source)
+        public virtual object ReadValue(JObject jObject, Type type)
+        {
+            // Read from the message stream
+            JsonSerializer jsonSerializer = JsonSerializer.Create(GetJsonDeserializerSettings());
+            return jsonSerializer.Deserialize(new JTokenReader(jObject), type);
+        }
+
+        public T CloneJson<T>(T source)
         {
             if (ReferenceEquals(source, null))
             {
