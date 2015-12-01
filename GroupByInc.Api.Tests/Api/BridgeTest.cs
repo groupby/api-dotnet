@@ -6,6 +6,7 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Spring.Http;
 using Spring.Rest.Client.Testing;
+using System.Net;
 using MockClientHttpRequestFactory = GroupByInc.Api.Tests.Http.Client.Testing.MockClientHttpRequestFactory;
 
 namespace GroupByInc.Api.Tests.Api
@@ -23,7 +24,6 @@ namespace GroupByInc.Api.Tests.Api
             string fileToUpload = Path.Combine(Environment.CurrentDirectory,
                 string.Format(@"Resource{0}result.json", Path.DirectorySeparatorChar));
             mockClientHttpRequest.AndRespond(ResponseCreators.CreateWith(File.ReadAllText(fileToUpload), headers));
-
 
             MockClientHttpRequestFactory httpRequestFactory = new MockClientHttpRequestFactory();
             httpRequestFactory.AddMockClient(mockClientHttpRequest);
@@ -46,6 +46,36 @@ namespace GroupByInc.Api.Tests.Api
                 JsonConvert.DeserializeObject("{\"type\":\"Value\",\"count\":2144,\"value\":\"Category Root~Sale!\"}",
                     typeof(RefinementValue));
             Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public void GetErrorFromBridge()
+        {
+            MockClientHttpRequest mockClientHttpRequest = new MockClientHttpRequest();
+            HttpHeaders headers = new HttpHeaders();
+            headers.Add("Content-Type", "application/json");
+
+            string responseJson = Path.Combine(Environment.CurrentDirectory,
+                string.Format(@"Resource{0}error.json", Path.DirectorySeparatorChar));
+            mockClientHttpRequest.AndRespond(ResponseCreators.CreateWith(File.ReadAllText(responseJson), headers,
+                HttpStatusCode.Unauthorized, "A bad thing happened"));
+
+            MockClientHttpRequestFactory httpRequestFactory = new MockClientHttpRequestFactory();
+            httpRequestFactory.AddMockClient(mockClientHttpRequest);
+            Query query = new Query();
+            query.SetReturnBinary(false);
+            CloudBridge cloudBridge = new CloudBridge("****", "https://example.groupbycloud.com:443/api/v1",
+                httpRequestFactory);
+
+            try
+            {
+                JObject results = cloudBridge.Search(query);
+                Assert.Fail("No exception thrown on bridge error");
+            }
+            catch (IOException e)
+            {
+                Assert.AreEqual(e.Message, "Exception from bridge: Unauthorized A bad thing happened, This is the expected error");
+            }
         }
     }
 }
