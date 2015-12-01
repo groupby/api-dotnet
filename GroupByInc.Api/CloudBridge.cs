@@ -85,38 +85,35 @@ namespace GroupByInc.Api
             return _mappers.ReadValue(response, returnBinary);
         }
 
-        public JObject MapRefinements(IClientHttpResponse response, bool returnBinary)
-        {
-            return _mappers.ReadValue(response, returnBinary);
-        }
-
         public JObject Search(Query query)
         {
-            IClientHttpResponse response = FireRequest(_bridgeUrl, query.GetBridgeJson(_clientKey));
+            IClientHttpResponse response = FireRequest(_bridgeUrl, query.GetBridgeJson(_clientKey),
+                query.IsReturnBinary());
             return Map(response, query.IsReturnBinary());
         }
 
         public JObject Refinements(Query query, string navigationName)
         {
             IClientHttpResponse response = FireRequest(_bridgeRefinementsUrl,
-                query.GetBridgeRefinementsJson(_clientKey, navigationName));
-            return MapRefinements(response, query.IsReturnBinary());
+                query.GetBridgeRefinementsJson(_clientKey, navigationName),
+                query.IsReturnBinary());
+            return Map(response, query.IsReturnBinary());
         }
 
-        private IClientHttpResponse FireRequest(string url, string body)
+        private IClientHttpResponse FireRequest(string url, string body, bool returnsBinary)
         {
             //TODO : Implement retry mechanism
             IClientHttpResponse response = PostToBridge(url, body);
             if (response.StatusCode != HttpStatusCode.OK)
             {
-                HandleErrorStatus(response);
+                HandleErrorStatus(response, returnsBinary);
             }
             return response;
         }
 
-        private void HandleErrorStatus(IClientHttpResponse response)
+        private void HandleErrorStatus(IClientHttpResponse response, bool returnsBinary)
         {
-            throw new IOException(ExceptionFromBridge + response.StatusCode + response.StatusDescription);
+            throw new IOException(ExceptionFromBridge + response.StatusCode + " " + response.StatusDescription + ", " + Map(response, returnsBinary)["errors"]);
         }
 
         private IClientHttpResponse PostToBridge(string url, string body)
