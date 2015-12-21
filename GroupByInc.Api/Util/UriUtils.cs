@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Web;
@@ -107,15 +107,8 @@ namespace GroupByInc.Api.Util
 
         public static string UriToString(UriBuilder uri)
         {
-            string s = uri.ToString();
+            string s = uri.Path + uri.Query;
 
-
-            if (s.StartsWith("://"))
-            {
-                //TODO: Hack to allow mono building.
-                //Must be removed in the future
-                return s.Substring(uri.Path.Length == 1 ? 4 : 3);
-            }
             return uri.Path.Length == 1 ? s.Substring(1) : s;
         }
 

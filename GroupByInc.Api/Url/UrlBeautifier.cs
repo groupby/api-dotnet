@@ -62,8 +62,7 @@ namespace GroupByInc.Api.Url
                 query.SetQuery(searchString);
             }
 
-            UriBuilder uri = new UriBuilder("", "");
-            uri.Path = "";
+            UriBuilder uri = new UriBuilder(null, null, -1, "");
             query.AddRefinementsByString(existingRefinements);
             OrderedDictionary navigations = GetDistinctRefinements(query);
             AddRefinements(query.GetQuery(), navigations, pathSegmentLookup, uri);
