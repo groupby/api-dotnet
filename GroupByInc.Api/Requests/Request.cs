@@ -18,6 +18,12 @@ namespace GroupByInc.Api.Requests
         [JsonProperty("orFields", NullValueHandling = NullValueHandling.Ignore)] //
         private List<string> _orFields = new List<string>();
 
+        [JsonProperty("includedNavigations", NullValueHandling = NullValueHandling.Ignore)] //
+        private List<string> _includedNavigations = new List<string>();
+
+        [JsonProperty("excludedNavigations", NullValueHandling = NullValueHandling.Ignore)] //
+        private List<string> _excludedNavigations = new List<string>();
+
         [JsonProperty("pruneRefinements")]
         private bool _pruneRefinements = true;
 
@@ -128,6 +134,27 @@ namespace GroupByInc.Api.Requests
             return this;
         }
 
+        public List<string> GetIncludedNavigations()
+        {
+            return _includedNavigations;
+        }
+
+        public Request SetIncludedNavigations(List<string> includedNavigations)
+        {
+            _includedNavigations = includedNavigations;
+            return this;
+        }
+
+        public List<string> GetExcludedNavigations()
+        {
+            return _excludedNavigations;
+        }
+
+        public Request SetExcludedNavigations(List<string> excludedNavigations)
+        {
+            _excludedNavigations = excludedNavigations;
+            return this;
+        }
 
         public Request SetCollection(string value)
         {

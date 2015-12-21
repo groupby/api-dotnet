@@ -19,6 +19,8 @@ namespace GroupByInc.Api
         private readonly List<string> _fields = new List<string>();
         private readonly OrderedDictionary _navigations = new OrderedDictionary();
         private readonly List<string> _orFields = new List<string>();
+        private readonly List<string> _includedNavigations = new List<string>();
+        private readonly List<string> _excludedNavigations = new List<string>();
         private readonly List<Sort> _sort = new List<Sort>();
         private string _area;
         private string _biasingProfile;
@@ -91,6 +93,8 @@ namespace GroupByInc.Api
             request.SetQuery(_query);
             request.SetFields(_fields);
             request.SetOrFields(_orFields);
+            request.SetIncludedNavigations(_includedNavigations);
+            request.SetExcludedNavigations(_excludedNavigations);
             request.SetLanguage(_language);
             request.SetBiasingProfile(_biasingProfile);
             request.SetPageSize(_pageSize);
@@ -347,6 +351,26 @@ namespace GroupByInc.Api
         public Query AddOrField(params string[] name)
         {
             return AddField(_orFields, name);
+        }
+
+        public List<string> GetIncludedNavigations()
+        {
+            return _includedNavigations;
+        }
+
+        public Query AddIncludedNavigation(params string[] navigations)
+        {
+            return AddField(_includedNavigations, navigations);
+        }
+
+        public List<string> GetExcludedNavigations()
+        {
+            return _excludedNavigations;
+        }
+
+        public Query AddExcludedNavigation(params string[] navigations)
+        {
+            return AddField(_excludedNavigations, navigations);
         }
 
         public Query AddRangeRefinement(string navigationName, string low, string high)
