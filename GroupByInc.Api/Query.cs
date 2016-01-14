@@ -4,8 +4,12 @@ using System.Collections.Specialized;
 using System.Text;
 using System.Text.RegularExpressions;
 using GroupByInc.Api.Models;
+using MBiasing = GroupByInc.Api.Models.Biasing;
+using MBias = GroupByInc.Api.Models.Bias;
 using GroupByInc.Api.Models.Refinements;
 using GroupByInc.Api.Requests;
+using RBiasing = GroupByInc.Api.Requests.Biasing;
+using RBias = GroupByInc.Api.Requests.Bias;
 using GroupByInc.Api.Requests.Refinement;
 using GroupByInc.Api.Util;
 
@@ -29,13 +33,14 @@ namespace GroupByInc.Api
         private bool _disableAutocorrection = true;
         private string _language;
         private MatchStrategy _matchStrategy;
+        private MBiasing _biasing;
         private int _pageSize = 10;
         private bool _pruneRefinements = true;
         private string _query;
         private bool _returnBinary = false;
         private int _skip;
         private bool _wildcardSearchEnabled;
-        protected RestrictNavigation RestrictNavigation;
+        protected RestrictNavigation _restrictNavigation;
         private static Mappers _mappers;
 
         static Query() 
@@ -118,17 +123,85 @@ namespace GroupByInc.Api
             {
                 request.SetDisableAutocorrection(true);
             }
+            if (_biasing != null)
+            {
+                request.SetBiasing(ConvertBiasing(_biasing));
+            }
 
             return request;
         }
 
         private RestrictNavigation ConvertRestrictNavigation()
         {
-            return RestrictNavigation == null
+            return _restrictNavigation == null
                 ? null
                 : new RestrictNavigation()
-                    .SetName(RestrictNavigation.GetName())
-                    .SetCount(RestrictNavigation.GetCount());
+                    .SetName(_restrictNavigation.GetName())
+                    .SetCount(_restrictNavigation.GetCount());
+        }
+
+        private RBiasing ConvertBiasing(MBiasing biasing)
+        {
+            RBiasing convertedBiasing = new RBiasing();
+
+            bool hasData = false;
+
+            if (biasing == null)
+            {
+                if (biasing.GetBringToTop().Count > 0)
+                {
+                    convertedBiasing.SetBringToTop(biasing.GetBringToTop());
+                    hasData = true;
+                }
+                if (biasing.GetBiases().Count > 0)
+                {
+                    convertedBiasing.SetBiases(ConvertBiases(biasing.GetBiases()));
+                    convertedBiasing.SetAugmentBiases(biasing.IsAugmentBiases());
+                    hasData = true;
+                }
+                if (biasing.GetInfluence().HasValue)
+                {
+                    convertedBiasing.SetInfluence(biasing.GetInfluence().Value);
+                    hasData = true;
+                }
+            }
+
+            return hasData ? convertedBiasing : null;
+        }
+
+        private RBias.Strength ConvertStrength(MBias.Strength strength)
+        {
+            RBias.Strength convertedStrength;
+
+            try
+            {
+                convertedStrength = (RBias.Strength) Enum.Parse(typeof(RBias.Strength), strength.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Could not convert bias strength " + strength.ToString());
+                convertedStrength = RBias.Strength.Leave_Unchanged;
+            }
+
+            return convertedStrength;
+        }
+
+        private RBias ConvertBias(MBias bias)
+        {
+            return new RBias()
+                .SetName(bias.GetName())
+                .SetContent(bias.GetContent())
+                .SetStrength(ConvertStrength(bias.GetStrength()));
+        }
+
+        private List<RBias> ConvertBiases(List<MBias> biases)
+        {
+            List<RBias> convertedBiases = new List<RBias>();
+            foreach (MBias bias in biases)
+            {
+                convertedBiases.Add(ConvertBias(bias));
+            }
+            return convertedBiases;
         }
 
         public string GetBridgeJson(string clientKey)
@@ -503,13 +576,13 @@ namespace GroupByInc.Api
 
         public Query SetRestrictNavigation(RestrictNavigation restrictNavigation)
         {
-            RestrictNavigation = restrictNavigation;
+            _restrictNavigation = restrictNavigation;
             return this;
         }
 
         public Query SetRestrictNavigation(string name, int count)
         {
-            RestrictNavigation = new RestrictNavigation().SetName(name).SetCount(count);
+            _restrictNavigation = new RestrictNavigation().SetName(name).SetCount(count);
             return this;
         }
 
@@ -538,6 +611,47 @@ namespace GroupByInc.Api
         public Query SetMatchStrategy(MatchStrategy matchStrategy)
         {
             _matchStrategy = matchStrategy;
+            return this;
+        }
+
+        public MBiasing GetBiasing()
+        {
+            return _biasing;
+        }
+
+        public Query SetBiasing(MBiasing biasing)
+        {
+            _biasing = biasing;
+            return this;
+        }
+
+        public Query SetBringToTop(List<string> bringToTop)
+        {
+            if (_biasing == null)
+            {
+                _biasing = new MBiasing();
+            }
+            _biasing.SetBringToTop(bringToTop);
+            return this;
+        }
+
+        public Query SetBiasingAugment(bool augment)
+        {
+            if (_biasing == null)
+            {
+                _biasing = new MBiasing();
+            }
+            _biasing.SetAugmentBiases(augment);
+            return this;
+        }
+
+        public Query SetInfluence(float influence)
+        {
+            if (_biasing == null)
+            {
+                _biasing = new MBiasing();
+            }
+            _biasing.SetInfluence(influence);
             return this;
         }
     }

@@ -49,6 +49,8 @@
     <Compile Include="Injector\GlobalInjector.cs" />
     <Compile Include="Injector\StaticInjector.cs" />
     <Compile Include="Injector\StaticInjectorFactory.cs" />
+    <Compile Include="Models\Biasing.cs" />
+    <Compile Include="Models\Bias.cs" />
     <Compile Include="Models\CustomUrlParam.cs" />
     <Compile Include="Models\Metadata.cs" />
     <Compile Include="Models\Navigation.cs" />
@@ -62,6 +64,8 @@
     <Compile Include="Requests\Refinement\SelectedRefinementValue.cs" />
     <Compile Include="Requests\RestrictNavigation.cs" />
     <Compile Include="Requests\SelectedRefinement.cs" />
+    <Compile Include="Requests\Biasing.cs" />
+    <Compile Include="Requests\Bias.cs" />
     <Compile Include="Requests\Sort.cs" />
     <Compile Include="CloudBridge.cs" />
     <Compile Include="Query.cs" />

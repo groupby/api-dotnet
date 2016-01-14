@@ -78,6 +78,8 @@ namespace GroupByInc.Api.Requests
         [JsonProperty("matchStrategy")]
         private MatchStrategy _matchStrategy;
 
+        [JsonProperty("biasing")]
+        private Biasing _biasing;
 
         /// <summary>
         /// </summary>
@@ -331,6 +333,17 @@ namespace GroupByInc.Api.Requests
             return this;
         }
 
+        public Biasing GetBiasing()
+        {
+            return _biasing;
+        }
+
+        public Request SetBiasing(Biasing biasing)
+        {
+            _biasing = biasing;
+            return this;
+        }
+
         public string GetUserId()
         {
             return _userId;
@@ -341,5 +354,6 @@ namespace GroupByInc.Api.Requests
             _userId = userId;
             return this;
         }
+
     }
 }
