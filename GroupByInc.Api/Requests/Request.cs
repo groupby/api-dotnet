@@ -42,6 +42,9 @@ namespace GroupByInc.Api.Requests
         [JsonProperty("area")]
         private string _area;
 
+        [JsonProperty("userId")]
+        private string _userId;
+
         [JsonProperty("biasingProfile")]
         private string _biasingProfile;
 
@@ -325,6 +328,17 @@ namespace GroupByInc.Api.Requests
         public Request SetMatchStrategy(MatchStrategy matchStrategy)
         {
             _matchStrategy = matchStrategy;
+            return this;
+        }
+
+        public string GetUserId()
+        {
+            return _userId;
+        }
+
+        public Request SetUserId(string userId)
+        {
+            _userId = userId;
             return this;
         }
     }
