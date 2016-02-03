@@ -3,8 +3,6 @@
 
 #### Development
 
-`./setupWorkstation.sh` to install mono / nuget / nunit
-
 `mvn -Punit` to install and test
 
 #### Searching
