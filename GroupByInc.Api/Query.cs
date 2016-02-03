@@ -22,6 +22,7 @@ namespace GroupByInc.Api
         private readonly List<string> _includedNavigations = new List<string>();
         private readonly List<string> _excludedNavigations = new List<string>();
         private readonly List<Sort> _sort = new List<Sort>();
+        private string _userId;
         private string _area;
         private string _biasingProfile;
         private string _collection;
@@ -87,6 +88,7 @@ namespace GroupByInc.Api
         {
             Request request = new Request();
             request.SetClientKey(clientKey);
+            request.SetUserId(_userId);
             request.SetArea(_area);
             request.SetSort(_sort);
             request.SetCollection(_collection);
@@ -173,6 +175,17 @@ namespace GroupByInc.Api
         public Query SetArea(string area)
         {
             _area = area;
+            return this;
+        }
+
+        public string GetUserId()
+        {
+            return _userId;
+        }
+
+        public Query SetUserId(string userId)
+        {
+            _userId = userId;
             return this;
         }
 
