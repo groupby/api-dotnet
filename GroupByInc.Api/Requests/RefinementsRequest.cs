@@ -2,7 +2,7 @@
 
 namespace GroupByInc.Api.Requests
 {
-    public class RefinementsRequest : Request
+    public class RefinementsRequest
     {
         [JsonProperty("originalQuery")]
         private Request _originalQuery;
