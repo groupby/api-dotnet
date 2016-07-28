@@ -45,12 +45,6 @@
       <plugins>
 
         <plugin>
-          <groupId>com.groupbyinc</groupId>
-          <artifactId>common-lifecycle</artifactId>
-          <version>${groupbyinc.common.version}</version>
-        </plugin>
-
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>1.5</version>
