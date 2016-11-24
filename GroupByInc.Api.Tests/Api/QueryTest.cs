@@ -1,5 +1,4 @@
-﻿using GroupByInc.Api.Models;
-using GroupByInc.Api.Requests;
+﻿using GroupByInc.Api.Requests;
 using NUnit.Framework;
 
 namespace GroupByInc.Api.Tests.Api
@@ -51,12 +50,11 @@ namespace GroupByInc.Api.Tests.Api
             _query.SetArea("staging");
             _query.AddValueRefinement("redsox", "suck");
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -66,12 +64,11 @@ namespace GroupByInc.Api.Tests.Api
             SetupGeneratedQuery();
             _query.SetLanguage("lang_en");
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\",\"language\":\"lang_en\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\",\"language\":\"lang_en\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
 
 
             AssertQuery(expected, _query);
@@ -81,12 +78,11 @@ namespace GroupByInc.Api.Tests.Api
         public void GenWithNoLanguage()
         {
             SetupGeneratedQuery();
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -96,12 +92,11 @@ namespace GroupByInc.Api.Tests.Api
             SetupGeneratedQuery();
             _query.SetLanguage(null);
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"biasingProfile\":\"flange\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
 
             AssertQuery(expected, _query);
         }
@@ -115,14 +110,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.SetArea("staging");
             _query.AddValueRefinement("redsox", "suck", true);
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":true,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\"," +
-                "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
-                "\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":true,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\"," +
+                                    "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
+                                    "\"skip\":0," +
+                                    "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -152,9 +146,9 @@ namespace GroupByInc.Api.Tests.Api
         public void NullSearch()
         {
             _query.SetPageSize(100);
-            string expected = "{\"pruneRefinements\":true," +
-                              "\"clientKey\":\"aoeu\"," +
-                              "\"skip\":0,\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"pruneRefinements\":true," +
+                                    "\"clientKey\":\"aoeu\"," +
+                                    "\"skip\":0,\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -169,13 +163,12 @@ namespace GroupByInc.Api.Tests.Api
             _query.AddValueRefinement("redsox", "suck");
             _query.SetPruneRefinements(false);
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":false," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
-                "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":false," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
+                                    "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
+                                    "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -189,13 +182,12 @@ namespace GroupByInc.Api.Tests.Api
             _query.AddValueRefinement("redsox", "suck");
             _query.SetPruneRefinements(true);
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
-                "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\"," +
+                                    "\"area\":\"staging\",\"query\":\"boston\",\"skip\":0," +
+                                    "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
 
             AssertQuery(expected, _query);
         }
@@ -205,10 +197,10 @@ namespace GroupByInc.Api.Tests.Api
         {
             _query.SetPageSize(100);
             _query.AddRefinementsByString("abc=ab'");
-            string expected = "{\"pruneRefinements\":true," +
-                              "\"refinements\":[{\"value\":\"ab'\",\"navigationName\":\"abc\",\"exclude\":false,\"type\":\"Value\"}]," +
-                              "\"clientKey\":\"aoeu\",\"skip\":0," +
-                              "\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"ab'\",\"navigationName\":\"abc\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"skip\":0," +
+                                    "\"pageSize\":100,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -221,14 +213,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.SetArea("staging");
             _query.AddValueRefinement("redsox", "suck");
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"clientKey\":\"aoeu\"," +
-                "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
-                "\"skip\":0," +
-                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"clientKey\":\"aoeu\"," +
+                                    "\"collection\":\"docs\",\"area\":\"staging\",\"query\":\"boston\"," +
+                                    "\"skip\":0," +
+                                    "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -236,7 +227,7 @@ namespace GroupByInc.Api.Tests.Api
         public void SplitTestCategory()
         {
             string[] split = _query.SplitRefinements("~category_leaf_expanded=Category Root~Athletics~Men's~Sneakers");
-            Assert.AreEqual(new string[] { "category_leaf_expanded=Category Root~Athletics~Men's~Sneakers" }, split);
+            Assert.AreEqual(new string[] {"category_leaf_expanded=Category Root~Athletics~Men's~Sneakers"}, split);
         }
 
         [Test]
@@ -248,11 +239,11 @@ namespace GroupByInc.Api.Tests.Api
 
             string[] split = _query.SplitRefinements(reallyLongString);
             Assert.AreEqual(new string[]
-            {
-                "category_leaf_expanded=Category Root~Athletics~Men's~Sneakers", "category_leaf_id=580003",
-                "color=BLUE", "color=YELLOW", "color=GREY", "feature=Lace Up", "feature=Light Weight",
-                "brand=Nike"
-            },
+                {
+                    "category_leaf_expanded=Category Root~Athletics~Men's~Sneakers", "category_leaf_id=580003",
+                    "color=BLUE", "color=YELLOW", "color=GREY", "feature=Lace Up", "feature=Light Weight",
+                    "brand=Nike"
+                },
                 split);
         }
 
@@ -263,21 +254,22 @@ namespace GroupByInc.Api.Tests.Api
                 _query.SplitRefinements(
                     "~category_leaf_expanded=Category Root~Athletics~Men's~Sneakers~category_leaf_id=580003");
             Assert.AreEqual(
-                new string[] { "category_leaf_expanded=Category Root~Athletics~Men's~Sneakers", "category_leaf_id=580003" }, split);
+                new string[]
+                    {"category_leaf_expanded=Category Root~Athletics~Men's~Sneakers", "category_leaf_id=580003"}, split);
         }
 
         [Test]
         public void SplitTestNoCategory()
         {
             string[] split = _query.SplitRefinements("~gender=Women~simpleColorDesc=Pink~product=Clothing");
-            Assert.AreEqual(new string[] { "gender=Women", "simpleColorDesc=Pink", "product=Clothing" }, split);
+            Assert.AreEqual(new string[] {"gender=Women", "simpleColorDesc=Pink", "product=Clothing"}, split);
         }
 
         [Test]
         public void SplitTestRange()
         {
             string[] split = _query.SplitRefinements("test=bob~price:10..20");
-            Assert.AreEqual(new string[] { "test=bob", "price:10..20" }, split);
+            Assert.AreEqual(new string[] {"test=bob", "price:10..20"}, split);
         }
 
         [Test]
@@ -294,7 +286,7 @@ namespace GroupByInc.Api.Tests.Api
         public void TestEmpty()
         {
             string[] split = _query.SplitRefinements("");
-            Assert.AreEqual(new string[] { }, split);
+            Assert.AreEqual(new string[] {}, split);
         }
 
         [Test]
@@ -308,14 +300,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.SetSort(new Sort().SetField("relevance"),
                 new Sort().SetField("brand").SetOrder(Sort.Order.Descending));
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"sort\":[{\"order\":\"Ascending\",\"field\":\"relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"sort\":[{\"order\":\"Ascending\",\"field\":\"relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
+                                    "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -323,7 +314,7 @@ namespace GroupByInc.Api.Tests.Api
         public void TestNull()
         {
             string[] split = _query.SplitRefinements(null);
-            Assert.AreEqual(new string[] { }, split);
+            Assert.AreEqual(new string[] {}, split);
         }
 
         [Test]
@@ -336,14 +327,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.AddValueRefinement("redsox", "suck");
             _query.SetSort(new Sort().SetField("relevance").SetOrder(Sort.Order.Descending));
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"sort\":[{\"order\":\"Descending\",\"field\":\"relevance\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"sort\":[{\"order\":\"Descending\",\"field\":\"relevance\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
+                                    "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -357,14 +347,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.AddValueRefinement("redsox", "suck");
             _query.SetSort(Sort.Relevance);
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
+                                    "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -378,14 +367,13 @@ namespace GroupByInc.Api.Tests.Api
             _query.AddValueRefinement("redsox", "suck");
             _query.SetSort(Sort.Relevance, new Sort().SetField("brand").SetOrder(Sort.Order.Descending));
 
-            string expected =
-                "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
-                "\"pruneRefinements\":true," +
-                "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
-                "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
-                "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
-                "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
-                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            const string expected = "{\"customUrlParams\":[{\"key\":\"fromGoogle\",\"value\":\"true\"},{\"key\":\"bigspender\",\"value\":\"1\"}]," +
+                                    "\"pruneRefinements\":true," +
+                                    "\"refinements\":[{\"value\":\"suck\",\"navigationName\":\"redsox\",\"exclude\":false,\"type\":\"Value\"}]," +
+                                    "\"sort\":[{\"order\":\"Ascending\",\"field\":\"_relevance\"},{\"order\":\"Descending\",\"field\":\"brand\"}]," +
+                                    "\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"query\":\"boston\",\"skip\":0,\"pageSize\":10," +
+                                    "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
 
@@ -393,7 +381,22 @@ namespace GroupByInc.Api.Tests.Api
         public void TestUtf8()
         {
             string[] split = _query.SplitRefinements("tëst=bäb~price:10..20");
-            Assert.AreEqual(new string[] { "tëst=bäb", "price:10..20" }, split);
+            Assert.AreEqual(new string[] {"tëst=bäb", "price:10..20"}, split);
+        }
+
+        [Test]
+        public void TestSessionAndVisitorId()
+        {
+            _query.SetQuery("boston");
+            _query.SetCollection("docs");
+            _query.SetArea("staging");
+            _query.SetVisitorId("somevisitorhash");
+            _query.SetSessionId("somesessionhash");
+
+            const string expected = "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                                    "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\",\"skip\":0," +
+                                    "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            AssertQuery(expected, _query);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GroupByInc.Api.Models;
 using GroupByInc.Api.Util;
 using Newtonsoft.Json;
@@ -24,8 +25,7 @@ namespace GroupByInc.Api.Requests
         [JsonProperty("excludedNavigations", NullValueHandling = NullValueHandling.Ignore)] //
         private List<string> _excludedNavigations = new List<string>();
 
-        [JsonProperty("pruneRefinements")]
-        private bool _pruneRefinements = true;
+        [JsonProperty("pruneRefinements")] private bool _pruneRefinements = true;
 
         [JsonProperty("refinements", NullValueHandling = NullValueHandling.Ignore)] //
         private List<SelectedRefinement> _refinements = new List<SelectedRefinement>();
@@ -33,53 +33,41 @@ namespace GroupByInc.Api.Requests
         [JsonProperty("sort", NullValueHandling = NullValueHandling.Ignore)] //
         private List<Sort> _sort = new List<Sort>();
 
-        [JsonProperty("clientKey")]
-        private string _clientKey;
+        [JsonProperty("clientKey")] private string _clientKey;
 
-        [JsonProperty("collection")]
-        private string _collection;
+        [JsonProperty("collection")] private string _collection;
 
-        [JsonProperty("area")]
-        private string _area;
+        [JsonProperty("area")] private string _area;
 
-        [JsonProperty("userId")]
-        private string _userId;
+        [JsonProperty("sessionId")] private string _sessionId;
 
-        [JsonProperty("biasingProfile")]
-        private string _biasingProfile;
+        [JsonProperty("visitorId")] private string _visitorId;
 
-        [JsonProperty("language")]
-        private string _language;
+        [JsonProperty("biasingProfile")] private string _biasingProfile;
 
-        [JsonProperty("query")]
-        private string _query;
+        [JsonProperty("language")] private string _language;
 
-        [JsonProperty("refinementQuery")]
-        private string _refinementQuery;
+        [JsonProperty("query")] private string _query;
 
-        [JsonProperty("restrictedNavigation")]
-        private RestrictNavigation _restrictNavigation;
+        [JsonProperty("refinementQuery")] private string _refinementQuery;
 
-        [JsonProperty("skip")]
-        private int _skip;
+        [JsonProperty("restrictedNavigation")] private RestrictNavigation _restrictNavigation;
 
-        [JsonProperty("pageSize")]
-        private int _pageSize;
+        [JsonProperty("skip")] private int _skip;
 
-        [JsonProperty("returnBinary")]
-        private bool _returnBinary;
+        [JsonProperty("pageSize")] private int _pageSize;
 
-        [JsonProperty("disableAutocorrection")]
-        private bool _disableAutocorrection;
+        [JsonProperty("returnBinary")] private bool _returnBinary;
 
-        [JsonProperty("wildcardSearchEnabled")]
-        private bool? _wildcardSearchEnabled = false;
+        [JsonProperty("disableAutocorrection")] private bool _disableAutocorrection;
 
-        [JsonProperty("matchStrategy")]
-        private MatchStrategy _matchStrategy;
+        [JsonProperty("wildcardSearchEnabled")] private bool? _wildcardSearchEnabled = false;
 
-        [JsonProperty("biasing")]
-        private Biasing _biasing;
+        [JsonProperty("matchStrategy")] private MatchStrategy _matchStrategy;
+
+        [JsonProperty("matchStrategyName")] private string _matchStrategyName;
+
+        [JsonProperty("biasing")] private Biasing _biasing;
 
         /// <summary>
         /// </summary>
@@ -344,16 +332,37 @@ namespace GroupByInc.Api.Requests
             return this;
         }
 
-        public string GetUserId()
+        public string GetVisitorId()
         {
-            return _userId;
+            return _visitorId;
         }
 
-        public Request SetUserId(string userId)
+        public Request SetVisitorId(string visitorId)
         {
-            _userId = userId;
+            _visitorId = visitorId;
             return this;
         }
 
+        public string GetSessionId()
+        {
+            return _sessionId;
+        }
+
+        public Request SetSessionId(string sessionId)
+        {
+            _sessionId = sessionId;
+            return this;
+        }
+
+        public string GetMatchStrategyName()
+        {
+            return _matchStrategyName;
+        }
+
+        public Request SetMatchStrategyName(string matchStrategyName)
+        {
+            _matchStrategyName = matchStrategyName;
+            return this;
+        }
     }
 }
