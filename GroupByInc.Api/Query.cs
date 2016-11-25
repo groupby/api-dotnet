@@ -17,7 +17,7 @@ namespace GroupByInc.Api
 {
     public class Query
     {
-        private static readonly string Dots = @"\.\.";
+        private const string Dots = @"\.\.";
         public static readonly string TildeRegex = @"~((?=[\w.]*[=:]))";
         private readonly List<CustomUrlParam> _customUrlParams = new List<CustomUrlParam>();
         private readonly List<string> _fields = new List<string>();
@@ -26,13 +26,15 @@ namespace GroupByInc.Api
         private readonly List<string> _includedNavigations = new List<string>();
         private readonly List<string> _excludedNavigations = new List<string>();
         private readonly List<Sort> _sort = new List<Sort>();
-        private string _userId;
+        private string _visitorId;
+        private string _sessionId;
         private string _area;
         private string _biasingProfile;
         private string _collection;
         private bool _disableAutocorrection = true;
         private string _language;
         private MatchStrategy _matchStrategy;
+        private string _matchStrategyName;
         private MBiasing _biasing;
         private int _pageSize = 10;
         private bool _pruneRefinements = true;
@@ -40,10 +42,10 @@ namespace GroupByInc.Api
         private bool _returnBinary = false;
         private int _skip;
         private bool _wildcardSearchEnabled;
-        protected RestrictNavigation _restrictNavigation;
+        protected RestrictNavigation RestrictNavigation;
         private static Mappers _mappers;
 
-        static Query() 
+        static Query()
         {
             _mappers = new Mappers();
         }
@@ -93,7 +95,8 @@ namespace GroupByInc.Api
         {
             Request request = new Request();
             request.SetClientKey(clientKey);
-            request.SetUserId(_userId);
+            request.SetSessionId(_sessionId);
+            request.SetVisitorId(_visitorId);
             request.SetArea(_area);
             request.SetSort(_sort);
             request.SetCollection(_collection);
@@ -108,6 +111,7 @@ namespace GroupByInc.Api
             request.SetSkip(_skip);
             request.SetWildcardSearchEnabled(_wildcardSearchEnabled);
             request.SetMatchStrategy(_matchStrategy);
+            request.SetMatchStrategyName(_matchStrategyName);
             request.SetCustomUrlParams(_customUrlParams);
             request.SetRefinements(GenerateSelectedRefinements(_navigations));
             request.SetRestrictNavigation(ConvertRestrictNavigation());
@@ -133,11 +137,11 @@ namespace GroupByInc.Api
 
         private RestrictNavigation ConvertRestrictNavigation()
         {
-            return _restrictNavigation == null
+            return RestrictNavigation == null
                 ? null
                 : new RestrictNavigation()
-                    .SetName(_restrictNavigation.GetName())
-                    .SetCount(_restrictNavigation.GetCount());
+                    .SetName(RestrictNavigation.GetName())
+                    .SetCount(RestrictNavigation.GetCount());
         }
 
         private RBiasing ConvertBiasing(MBiasing biasing)
@@ -251,14 +255,25 @@ namespace GroupByInc.Api
             return this;
         }
 
-        public string GetUserId()
+        public string GetVisitorId()
         {
-            return _userId;
+            return _visitorId;
         }
 
-        public Query SetUserId(string userId)
+        public Query SetVisitorId(string visitorId)
         {
-            _userId = userId;
+            _visitorId = visitorId;
+            return this;
+        }
+
+        public string GetSessionId()
+        {
+            return _sessionId;
+        }
+
+        public Query SetSessionId(string sessionId)
+        {
+            _sessionId = sessionId;
             return this;
         }
 
@@ -576,13 +591,13 @@ namespace GroupByInc.Api
 
         public Query SetRestrictNavigation(RestrictNavigation restrictNavigation)
         {
-            _restrictNavigation = restrictNavigation;
+            RestrictNavigation = restrictNavigation;
             return this;
         }
 
         public Query SetRestrictNavigation(string name, int count)
         {
-            _restrictNavigation = new RestrictNavigation().SetName(name).SetCount(count);
+            RestrictNavigation = new RestrictNavigation().SetName(name).SetCount(count);
             return this;
         }
 
@@ -613,6 +628,19 @@ namespace GroupByInc.Api
             _matchStrategy = matchStrategy;
             return this;
         }
+
+
+        public string GetMatchStrategyName()
+        {
+            return _matchStrategyName;
+        }
+
+        public Query SetMatchStrategy(string matchStrategyName)
+        {
+            _matchStrategyName = matchStrategyName;
+            return this;
+        }
+
 
         public MBiasing GetBiasing()
         {
