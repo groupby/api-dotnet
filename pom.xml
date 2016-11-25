@@ -26,7 +26,7 @@
 
   <properties>
     <!-- # GroupBy Dependency params-->
-    <groupbyinc.bindle.version>2.0.194</groupbyinc.bindle.version>
+    <groupbyinc.bindle.version>2.3.68</groupbyinc.bindle.version>
 
     <!-- # Build params-->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
