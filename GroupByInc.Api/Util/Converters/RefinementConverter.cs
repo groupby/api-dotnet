@@ -11,7 +11,7 @@ namespace GroupByInc.Api.Util.Converters
         public override bool CanConvert(Type objectType)
         {
             //assume we can convert to anything for now
-            return (objectType == typeof (Refinement));
+            return (objectType == typeof(Refinement));
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue,

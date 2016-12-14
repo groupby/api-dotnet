@@ -6,17 +6,16 @@ namespace GroupByInc.Api.Models
     {
         public enum TypeEnum
         {
-            Value, Range
+            Value,
+            Range
         }
 
         [JsonProperty("_id")] //
         private string _id;
 
-        [JsonProperty("count")]
-        protected int Count;
+        [JsonProperty("count")] protected int Count;
 
-        [JsonProperty("exclude")]
-        protected bool? Exclude = false;
+        [JsonProperty("exclude")] protected bool? Exclude = false;
 
         public abstract TypeEnum Type { get; }
 //

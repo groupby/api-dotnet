@@ -5,8 +5,7 @@ namespace GroupByInc.Api.Requests
 {
     public class MatchStrategy
     {
-        [JsonProperty("rules")]
-        private List<PartialMatchRule> _rules =  new List<PartialMatchRule>();
+        [JsonProperty("rules")] private List<PartialMatchRule> _rules = new List<PartialMatchRule>();
 
         public List<PartialMatchRule> GetRules()
         {

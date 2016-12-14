@@ -2,7 +2,6 @@ using System.Collections.Generic;
 
 namespace GroupByInc.Api.Requests
 {
-
     public class Bias
     {
         public enum Strength
@@ -56,6 +55,5 @@ namespace GroupByInc.Api.Requests
             _strength = strength;
             return this;
         }
-
     }
 }

@@ -5,8 +5,7 @@ namespace GroupByInc.Api.Requests.Refinement
 {
     public class SelectedRefinementValue : SelectedRefinement
     {
-        [JsonProperty("value")]
-        private string _value;
+        [JsonProperty("value")] private string _value;
 
         public string GetValue()
         {
@@ -22,10 +21,7 @@ namespace GroupByInc.Api.Requests.Refinement
         [JsonProperty("type")]
         public override TypeEnum Type
         {
-            get
-            {
-                return TypeEnum.Value;
-            }
+            get { return TypeEnum.Value; }
         }
 
         public override String ToTildeString()

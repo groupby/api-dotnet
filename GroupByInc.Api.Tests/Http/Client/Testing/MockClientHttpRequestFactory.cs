@@ -36,7 +36,6 @@ namespace GroupByInc.Api.Tests.Http.Client.Testing
     /// <author>Bruno Baia (.NET)</author>
     public class MockClientHttpRequestFactory : IClientHttpRequestFactory
     {
-
         private MockClientHttpRequest _mockClientHttpRequest;
 
         /// <summary>
@@ -65,5 +64,4 @@ namespace GroupByInc.Api.Tests.Http.Client.Testing
             _mockClientHttpRequest = mockClientHttpRequest;
         }
     }
-
 }

@@ -164,8 +164,8 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException),
-            ExpectedMessage = "This token: q is already mapped to: search")]
+        [ExpectedException(typeof(UrlBeautificationException),
+             ExpectedMessage = "This token: q is already mapped to: search")]
         public void TestExistingMapping()
         {
             _beautifier.SetSearchMapping('q');
@@ -173,7 +173,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlBadInsert()
         {
             SetSearchAndIndex();
@@ -181,7 +181,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlBadInsert2()
         {
             SetSearchAndIndex();
@@ -189,7 +189,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlBadReplace()
         {
             SetSearchAndIndex();
@@ -222,7 +222,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlInsertMalformedIndex()
         {
             SetSearchAndIndex();
@@ -230,7 +230,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlInsertNoIndex()
         {
             SetSearchAndIndex();
@@ -266,7 +266,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlReplaceBadReplacementString()
         {
             SetSearchAndIndex();
@@ -274,7 +274,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestFromUrlReplaceNoIndex()
         {
             SetSearchAndIndex();
@@ -405,7 +405,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException))]
+        [ExpectedException(typeof(UrlBeautificationException))]
         public void TestRange()
         {
             _beautifier.AddRefinementMapping('t', "test");
@@ -513,8 +513,8 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (UrlBeautificationException),
-            ExpectedMessage = "Vowels are not allowed to avoid Dictionary words appearing")]
+        [ExpectedException(typeof(UrlBeautificationException),
+             ExpectedMessage = "Vowels are not allowed to avoid Dictionary words appearing")]
         public void TestStopVowels()
         {
             _beautifier.AddRefinementMapping('u', "test");

@@ -16,29 +16,22 @@ namespace GroupByInc.Api.Models
 
         private string _id;
 
-        [JsonProperty("name")]
-        private string _name;
+        [JsonProperty("name")] private string _name;
 
-        [JsonProperty("displayName")]
-        private string _displayName;
-        
-        [JsonProperty("range")]
-        private bool _range;
+        [JsonProperty("displayName")] private string _displayName;
 
-        [JsonProperty("or")]
-        private bool _or;
-        
-        [JsonProperty("sort")]
-        private Sort _sort;
+        [JsonProperty("range")] private bool _range;
 
-        [JsonProperty("moreRefinements", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        private bool? _moreRefinements;
+        [JsonProperty("or")] private bool _or;
 
-        [JsonProperty("refinements")]
-        private List<Refinement> _refinements = new List<Refinement>();
+        [JsonProperty("sort")] private Sort _sort;
 
-        [JsonProperty("metadata")]
-        private List<Metadata> _metadata = new List<Metadata>();
+        [JsonProperty("moreRefinements", DefaultValueHandling = DefaultValueHandling.Ignore)] private bool?
+            _moreRefinements;
+
+        [JsonProperty("refinements")] private List<Refinement> _refinements = new List<Refinement>();
+
+        [JsonProperty("metadata")] private List<Metadata> _metadata = new List<Metadata>();
 
         public string GetName()
         {
@@ -139,6 +132,5 @@ namespace GroupByInc.Api.Models
             _moreRefinements = moreRefinements;
             return this;
         }
-
     }
 }

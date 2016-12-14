@@ -4,11 +4,9 @@ namespace GroupByInc.Api.Models.Refinements
 {
     public class RefinementRange : Refinement
     {
-        [JsonProperty("low")]
-        private string _low;
+        [JsonProperty("low")] private string _low;
 
-        [JsonProperty("high")]
-        private string _high;
+        [JsonProperty("high")] private string _high;
 
         public string GetLow()
         {
@@ -36,10 +34,7 @@ namespace GroupByInc.Api.Models.Refinements
         [JsonProperty("type")]
         public override TypeEnum Type
         {
-            get
-            {
-                return TypeEnum.Range;
-            }
+            get { return TypeEnum.Range; }
         }
 
         public RefinementRange SetCount(int count)

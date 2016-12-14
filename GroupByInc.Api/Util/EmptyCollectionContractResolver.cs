@@ -28,7 +28,7 @@ namespace GroupByInc.Api.Util
             if (collection != null && collection.Count == 0)
                 return true;
 
-            if (!typeof (IEnumerable).IsAssignableFrom(property.PropertyType))
+            if (!typeof(IEnumerable).IsAssignableFrom(property.PropertyType))
                 return false;
 
             PropertyInfo countProp = property.PropertyType.GetProperty("Count");
