@@ -12,11 +12,9 @@ namespace GroupByInc.Api.Models
     /// </summary>
     public class Metadata
     {
-        [JsonProperty("key")]
-        private string _key;
+        [JsonProperty("key")] private string _key;
 
-        [JsonProperty("value")]
-        private string _value;
+        [JsonProperty("value")] private string _value;
 
         public string Key
         {

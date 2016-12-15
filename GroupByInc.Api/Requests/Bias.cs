@@ -1,8 +1,8 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace GroupByInc.Api.Requests
 {
-
     public class Bias
     {
         public enum Strength
@@ -18,10 +18,13 @@ namespace GroupByInc.Api.Requests
             Absolute_Decrease
         }
 
+        [JsonProperty("name")]
         private string _name;
 
+        [JsonProperty("content")]
         private string _content;
 
+        [JsonProperty("strength")]
         private Strength _strength;
 
         public string GetName()
@@ -56,6 +59,5 @@ namespace GroupByInc.Api.Requests
             _strength = strength;
             return this;
         }
-
     }
 }

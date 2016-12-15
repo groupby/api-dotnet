@@ -5,9 +5,7 @@ namespace GroupByInc.Api.Models.Refinements
 {
     public class RefinementValue : Refinement
     {
-
-        [JsonProperty("value")]
-        private string _value;
+        [JsonProperty("value")] private string _value;
 
         public string GetValue()
         {
@@ -23,10 +21,7 @@ namespace GroupByInc.Api.Models.Refinements
         [JsonProperty("type")]
         public override TypeEnum Type
         {
-            get
-            {
-                return TypeEnum.Value;
-            }
+            get { return TypeEnum.Value; }
         }
 
         public RefinementValue SetCount(int count)

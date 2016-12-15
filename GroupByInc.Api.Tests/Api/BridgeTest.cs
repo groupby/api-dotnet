@@ -35,8 +35,8 @@ namespace GroupByInc.Api.Tests.Api
                 httpRequestFactory);
             JObject results = cloudBridge.Search(query);
             Assert.AreEqual(results["area"].ToString(), "Production");
-            Assert.AreEqual(((JArray)results["availableNavigation"]).Count, 14);
-            Assert.AreEqual(((JArray)results["records"]).Count, 50);
+            Assert.AreEqual(((JArray) results["availableNavigation"]).Count, 14);
+            Assert.AreEqual(((JArray) results["records"]).Count, 50);
         }
 
         [Test]
@@ -74,7 +74,8 @@ namespace GroupByInc.Api.Tests.Api
             }
             catch (IOException e)
             {
-                Assert.AreEqual(e.Message, "Exception from bridge: Unauthorized A bad thing happened, This is the expected error");
+                Assert.AreEqual(e.Message,
+                    "Exception from bridge: Unauthorized A bad thing happened, This is the expected error");
             }
         }
     }

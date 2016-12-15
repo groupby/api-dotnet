@@ -4,11 +4,9 @@ namespace GroupByInc.Api.Requests
 {
     public class RefinementsRequest
     {
-        [JsonProperty("originalQuery")]
-        private Request _originalQuery;
+        [JsonProperty("originalQuery")] private Request _originalQuery;
 
-        [JsonProperty("navigationName")]
-        private string _navigationName;
+        [JsonProperty("navigationName")] private string _navigationName;
 
         public string GetNavigationName()
         {

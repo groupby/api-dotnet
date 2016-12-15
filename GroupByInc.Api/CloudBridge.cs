@@ -113,7 +113,8 @@ namespace GroupByInc.Api
 
         private void HandleErrorStatus(IClientHttpResponse response, bool returnsBinary)
         {
-            throw new IOException(ExceptionFromBridge + response.StatusCode + " " + response.StatusDescription + ", " + Map(response, returnsBinary)["errors"]);
+            throw new IOException(ExceptionFromBridge + response.StatusCode + " " + response.StatusDescription + ", " +
+                                  Map(response, returnsBinary)["errors"]);
         }
 
         private IClientHttpResponse PostToBridge(string url, string body)

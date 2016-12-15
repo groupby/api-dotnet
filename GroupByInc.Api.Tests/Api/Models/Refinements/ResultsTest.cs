@@ -51,7 +51,7 @@ namespace GroupByInc.Api.Tests.Api.Models.Refinements
                              "\"exclude\":false,\"type\":\"Range\"},{\"value\":\"Ö'=\\\"\",\"count\":0," +
                              "\"exclude\":false,\"type\":\"Value\"}],\"metadata\":[]}",
                 new Navigation().SetName("A")
-                    .SetRefinements(new List<Refinement>(new Refinement[] { refinementRange, refinementValue })));
+                    .SetRefinements(new List<Refinement>(new Refinement[] {refinementRange, refinementValue})));
 
 
             AssertNavigation("{\"name\":\"A\",\"range\":false,\"or\":false,\"sort\":\"Count_Ascending\"," +
@@ -59,7 +59,7 @@ namespace GroupByInc.Api.Tests.Api.Models.Refinements
                              "\"exclude\":false,\"type\":\"Value\"},{\"low\":\"10\",\"high\":\"100\",\"count\":0," +
                              "\"exclude\":false,\"type\":\"Range\"}],\"metadata\":[]}",
                 new Navigation().SetName("A")
-                    .SetRefinements(new List<Refinement>(new Refinement[] { refinementValue, refinementRange })));
+                    .SetRefinements(new List<Refinement>(new Refinement[] {refinementValue, refinementRange})));
         }
 
         [Test]

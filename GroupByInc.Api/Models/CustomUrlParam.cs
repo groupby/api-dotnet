@@ -7,11 +7,9 @@ namespace GroupByInc.Api.Models
     /// </summary>
     public class CustomUrlParam
     {
-        [JsonProperty("key")]
-        private string _key;
+        [JsonProperty("key")] private string _key;
 
-        [JsonProperty("value")]
-        private string _value;
+        [JsonProperty("value")] private string _value;
 
         public string GetKey()
         {
@@ -31,7 +29,7 @@ namespace GroupByInc.Api.Models
         }
 
         public CustomUrlParam SetValue(string value)
-        {   
+        {
             _value = value;
             return this;
         }

@@ -1,16 +1,20 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace GroupByInc.Api.Requests
 {
     public class Biasing
     {
+        [JsonProperty("bringToTop", NullValueHandling = NullValueHandling.Ignore)] //
         private List<string> _bringToTop;
 
-        private float? _influence;
-
-        private bool _augmentBiases;
-
+        [JsonProperty("biases", NullValueHandling = NullValueHandling.Ignore)] //
         private List<Bias> _biases;
+
+        [JsonProperty("influence")] private float? _influence;
+
+        [JsonProperty("augmentBiases")] private bool _augmentBiases;
+
 
         public List<string> GetBringToTop()
         {

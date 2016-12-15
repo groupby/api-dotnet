@@ -12,8 +12,8 @@ namespace GroupByInc.Api.Tags
     public class UrlFunctions
     {
         private static Mappers _mappers;
-        
-        static UrlFunctions() 
+
+        static UrlFunctions()
         {
             _mappers = new Mappers();
         }

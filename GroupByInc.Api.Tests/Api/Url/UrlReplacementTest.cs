@@ -76,7 +76,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (ParserException))]
+        [ExpectedException(typeof(ParserException))]
         public void TestFromStringInvalidString()
         {
             UrlReplacement.FromString("a2-a");
@@ -101,7 +101,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        [ExpectedException(typeof (ParserException))]
+        [ExpectedException(typeof(ParserException))]
         public void TestParseQueryStringWithDashMismatch()
         {
             UrlReplacement.ParseQueryString("2-a-i3-b--4-c");

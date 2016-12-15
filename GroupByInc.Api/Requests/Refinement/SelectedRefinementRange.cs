@@ -4,11 +4,9 @@ namespace GroupByInc.Api.Requests.Refinement
 {
     public class SelectedRefinementRange : SelectedRefinement
     {
-        [JsonProperty("low")]
-        private string _low;
+        [JsonProperty("low")] private string _low;
 
-        [JsonProperty("high")]
-        private string _high;
+        [JsonProperty("high")] private string _high;
 
         public string GetLow()
         {
@@ -36,10 +34,7 @@ namespace GroupByInc.Api.Requests.Refinement
         [JsonProperty("type")]
         public override TypeEnum Type
         {
-            get
-            {
-                return TypeEnum.Range;
-            }
+            get { return TypeEnum.Range; }
         }
 
         public override string ToTildeString()

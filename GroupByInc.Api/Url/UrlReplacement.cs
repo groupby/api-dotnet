@@ -149,8 +149,8 @@ namespace GroupByInc.Api.Url
         public override int GetHashCode()
         {
             int result = _index;
-            result = 31*result + (_replacement != null ? _replacement.GetHashCode() : 0);
-            result = 31*result + (_type != null ? _type.GetHashCode() : 0);
+            result = 31 * result + (_replacement != null ? _replacement.GetHashCode() : 0);
+            result = 31 * result + (_type != null ? _type.GetHashCode() : 0);
             return result;
         }
 

@@ -10,11 +10,9 @@ namespace GroupByInc.Api.Requests
             Range
         }
 
-        [JsonProperty("_id")]
-        private string _id;
+        [JsonProperty("_id")] private string _id;
 
-        [JsonProperty("navigationName")]
-        public string _navigationName;
+        [JsonProperty("navigationName")] public string _navigationName;
 
         [JsonProperty("exclude")] //
         private bool? _exclude;
@@ -57,7 +55,8 @@ namespace GroupByInc.Api.Requests
 
         public bool? GetExclude()
         {
-            return _exclude;;
+            return _exclude;
+            ;
         }
 
         public SelectedRefinement SetExclude(bool? exclude)

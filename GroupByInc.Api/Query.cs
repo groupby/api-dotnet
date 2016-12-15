@@ -115,6 +115,7 @@ namespace GroupByInc.Api
             request.SetCustomUrlParams(_customUrlParams);
             request.SetRefinements(GenerateSelectedRefinements(_navigations));
             request.SetRestrictNavigation(ConvertRestrictNavigation());
+
             if (!_pruneRefinements)
             {
                 request.SetPruneRefinements(false);
@@ -135,6 +136,7 @@ namespace GroupByInc.Api
             return request;
         }
 
+
         private RestrictNavigation ConvertRestrictNavigation()
         {
             return RestrictNavigation == null
@@ -150,7 +152,7 @@ namespace GroupByInc.Api
 
             bool hasData = false;
 
-            if (biasing == null)
+            if (biasing != null)
             {
                 if (biasing.GetBringToTop().Count > 0)
                 {

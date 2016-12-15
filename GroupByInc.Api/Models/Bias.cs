@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace GroupByInc.Api.Models
 {
-
     public class Bias
     {
         public enum Strength
@@ -19,14 +18,11 @@ namespace GroupByInc.Api.Models
             Absolute_Decrease
         }
 
-        [JsonProperty("name")]
-        private string _name;
+        [JsonProperty("name")] private string _name;
 
-        [JsonProperty("content")]
-        private string _content;
+        [JsonProperty("content")] private string _content;
 
-        [JsonProperty("strength")]
-        private Strength _strength;
+        [JsonProperty("strength")] private Strength _strength;
 
         public string GetName()
         {
@@ -60,6 +56,5 @@ namespace GroupByInc.Api.Models
             _strength = strength;
             return this;
         }
-
     }
 }

@@ -4,17 +4,13 @@ namespace GroupByInc.Api.Requests
 {
     public class PartialMatchRule
     {
-        [JsonProperty("terms")]
-        private int? _terms;
+        [JsonProperty("terms")] private int? _terms;
 
-        [JsonProperty("termsGreaterThan")]
-        private int? _termsGreaterThan;
+        [JsonProperty("termsGreaterThan")] private int? _termsGreaterThan;
 
-        [JsonProperty("mustMatch")]
-        private int? _mustMatch;
-        
-        [JsonProperty("percentage")]
-        private bool? _percentage = false;
+        [JsonProperty("mustMatch")] private int? _mustMatch;
+
+        [JsonProperty("percentage")] private bool? _percentage = false;
 
         public int? GetTerms()
         {
