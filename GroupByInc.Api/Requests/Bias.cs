@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace GroupByInc.Api.Requests
 {
@@ -17,10 +18,13 @@ namespace GroupByInc.Api.Requests
             Absolute_Decrease
         }
 
+        [JsonProperty("name")]
         private string _name;
 
+        [JsonProperty("content")]
         private string _content;
 
+        [JsonProperty("strength")]
         private Strength _strength;
 
         public string GetName()

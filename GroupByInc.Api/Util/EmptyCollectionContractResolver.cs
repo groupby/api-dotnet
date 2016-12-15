@@ -24,6 +24,12 @@ namespace GroupByInc.Api.Util
         private bool IsEmptyCollection(JsonProperty property, object target)
         {
             object value = property.ValueProvider.GetValue(target);
+
+            if (value == null)
+            {
+                return true;
+            }
+
             ICollection collection = value as ICollection;
             if (collection != null && collection.Count == 0)
                 return true;

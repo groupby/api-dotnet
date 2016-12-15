@@ -8,13 +8,16 @@ namespace GroupByInc.Api.Models
     /// </summary>
     public class Biasing
     {
-        [JsonProperty("bringToTop")] private List<string> _bringToTop = new List<string>();
+        [JsonProperty("bringToTop", NullValueHandling = NullValueHandling.Ignore)] //
+        private List<string> _bringToTop = new List<string>();
+
+        [JsonProperty("biases", NullValueHandling = NullValueHandling.Ignore)] //
+        private List<Bias> _biases = new List<Bias>();
 
         [JsonProperty("influence")] private float? _influence = null;
 
         [JsonProperty("augmentBiases")] private bool _augmentBiases;
 
-        [JsonProperty("biases")] private List<Bias> _biases = new List<Bias>();
 
         public List<string> GetBringToTop()
         {

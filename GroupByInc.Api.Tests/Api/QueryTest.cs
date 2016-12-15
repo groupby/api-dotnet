@@ -1,5 +1,8 @@
-﻿using GroupByInc.Api.Requests;
+﻿using System.Collections.Generic;
+using GroupByInc.Api.Requests;
 using NUnit.Framework;
+using MBias = GroupByInc.Api.Models.Bias;
+using MBiasing = GroupByInc.Api.Models.Biasing;
 
 namespace GroupByInc.Api.Tests.Api
 {
@@ -409,6 +412,70 @@ namespace GroupByInc.Api.Tests.Api
                 "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\",\"skip\":0," +
                 "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
+            AssertQuery(expected, _query);
+        }
+
+
+        [Test]
+        public void TestQueryTimeBiasing()
+        {
+            _query.SetQuery("boston");
+            _query.SetCollection("docs");
+            _query.SetArea("staging");
+            _query.SetVisitorId("somevisitorhash");
+            _query.SetSessionId("somesessionhash");
+            MBiasing biasing = new MBiasing();
+            biasing.SetInfluence(12.1f);
+            List<GroupByInc.Api.Models.Bias> biases = new List<GroupByInc.Api.Models.Bias>();
+            biases.Add(new MBias().SetName("title").SetStrength(MBias.Strength.Absolute_Increase));
+            biasing.SetBiases(biases);
+            _query.SetBiasing(biasing);
+
+            const string expected =
+                "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\",\"skip\":0," +
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false," +
+                "\"biasing\":{\"biases\":[{\"name\":\"title\",\"strength\":\"Absolute_Increase\"}],\"influence\":12.1,\"augmentBiases\":false}}";
+            AssertQuery(expected, _query);
+        }
+
+        [Test]
+        public void TestQueryWithBringToTop()
+        {
+            _query.SetQuery("boston");
+            _query.SetCollection("docs");
+            _query.SetArea("staging");
+            _query.SetVisitorId("somevisitorhash");
+            _query.SetSessionId("somesessionhash");
+            MBiasing biasing = new MBiasing();
+            List<string> bringToTop = new List<string>();
+            bringToTop.Add("id1");
+            biasing.SetBringToTop(bringToTop);
+            _query.SetBiasing(biasing);
+
+            const string expected =
+                "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\",\"skip\":0," +
+                "\"pageSize\":10,\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false," +
+                "\"biasing\":{\"bringToTop\":[\"id1\"],\"augmentBiases\":false}}";
+            AssertQuery(expected, _query);
+        }
+
+        [Test]
+        public void TestQueryWithRestrictNavigation()
+        {
+            _query.SetQuery("boston");
+            _query.SetCollection("docs");
+            _query.SetArea("staging");
+            _query.SetVisitorId("somevisitorhash");
+            _query.SetSessionId("somesessionhash");
+            _query.SetRestrictNavigation(new RestrictNavigation().SetName("brand").SetCount(2));
+
+            const string expected =
+                "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
+                "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\"," +
+                "\"restrictedNavigation\":{\"name\":\"brand\",\"count\":2},\"skip\":0,\"pageSize\":10," +
+                "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
     }

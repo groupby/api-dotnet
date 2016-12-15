@@ -1,10 +1,14 @@
-﻿namespace GroupByInc.Api.Requests
+﻿using Newtonsoft.Json;
+
+namespace GroupByInc.Api.Requests
 {
     /// <summary>
     /// </summary>
     public class RestrictNavigation
     {
+        [JsonProperty("name")]
         private string _name;
+        [JsonProperty("count")]
         private int _count;
 
         public RestrictNavigation SetName(string value)
