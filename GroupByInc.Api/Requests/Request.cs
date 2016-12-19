@@ -51,7 +51,7 @@ namespace GroupByInc.Api.Requests
 
         [JsonProperty("refinementQuery")] private string _refinementQuery;
 
-        [JsonProperty("restrictedNavigation")] private RestrictNavigation _restrictNavigation;
+        [JsonProperty("restrictNavigation")] private RestrictNavigation _restrictNavigation;
 
         [JsonProperty("skip")] private int _skip;
 
