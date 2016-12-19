@@ -474,7 +474,7 @@ namespace GroupByInc.Api.Tests.Api
             const string expected =
                 "{\"pruneRefinements\":true,\"clientKey\":\"aoeu\",\"collection\":\"docs\",\"area\":\"staging\"," +
                 "\"sessionId\":\"somesessionhash\",\"visitorId\":\"somevisitorhash\",\"query\":\"boston\"," +
-                "\"restrictedNavigation\":{\"name\":\"brand\",\"count\":2},\"skip\":0,\"pageSize\":10," +
+                "\"restrictNavigation\":{\"name\":\"brand\",\"count\":2},\"skip\":0,\"pageSize\":10," +
                 "\"returnBinary\":false,\"disableAutocorrection\":true,\"wildcardSearchEnabled\":false}";
             AssertQuery(expected, _query);
         }
