@@ -186,7 +186,7 @@ namespace GroupByInc.Api.Tests.Api.Url
         }
 
         [Test]
-        public void ToString()
+        public void TestToString()
         {
             UrlReplacement r = new UrlReplacement(2, "a", UrlReplacement.OperationType.Swap);
             Assert.AreEqual("2-a", r.ToString());
