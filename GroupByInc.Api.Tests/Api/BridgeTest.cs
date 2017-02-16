@@ -69,7 +69,7 @@ namespace GroupByInc.Api.Tests.Api
 
             try
             {
-                JObject results = cloudBridge.Search(query);
+                cloudBridge.Search(query);
                 Assert.Fail("No exception thrown on bridge error");
             }
             catch (IOException e)
