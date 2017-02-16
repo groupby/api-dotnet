@@ -12,7 +12,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>Search API GroupBy JSON REST</tags>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
     </dependencies>
   </metadata>
   <files>
