@@ -2,8 +2,6 @@
 
 namespace GroupByInc.Api.Requests
 {
-    /// <summary>
-    /// </summary>
     public class RestrictNavigation
     {
         [JsonProperty("name")]
@@ -33,9 +31,6 @@ namespace GroupByInc.Api.Requests
             return _count;
         }
 
-        /// <summary>
-        /// </summary>
-        /// <returns></returns>
         public override string ToString()
         {
             return "[" + _name + "," + _count + "]";

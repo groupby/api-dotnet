@@ -56,7 +56,6 @@ namespace GroupByInc.Api.Requests
         public bool? GetExclude()
         {
             return _exclude;
-            ;
         }
 
         public SelectedRefinement SetExclude(bool? exclude)
