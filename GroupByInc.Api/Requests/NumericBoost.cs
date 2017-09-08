@@ -1,12 +1,16 @@
-﻿namespace GroupByInc.Api.Requests
+﻿using Newtonsoft.Json;
+
+namespace GroupByInc.Api.Requests
 {
     public class NumericBoost
     {
-        public static readonly double DEFAULT_STRENGTH = 1.0;
+        public static readonly double DEFAULT_STRENGTH = 1d;
 
-        private string _name;
-        private bool _inverted;
-        private double _strength = DEFAULT_STRENGTH;
+        [ JsonProperty("name") ] private string _name;
+        
+        [ JsonProperty("terms") ] private bool _inverted;
+        
+        [ JsonProperty("strength") ]private double _strength = DEFAULT_STRENGTH;
 
         public string GetName()
         {

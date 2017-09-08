@@ -224,6 +224,7 @@ namespace GroupByInc.Api
             {
                 convertedNumericBoosts.Add(ConvertNumericBoost(boost));
             }
+            return convertedNumericBoosts;
         }
 
         private RNumericBoost ConvertNumericBoost(MNumericBoost boost)
