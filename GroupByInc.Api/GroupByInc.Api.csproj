@@ -54,10 +54,12 @@
     <Compile Include="Models\CustomUrlParam.cs" />
     <Compile Include="Models\Metadata.cs" />
     <Compile Include="Models\Navigation.cs" />
+    <Compile Include="Models\NumericBoost.cs" />
     <Compile Include="Models\Refinement.cs" />
     <Compile Include="Models\Refinements\RefinementRange.cs" />
     <Compile Include="Models\Refinements\RefinementValue.cs" />
     <Compile Include="Requests\MatchStrategy.cs" />
+    <Compile Include="Requests\NumericBoost.cs" />
     <Compile Include="Requests\PartialMatchRule.cs" />
     <Compile Include="Requests\RefinementsRequest.cs" />
     <Compile Include="Requests\Refinement\SelectedRefinementRange.cs" />

@@ -12,6 +12,8 @@ using RBiasing = GroupByInc.Api.Requests.Biasing;
 using RBias = GroupByInc.Api.Requests.Bias;
 using GroupByInc.Api.Requests.Refinement;
 using GroupByInc.Api.Util;
+using RNumericBoost = GroupByInc.Api.Requests.NumericBoost;
+using MNumericBoost = GroupByInc.Api.Models.NumericBoost;
 
 namespace GroupByInc.Api
 {
@@ -170,6 +172,11 @@ namespace GroupByInc.Api
                     convertedBiasing.SetInfluence(biasing.GetInfluence().Value);
                     hasData = true;
                 }
+                if (biasing.GetNumericBoosts().Count > 0)
+                {
+                    convertedBiasing.SetNumericBoosts(ConvertNumericBoosts(biasing.GetNumericBoosts()));
+                    hasData = true;
+                }
             }
 
             return hasData ? convertedBiasing : null;
@@ -185,7 +192,7 @@ namespace GroupByInc.Api
             }
             catch (Exception e)
             {
-                Console.WriteLine("Could not convert bias strength " + strength.ToString());
+                Console.WriteLine("Could not convert bias strength " + strength);
                 convertedStrength = RBias.Strength.Leave_Unchanged;
             }
 
@@ -208,6 +215,24 @@ namespace GroupByInc.Api
                 convertedBiases.Add(ConvertBias(bias));
             }
             return convertedBiases;
+        }
+
+        private List<RNumericBoost> ConvertNumericBoosts(List<MNumericBoost> numericBoosts)
+        {
+            List<RNumericBoost> convertedNumericBoosts = new List<RNumericBoost>();
+            foreach (MNumericBoost boost in numericBoosts)
+            {
+                convertedNumericBoosts.Add(ConvertNumericBoost(boost));
+            }
+            return convertedNumericBoosts;
+        }
+
+        private RNumericBoost ConvertNumericBoost(MNumericBoost boost)
+        {
+            return new RNumericBoost()
+                .SetName(boost.GetName())
+                .SetInverted(boost.IsInverted())
+                .SetStrength(boost.GetStrength());
         }
 
         public string GetBridgeJson(string clientKey)
@@ -338,7 +363,7 @@ namespace GroupByInc.Api
                 Regex pattern = new Regex(TildeRegex);
                 return StringUtils.RemoveNull(pattern.Split(refinementString));
             }
-            return new string[] {};
+            return new string[] { };
         }
 
         public Query AddRefinementsByString(string refinementString)

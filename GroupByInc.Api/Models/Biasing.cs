@@ -13,6 +13,9 @@ namespace GroupByInc.Api.Models
 
         [JsonProperty("biases", NullValueHandling = NullValueHandling.Ignore)] //
         private List<Bias> _biases = new List<Bias>();
+        
+        [JsonProperty("numericBoosts", NullValueHandling = NullValueHandling.Ignore)] //
+        private List<NumericBoost> _numericBoosts;
 
         [JsonProperty("influence")] private float? _influence = null;
 
@@ -60,6 +63,17 @@ namespace GroupByInc.Api.Models
         public Biasing SetBiases(List<Bias> biases)
         {
             _biases = biases;
+            return this;
+        }
+
+        public List<NumericBoost> GetNumericBoosts()
+        {
+            return _numericBoosts;
+        }
+
+        public Biasing SetNumericBoosts(List<NumericBoost> numericBoosts)
+        {
+            _numericBoosts = numericBoosts;
             return this;
         }
     }
