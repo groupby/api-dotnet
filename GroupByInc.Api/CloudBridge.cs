@@ -13,12 +13,10 @@ namespace GroupByInc.Api
     {
         public static readonly string Cluster = "/cluster";
         protected static readonly string Colon = ":";
-        protected static readonly string Http = "http://";
         protected static readonly string Https = "https://";
         private static readonly string _search = "/search";
         private static readonly string RefinementsSearch = "/refinements";
         private static readonly string RefinementSearch = "/refinement";
-        private static readonly string Body = "\nbody:\n";
         private static readonly string ExceptionFromBridge = "Exception from bridge: ";
         private static readonly string Dot = ".";
         private static readonly string CloudHost = "groupbycloud.com";
@@ -32,7 +30,6 @@ namespace GroupByInc.Api
         private readonly string _clientKey;
         private readonly IClientHttpRequestFactory _httpRequestFactory;
         private readonly Mappers _mappers;
-        private long _retryTimeout = 80;
 
         public CloudBridge(string clientKey, string customerId)
             : this(
