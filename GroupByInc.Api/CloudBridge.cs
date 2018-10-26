@@ -11,7 +11,6 @@ namespace GroupByInc.Api
 {
     public class CloudBridge
     {
-        public static readonly string Cluster = "/cluster";
         private static readonly string ExceptionFromBridge = "Exception from bridge: ";
         private static readonly string CloudHost = "groupbycloud.com";
         private readonly string _bridgeClusterUrl;
@@ -51,7 +50,7 @@ namespace GroupByInc.Api
 
             _bridgeUrl = $"{baseBridgeUrl}/search";
             _bridgeRefinementsUrl = $"{baseBridgeUrl}/refinements";
-            _bridgeClusterUrl = baseBridgeUrl + Cluster;
+            _bridgeClusterUrl = $"{baseBridgeUrl}/cluster";
         }
 
         public string GetBridgeUrl()
