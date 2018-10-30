@@ -11,39 +11,25 @@ namespace GroupByInc.Api
 {
     public class CloudBridge
     {
-        public static readonly string Cluster = "/cluster";
-        protected static readonly string Colon = ":";
-        protected static readonly string Http = "http://";
-        protected static readonly string Https = "https://";
-        private static readonly string _search = "/search";
-        private static readonly string RefinementsSearch = "/refinements";
-        private static readonly string RefinementSearch = "/refinement";
-        private static readonly string Body = "\nbody:\n";
         private static readonly string ExceptionFromBridge = "Exception from bridge: ";
-        private static readonly string Dot = ".";
         private static readonly string CloudHost = "groupbycloud.com";
-        private static readonly int CloudPort = 443;
-        private static readonly string CloudPath = "/api/v1";
-        private static readonly string UrlSuffix = Dot + CloudHost + Colon + CloudPort + CloudPath;
         private readonly string _bridgeClusterUrl;
-        private readonly string _bridgeRefinementSearchUrl;
         private readonly string _bridgeRefinementsUrl;
         private readonly string _bridgeUrl;
         private readonly string _clientKey;
         private readonly IClientHttpRequestFactory _httpRequestFactory;
         private readonly Mappers _mappers;
-        private long _retryTimeout = 80;
 
         public CloudBridge(string clientKey, string customerId)
             : this(
-                clientKey, string.Format("{0}{1}{2}", Https, customerId, UrlSuffix), new WebClientHttpRequestFactory(),
+                clientKey, $"https://{customerId}.{CloudHost}", new WebClientHttpRequestFactory(),
                 new Mappers())
         {
         }
 
         public CloudBridge(string clientKey, string customerId, Mappers mappers)
             : this(
-                clientKey, string.Format("{0}{1}{2}", Https, customerId, UrlSuffix), new WebClientHttpRequestFactory(),
+                clientKey, $"https://{customerId}.{CloudHost}", new WebClientHttpRequestFactory(),
                 mappers)
         {
         }
@@ -59,10 +45,12 @@ namespace GroupByInc.Api
             _clientKey = clientKey;
             _httpRequestFactory = httpRequestFactory;
             _mappers = mappers;
-            _bridgeUrl = baseUrl + _search;
-            _bridgeRefinementsUrl = _bridgeUrl + RefinementsSearch;
-            _bridgeRefinementSearchUrl = baseUrl + RefinementSearch;
-            _bridgeClusterUrl = baseUrl + Cluster;
+
+            var baseBridgeUrl = $"{baseUrl}:443/api/v1";
+
+            _bridgeUrl = $"{baseBridgeUrl}/search";
+            _bridgeRefinementsUrl = $"{baseBridgeUrl}/refinements";
+            _bridgeClusterUrl = $"{baseBridgeUrl}/cluster";
         }
 
         public string GetBridgeUrl()
